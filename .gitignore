@@ -5,3 +5,4 @@ shots/after/
 local_server.log
 nohup.out
 cf_token.txt
+live*.html
