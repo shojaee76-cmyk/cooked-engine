@@ -1,0 +1,1095 @@
+[
+  {
+    "id": "ratio",
+    "tag": "FOLLOW RATIO",
+    "slots": [
+      "followers",
+      "following",
+      "ratio"
+    ],
+    "device": "sharpest reframe",
+    "weight": 9,
+    "tier": "brutal",
+    "archetypes": [
+      "lurker",
+      "engagement_farmer"
+    ],
+    "text": "{following} follows. {followers} followers. Ratio {ratio}. You are not early, you are the only one in the room."
+  },
+  {
+    "id": "ratio",
+    "tag": "FOLLOW RATIO",
+    "slots": [
+      "followers",
+      "following",
+      "ratio"
+    ],
+    "device": "kill shot",
+    "weight": 9,
+    "tier": "brutal",
+    "archetypes": [
+      "lurker"
+    ],
+    "text": "{followers} follow you back and you follow {following}. A ratio of {ratio}. The audience you built is a list of people who owe you nothing."
+  },
+  {
+    "id": "ratio",
+    "tag": "FOLLOW RATIO",
+    "slots": [
+      "followers",
+      "following",
+      "ratio"
+    ],
+    "device": "understatement",
+    "weight": 9,
+    "tier": "brutal",
+    "archetypes": [
+      "lurker",
+      "engagement_farmer"
+    ],
+    "text": "Ratio {ratio}. You follow {following} and {followers} follow back. You did the following. They did not do it back."
+  },
+  {
+    "id": "ratio",
+    "tag": "FOLLOW RATIO",
+    "slots": [
+      "followers",
+      "following",
+      "ratio"
+    ],
+    "device": "receipt-as-verdict",
+    "weight": 9,
+    "tier": "brutal",
+    "archetypes": [
+      "lurker"
+    ],
+    "text": "{following} accounts get your attention. {followers} return it. {ratio} is the tally. This is not a network, it is a waiting room."
+  },
+  {
+    "id": "engagement",
+    "tag": "ENGAGEMENT",
+    "slots": [
+      "likes",
+      "tweets",
+      "likesPerPost"
+    ],
+    "device": "sharpest reframe",
+    "weight": 8,
+    "tier": "brutal",
+    "archetypes": [
+      "broadcaster"
+    ],
+    "text": "{likesPerPost} likes per post across {tweets} posts, {likes} in total. Not an audience, passing traffic with a phone."
+  },
+  {
+    "id": "engagement",
+    "tag": "ENGAGEMENT",
+    "slots": [
+      "likes",
+      "tweets",
+      "likesPerPost"
+    ],
+    "device": "humiliation by accuracy",
+    "weight": 8,
+    "tier": "brutal",
+    "archetypes": [
+      "broadcaster"
+    ],
+    "text": "{likes} likes from {tweets} posts. {likesPerPost} each. The market has priced your opinions and moved on."
+  },
+  {
+    "id": "engagement",
+    "tag": "ENGAGEMENT",
+    "slots": [
+      "likes",
+      "tweets",
+      "likesPerPost"
+    ],
+    "device": "nobody line",
+    "weight": 8,
+    "tier": "brutal",
+    "archetypes": [
+      "broadcaster"
+    ],
+    "text": "{likesPerPost} likes a post and {tweets} posts in, {likes} likes deep. Nobody is waiting for the next one."
+  },
+  {
+    "id": "engagement",
+    "tag": "ENGAGEMENT",
+    "slots": [
+      "likes",
+      "tweets",
+      "likesPerPost"
+    ],
+    "device": "receipt-as-verdict",
+    "weight": 7,
+    "tier": "brutal",
+    "archetypes": [
+      "broadcaster"
+    ],
+    "text": "{tweets} posts produced {likes} likes at {likesPerPost} apiece. This is not engagement, it is a diary nobody opens."
+  },
+  {
+    "id": "engagement_low",
+    "tag": "ONE WAY",
+    "slots": [
+      "tweets",
+      "likes"
+    ],
+    "device": "sharpest reframe",
+    "weight": 8,
+    "tier": "brutal",
+    "archetypes": [
+      "broadcaster",
+      "ghost"
+    ],
+    "text": "{tweets} posts and {likes} likes. You send. You never receive. This is a correspondence with yourself, filed in public."
+  },
+  {
+    "id": "engagement_low",
+    "tag": "ONE WAY",
+    "slots": [
+      "tweets",
+      "likes"
+    ],
+    "device": "understatement",
+    "weight": 8,
+    "tier": "brutal",
+    "archetypes": [
+      "broadcaster",
+      "ghost"
+    ],
+    "text": "{likes} likes against {tweets} posts. Nobody answers, and you keep the line open anyway."
+  },
+  {
+    "id": "engagement_low",
+    "tag": "ONE WAY",
+    "slots": [
+      "tweets",
+      "likes"
+    ],
+    "device": "nobody line",
+    "weight": 8,
+    "tier": "brutal",
+    "archetypes": [
+      "broadcaster",
+      "ghost"
+    ],
+    "text": "{tweets} posts, {likes} likes. You are holding a monologue in a room that left years ago."
+  },
+  {
+    "id": "engagement_low",
+    "tag": "ONE WAY",
+    "slots": [
+      "tweets",
+      "likes"
+    ],
+    "device": "kill shot",
+    "weight": 7,
+    "tier": "brutal",
+    "archetypes": [
+      "broadcaster",
+      "ghost"
+    ],
+    "text": "{likes} likes from {tweets} posts. You are not a broadcaster, you are a rounding error with opinions."
+  },
+  {
+    "id": "firehose",
+    "tag": "POST VOLUME",
+    "slots": [
+      "tweets",
+      "years",
+      "postsPerDay"
+    ],
+    "device": "the nobody line",
+    "weight": 8,
+    "tier": "brutal",
+    "archetypes": [
+      "broadcaster",
+      "degen"
+    ],
+    "text": "{postsPerDay} posts a day for {years} years. {tweets} times you mistook speaking for mattering."
+  },
+  {
+    "id": "firehose",
+    "tag": "POST VOLUME",
+    "slots": [
+      "tweets",
+      "years",
+      "postsPerDay"
+    ],
+    "device": "escalation",
+    "weight": 8,
+    "tier": "brutal",
+    "archetypes": [
+      "broadcaster",
+      "degen"
+    ],
+    "text": "{tweets} posts in {years} years, {postsPerDay} a day. The firehose ran the whole time and nothing ever landed."
+  },
+  {
+    "id": "firehose",
+    "tag": "POST VOLUME",
+    "slots": [
+      "tweets",
+      "years",
+      "postsPerDay"
+    ],
+    "device": "sharpest reframe",
+    "weight": 8,
+    "tier": "brutal",
+    "archetypes": [
+      "broadcaster",
+      "degen"
+    ],
+    "text": "{postsPerDay} a day, {years} years, {tweets} posts. Output without demand is a hobby with a receipt."
+  },
+  {
+    "id": "firehose",
+    "tag": "POST VOLUME",
+    "slots": [
+      "tweets",
+      "years",
+      "postsPerDay"
+    ],
+    "device": "legacy line",
+    "weight": 7,
+    "tier": "brutal",
+    "archetypes": [
+      "broadcaster",
+      "degen"
+    ],
+    "text": "{years} years at {postsPerDay} posts a day, {tweets} in total. Nobody has ever waited for one of them."
+  },
+  {
+    "id": "posts_per_day",
+    "tag": "DAILY OUTPUT",
+    "slots": [
+      "postsPerDay",
+      "years",
+      "tweets"
+    ],
+    "device": "sharpest reframe",
+    "weight": 8,
+    "tier": "brutal",
+    "archetypes": [
+      "broadcaster",
+      "degen"
+    ],
+    "text": "{postsPerDay} posts a day for {years} years. {tweets} posts. That is not dedication, that is a nervous habit with data."
+  },
+  {
+    "id": "posts_per_day",
+    "tag": "DAILY OUTPUT",
+    "slots": [
+      "postsPerDay",
+      "years",
+      "tweets"
+    ],
+    "device": "humiliation by accuracy",
+    "weight": 8,
+    "tier": "brutal",
+    "archetypes": [
+      "broadcaster",
+      "degen"
+    ],
+    "text": "{postsPerDay} a day, {years} years, {tweets} posts. You have out-published every person who stopped listening."
+  },
+  {
+    "id": "posts_per_day",
+    "tag": "DAILY OUTPUT",
+    "slots": [
+      "postsPerDay",
+      "years",
+      "tweets"
+    ],
+    "device": "understatement",
+    "weight": 7,
+    "tier": "brutal",
+    "archetypes": [
+      "broadcaster"
+    ],
+    "text": "{postsPerDay} posts a day for {years} years and {tweets} posts on file. Most people would call that a job. Nobody has called."
+  },
+  {
+    "id": "posts_per_day",
+    "tag": "DAILY OUTPUT",
+    "slots": [
+      "postsPerDay",
+      "years",
+      "tweets"
+    ],
+    "device": "kill shot",
+    "weight": 7,
+    "tier": "brutal",
+    "archetypes": [
+      "broadcaster",
+      "degen"
+    ],
+    "text": "{tweets} posts in {years} years at {postsPerDay} a day. Frequency is the only thing here that ever went up."
+  },
+  {
+    "id": "ghost",
+    "tag": "DORMANT",
+    "slots": [
+      "followers",
+      "tweets",
+      "years"
+    ],
+    "device": "sharpest reframe",
+    "weight": 7,
+    "tier": "brutal",
+    "archetypes": [
+      "ghost",
+      "lurker"
+    ],
+    "text": "{followers} followers, {tweets} posts, {years} years. You have an account, not a presence."
+  },
+  {
+    "id": "ghost",
+    "tag": "DORMANT",
+    "slots": [
+      "followers",
+      "tweets",
+      "years"
+    ],
+    "device": "nobody line",
+    "weight": 7,
+    "tier": "brutal",
+    "archetypes": [
+      "ghost",
+      "lurker"
+    ],
+    "text": "{tweets} posts in {years} years and {followers} people still following. They are waiting for a person who left."
+  },
+  {
+    "id": "ghost",
+    "tag": "DORMANT",
+    "slots": [
+      "followers",
+      "tweets",
+      "years"
+    ],
+    "device": "bureaucratic misregistration",
+    "weight": 7,
+    "tier": "brutal",
+    "archetypes": [
+      "ghost",
+      "lurker"
+    ],
+    "text": "{followers} followers, {tweets} posts, {years} years on file. The account exists. The person never attended."
+  },
+  {
+    "id": "ghost",
+    "tag": "DORMANT",
+    "slots": [
+      "followers",
+      "tweets",
+      "years"
+    ],
+    "device": "legacy line",
+    "weight": 6,
+    "tier": "brutal",
+    "archetypes": [
+      "ghost",
+      "lurker"
+    ],
+    "text": "{years} years old, {tweets} posts, {followers} followers. You registered and never bothered to arrive."
+  },
+  {
+    "id": "text_wall",
+    "tag": "TEXT ONLY",
+    "slots": [
+      "tweets",
+      "media"
+    ],
+    "device": "sharpest reframe",
+    "weight": 6,
+    "tier": "brutal",
+    "archetypes": [
+      "broadcaster"
+    ],
+    "text": "{tweets} posts and {media} images. You have never once let the reader rest."
+  },
+  {
+    "id": "text_wall",
+    "tag": "TEXT ONLY",
+    "slots": [
+      "tweets",
+      "media"
+    ],
+    "device": "escalation",
+    "weight": 6,
+    "tier": "brutal",
+    "archetypes": [
+      "broadcaster"
+    ],
+    "text": "{media} media across {tweets} posts. The wall of text is the strategy, and the strategy works on nobody."
+  },
+  {
+    "id": "text_wall",
+    "tag": "TEXT ONLY",
+    "slots": [
+      "tweets",
+      "media"
+    ],
+    "device": "understatement",
+    "weight": 6,
+    "tier": "brutal",
+    "archetypes": [
+      "broadcaster"
+    ],
+    "text": "{tweets} posts, {media} of them illustrated. You write like the scroll does not exist, which is why it scrolls."
+  },
+  {
+    "id": "not_verified",
+    "tag": "UNVERIFIED",
+    "slots": [
+      "years",
+      "followers"
+    ],
+    "device": "sharpest reframe",
+    "weight": 6,
+    "tier": "brutal",
+    "archetypes": [],
+    "text": "{years} years and {followers} followers, and the company still has no idea who you are."
+  },
+  {
+    "id": "not_verified",
+    "tag": "UNVERIFIED",
+    "slots": [
+      "years",
+      "followers"
+    ],
+    "device": "rule of three",
+    "weight": 6,
+    "tier": "brutal",
+    "archetypes": [],
+    "text": "{followers} followers after {years} years. Not verified, not notable, not missed."
+  },
+  {
+    "id": "not_verified",
+    "tag": "UNVERIFIED",
+    "slots": [
+      "years",
+      "followers"
+    ],
+    "device": "humiliation by accuracy",
+    "weight": 6,
+    "tier": "brutal",
+    "archetypes": [],
+    "text": "{years} years on this app and {followers} followers and no badge. The badge goes to people who matter. You are the control group."
+  },
+  {
+    "id": "bio_dyor",
+    "tag": "BIO",
+    "slots": [
+      "bio"
+    ],
+    "device": "sharpest reframe",
+    "weight": 6,
+    "tier": "brutal",
+    "archetypes": [
+      "builder_cosplayer"
+    ],
+    "text": "Your bio says {bio}. Your timeline says otherwise. The bio is the ambition, the posts are the evidence."
+  },
+  {
+    "id": "bio_dyor",
+    "tag": "BIO",
+    "slots": [
+      "bio"
+    ],
+    "device": "receipt-as-verdict",
+    "weight": 6,
+    "tier": "brutal",
+    "archetypes": [
+      "builder_cosplayer"
+    ],
+    "text": "{bio}, filed under your name. That is not a biography, that is a wish list."
+  },
+  {
+    "id": "bio_dyor",
+    "tag": "BIO",
+    "slots": [
+      "bio"
+    ],
+    "device": "understatement",
+    "weight": 6,
+    "tier": "brutal",
+    "archetypes": [
+      "builder_cosplayer"
+    ],
+    "text": "Your bio says {bio}. Nobody has ever checked. Nobody has ever needed to."
+  },
+  {
+    "id": "bio_dyor",
+    "tag": "BIO",
+    "slots": [
+      "bio"
+    ],
+    "device": "false respect",
+    "weight": 6,
+    "tier": "brutal",
+    "archetypes": [
+      "builder_cosplayer"
+    ],
+    "text": "Your bio says {bio}. Ambitious. The timeline, unfortunately, has not been informed."
+  },
+  {
+    "id": "bio_builder",
+    "tag": "BIO",
+    "slots": [
+      "bio",
+      "followers"
+    ],
+    "device": "sharpest reframe",
+    "weight": 7,
+    "tier": "brutal",
+    "archetypes": [
+      "builder_cosplayer"
+    ],
+    "text": "Your bio says {bio} and {followers} followers are the proof of concept. The title shipped before the product."
+  },
+  {
+    "id": "bio_builder",
+    "tag": "BIO",
+    "slots": [
+      "bio",
+      "followers"
+    ],
+    "device": "understatement",
+    "weight": 7,
+    "tier": "brutal",
+    "archetypes": [
+      "builder_cosplayer"
+    ],
+    "text": "{bio}, with {followers} followers. Every founder has a bio. The ones who ship have users."
+  },
+  {
+    "id": "bio_builder",
+    "tag": "BIO",
+    "slots": [
+      "bio",
+      "followers"
+    ],
+    "device": "kill shot",
+    "weight": 6,
+    "tier": "brutal",
+    "archetypes": [
+      "builder_cosplayer"
+    ],
+    "text": "{bio} and {followers} followers. You announced the company. The company has not announced you."
+  },
+  {
+    "id": "bio_builder",
+    "tag": "BIO",
+    "slots": [
+      "bio",
+      "followers"
+    ],
+    "device": "humiliation by accuracy",
+    "weight": 6,
+    "tier": "brutal",
+    "archetypes": [
+      "builder_cosplayer"
+    ],
+    "text": "Your bio says {bio}. {followers} followers is the market cap of the idea."
+  },
+  {
+    "id": "bio_degen",
+    "tag": "BIO",
+    "slots": [
+      "bio"
+    ],
+    "device": "false respect",
+    "weight": 6,
+    "tier": "brutal",
+    "archetypes": [
+      "degen"
+    ],
+    "text": "Your bio says {bio}. It is the most honest thing you have ever written."
+  },
+  {
+    "id": "bio_degen",
+    "tag": "BIO",
+    "slots": [
+      "bio"
+    ],
+    "device": "understatement",
+    "weight": 6,
+    "tier": "brutal",
+    "archetypes": [
+      "degen"
+    ],
+    "text": "Your bio says {bio} in plain text, as if anyone needed the warning label spelled out."
+  },
+  {
+    "id": "bio_degen",
+    "tag": "BIO",
+    "slots": [
+      "bio"
+    ],
+    "device": "sharpest reframe",
+    "weight": 6,
+    "tier": "brutal",
+    "archetypes": [
+      "degen"
+    ],
+    "text": "Your bio says {bio}. You turned a habit into a personality and a personality into nothing."
+  },
+  {
+    "id": "bio_noob",
+    "tag": "BIO",
+    "slots": [
+      "tweets"
+    ],
+    "device": "sharpest reframe",
+    "weight": 6,
+    "tier": "brutal",
+    "archetypes": [],
+    "text": "{tweets} posts in and the bio is still a trailer for a person who has not arrived."
+  },
+  {
+    "id": "bio_noob",
+    "tag": "BIO",
+    "slots": [
+      "tweets"
+    ],
+    "device": "understatement",
+    "weight": 6,
+    "tier": "brutal",
+    "archetypes": [],
+    "text": "{tweets} posts. Still no idea. The bio is a rough draft you forgot to submit."
+  },
+  {
+    "id": "bio_noob",
+    "tag": "BIO",
+    "slots": [
+      "tweets"
+    ],
+    "device": "escalation",
+    "weight": 6,
+    "tier": "brutal",
+    "archetypes": [],
+    "text": "You have posted {tweets} times and the bio still reads like someone waiting to become interesting."
+  },
+  {
+    "id": "bio_copypaste",
+    "tag": "BIO",
+    "slots": [
+      "bio"
+    ],
+    "device": "sharpest reframe",
+    "weight": 6,
+    "tier": "brutal",
+    "archetypes": [],
+    "text": "Your bio says {bio}. Someone else wrote that first, and they meant it."
+  },
+  {
+    "id": "bio_copypaste",
+    "tag": "BIO",
+    "slots": [
+      "bio"
+    ],
+    "device": "understatement",
+    "weight": 6,
+    "tier": "brutal",
+    "archetypes": [],
+    "text": "{bio} reads like a copy because it is one. You borrowed it from someone who meant it."
+  },
+  {
+    "id": "bio_copypaste",
+    "tag": "BIO",
+    "slots": [
+      "bio"
+    ],
+    "device": "bureaucratic misregistration",
+    "weight": 6,
+    "tier": "brutal",
+    "archetypes": [],
+    "text": "Your bio says {bio}. It is a template and you are the fill-in-the-blank."
+  },
+  {
+    "id": "handle_numbered",
+    "tag": "HANDLE",
+    "slots": [
+      "handle",
+      "handleNumber"
+    ],
+    "device": "sharpest reframe",
+    "weight": 6,
+    "tier": "brutal",
+    "archetypes": [],
+    "text": "{handle}, with {handleNumber} on the end. The number is there because the name was taken, and so was everything else."
+  },
+  {
+    "id": "handle_numbered",
+    "tag": "HANDLE",
+    "slots": [
+      "handle",
+      "handleNumber"
+    ],
+    "device": "humiliation by accuracy",
+    "weight": 6,
+    "tier": "brutal",
+    "archetypes": [],
+    "text": "{handle} and the {handleNumber}. You took the version of the name nobody else wanted."
+  },
+  {
+    "id": "handle_numbered",
+    "tag": "HANDLE",
+    "slots": [
+      "handle",
+      "handleNumber"
+    ],
+    "device": "understatement",
+    "weight": 6,
+    "tier": "brutal",
+    "archetypes": [],
+    "text": "The {handleNumber} in {handle} is not a style choice. It is the queue you were standing in."
+  },
+  {
+    "id": "handle_long",
+    "tag": "HANDLE",
+    "slots": [
+      "handle",
+      "handleLength"
+    ],
+    "device": "sharpest reframe",
+    "weight": 6,
+    "tier": "brutal",
+    "archetypes": [],
+    "text": "{handleLength} characters for a name. Shorter handles went to people who arrived first, and {handle} is the receipt."
+  },
+  {
+    "id": "handle_long",
+    "tag": "HANDLE",
+    "slots": [
+      "handle",
+      "handleLength"
+    ],
+    "device": "nobody line",
+    "weight": 6,
+    "tier": "brutal",
+    "archetypes": [],
+    "text": "{handle} is {handleLength} characters long. Nobody types that to find you, and nobody has tried."
+  },
+  {
+    "id": "handle_long",
+    "tag": "HANDLE",
+    "slots": [
+      "handle",
+      "handleLength"
+    ],
+    "device": "kill shot",
+    "weight": 6,
+    "tier": "brutal",
+    "archetypes": [],
+    "text": "{handleLength} characters in {handle}. The handle is long and the reach is short."
+  },
+  {
+    "id": "joined_old",
+    "tag": "ACCOUNT AGE",
+    "slots": [
+      "years",
+      "followers",
+      "tweets"
+    ],
+    "device": "legacy line",
+    "weight": 7,
+    "tier": "brutal",
+    "archetypes": [
+      "shiller",
+      "degen"
+    ],
+    "text": "{years} years on this app, {followers} followers, {tweets} posts. A long tenure in being optional."
+  },
+  {
+    "id": "joined_old",
+    "tag": "ACCOUNT AGE",
+    "slots": [
+      "years",
+      "followers",
+      "tweets"
+    ],
+    "device": "sharpest reframe",
+    "weight": 7,
+    "tier": "brutal",
+    "archetypes": [
+      "shiller",
+      "degen"
+    ],
+    "text": "You joined {years} years ago and have {tweets} posts and {followers} followers to show for it. Time served is not a reputation."
+  },
+  {
+    "id": "joined_old",
+    "tag": "ACCOUNT AGE",
+    "slots": [
+      "years",
+      "followers",
+      "tweets"
+    ],
+    "device": "receipt-as-verdict",
+    "weight": 6,
+    "tier": "brutal",
+    "archetypes": [
+      "shiller",
+      "degen"
+    ],
+    "text": "{years} years, {tweets} posts, {followers} followers. You were early to a place that never became anything, including for you."
+  },
+  {
+    "id": "joined_old",
+    "tag": "ACCOUNT AGE",
+    "slots": [
+      "years",
+      "followers",
+      "tweets"
+    ],
+    "device": "kill shot",
+    "weight": 6,
+    "tier": "brutal",
+    "archetypes": [
+      "shiller",
+      "degen"
+    ],
+    "text": "{years} years here, {tweets} posts, {followers} people who noticed. The rest of the years were just the wait."
+  },
+  {
+    "id": "name_mismatch",
+    "tag": "DISPLAY NAME",
+    "slots": [
+      "name",
+      "handle"
+    ],
+    "device": "sharpest reframe",
+    "weight": 6,
+    "tier": "brutal",
+    "archetypes": [],
+    "text": "The display name reads {name} and the handle reads {handle}. Pick one person to be."
+  },
+  {
+    "id": "name_mismatch",
+    "tag": "DISPLAY NAME",
+    "slots": [
+      "name",
+      "handle"
+    ],
+    "device": "escalation",
+    "weight": 6,
+    "tier": "brutal",
+    "archetypes": [],
+    "text": "{name} in the name field, {handle} in the URL. Two people, one account, neither of them going anywhere."
+  },
+  {
+    "id": "name_mismatch",
+    "tag": "DISPLAY NAME",
+    "slots": [
+      "name",
+      "handle"
+    ],
+    "device": "bureaucratic misregistration",
+    "weight": 6,
+    "tier": "brutal",
+    "archetypes": [],
+    "text": "{name} and {handle} do not match, which is consistent with the rest of the account."
+  },
+  {
+    "id": "name_mismatch",
+    "tag": "DISPLAY NAME",
+    "slots": [
+      "name",
+      "handle"
+    ],
+    "device": "understatement",
+    "weight": 6,
+    "tier": "brutal",
+    "archetypes": [],
+    "text": "Your name is {name} and your handle is {handle}. Neither one is a brand and neither one is the point."
+  },
+  {
+    "id": "per_follower",
+    "tag": "PER FOLLOWER",
+    "slots": [
+      "followers",
+      "tweets",
+      "valuePerFollower"
+    ],
+    "device": "sharpest reframe",
+    "weight": 7,
+    "tier": "brutal",
+    "archetypes": [
+      "engagement_farmer"
+    ],
+    "text": "{followers} followers at {valuePerFollower} each. {tweets} posts to produce a headcount the benchmark beats with one thread."
+  },
+  {
+    "id": "per_follower",
+    "tag": "PER FOLLOWER",
+    "slots": [
+      "followers",
+      "tweets",
+      "valuePerFollower"
+    ],
+    "device": "humiliation by accuracy",
+    "weight": 7,
+    "tier": "brutal",
+    "archetypes": [
+      "engagement_farmer"
+    ],
+    "text": "{valuePerFollower} per follower for {followers} followers across {tweets} posts. The benchmark spends less and collects more."
+  },
+  {
+    "id": "per_follower",
+    "tag": "PER FOLLOWER",
+    "slots": [
+      "followers",
+      "tweets",
+      "valuePerFollower"
+    ],
+    "device": "understatement",
+    "weight": 6,
+    "tier": "brutal",
+    "archetypes": [
+      "engagement_farmer"
+    ],
+    "text": "{followers} followers at {valuePerFollower} a head, bought with {tweets} posts. An audience at a price nobody would pay twice."
+  },
+  {
+    "id": "per_follower",
+    "tag": "PER FOLLOWER",
+    "slots": [
+      "followers",
+      "tweets",
+      "valuePerFollower"
+    ],
+    "device": "receipt-as-verdict",
+    "weight": 6,
+    "tier": "brutal",
+    "archetypes": [
+      "engagement_farmer"
+    ],
+    "text": "{valuePerFollower} each for {followers} followers and {tweets} posts to land them. Not a following, inventory nobody bids on."
+  },
+  {
+    "id": "per_tweet_value",
+    "tag": "VALUE PER TWEET",
+    "slots": [
+      "valuePerFollower",
+      "tweets",
+      "followers"
+    ],
+    "device": "sharpest reframe",
+    "weight": 7,
+    "tier": "brutal",
+    "archetypes": [
+      "engagement_farmer"
+    ],
+    "text": "{tweets} posts produced {followers} followers at {valuePerFollower} each. Every post you add makes the average worse."
+  },
+  {
+    "id": "per_tweet_value",
+    "tag": "VALUE PER TWEET",
+    "slots": [
+      "valuePerFollower",
+      "tweets",
+      "followers"
+    ],
+    "device": "humiliation by accuracy",
+    "weight": 7,
+    "tier": "brutal",
+    "archetypes": [
+      "engagement_farmer"
+    ],
+    "text": "{valuePerFollower} per follower after {tweets} posts, {followers} followers in. You are not compounding, you are diluting."
+  },
+  {
+    "id": "per_tweet_value",
+    "tag": "VALUE PER TWEET",
+    "slots": [
+      "valuePerFollower",
+      "tweets",
+      "followers"
+    ],
+    "device": "kill shot",
+    "weight": 6,
+    "tier": "brutal",
+    "archetypes": [
+      "engagement_farmer"
+    ],
+    "text": "{tweets} posts for {followers} followers at {valuePerFollower} a head. The marginal post has never once mattered."
+  },
+  {
+    "id": "per_tweet_value",
+    "tag": "VALUE PER TWEET",
+    "slots": [
+      "valuePerFollower",
+      "tweets",
+      "followers"
+    ],
+    "device": "receipt-as-verdict",
+    "weight": 6,
+    "tier": "brutal",
+    "archetypes": [
+      "engagement_farmer"
+    ],
+    "text": "{valuePerFollower} a follower, {tweets} posts and {followers} followers to get there. Volume and value have never met."
+  },
+  {
+    "id": "x_summary",
+    "tag": "PROFILE",
+    "slots": [
+      "followers",
+      "tweets",
+      "years"
+    ],
+    "device": "kill shot",
+    "weight": 10,
+    "tier": "brutal",
+    "archetypes": [],
+    "text": "{followers} followers, {tweets} posts, {years} years. This is the whole public record and it is a long silence with timestamps."
+  },
+  {
+    "id": "x_summary",
+    "tag": "PROFILE",
+    "slots": [
+      "followers",
+      "tweets",
+      "years"
+    ],
+    "device": "legacy line",
+    "weight": 10,
+    "tier": "brutal",
+    "archetypes": [],
+    "text": "{years} years, {tweets} posts, {followers} followers. You were loud for a decade and the room stayed empty."
+  },
+  {
+    "id": "x_summary",
+    "tag": "PROFILE",
+    "slots": [
+      "followers",
+      "tweets",
+      "years"
+    ],
+    "device": "sharpest reframe",
+    "weight": 10,
+    "tier": "brutal",
+    "archetypes": [],
+    "text": "{followers} followers after {tweets} posts and {years} years. That is not a presence, that is attendance."
+  },
+  {
+    "id": "x_summary",
+    "tag": "PROFILE",
+    "slots": [
+      "followers",
+      "tweets",
+      "years"
+    ],
+    "device": "receipt-as-verdict",
+    "weight": 10,
+    "tier": "brutal",
+    "archetypes": [],
+    "text": "{tweets} posts, {years} years, {followers} followers. You have been publishing your irrelevance on a schedule."
+  }
+]

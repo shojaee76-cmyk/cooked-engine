@@ -1,0 +1,1035 @@
+[
+  {
+    "id": "no_ens",
+    "tag": "IDENTITY",
+    "slots": [
+      "addr"
+    ],
+    "device": "sharpest reframe",
+    "weight": 4,
+    "tier": "medium",
+    "archetypes": [
+      "ghost_account"
+    ],
+    "text": "No .eth name. {addr} introduces itself by number, like a defendant."
+  },
+  {
+    "id": "no_ens",
+    "tag": "IDENTITY",
+    "slots": [
+      "addr"
+    ],
+    "device": "bureaucratic misregistration",
+    "weight": 3,
+    "tier": "gentle",
+    "archetypes": [],
+    "text": "You never registered a .eth name for {addr}. Not private, just unlisted, and the difference is a lookup."
+  },
+  {
+    "id": "no_ens",
+    "tag": "IDENTITY",
+    "slots": [
+      "addr"
+    ],
+    "device": "understatement",
+    "weight": 4,
+    "tier": "medium",
+    "archetypes": [
+      "empty_wallet",
+      "silent_holder"
+    ],
+    "text": "No .eth name on {addr}. You have been here long enough to be a number and nothing else."
+  },
+  {
+    "id": "no_ens",
+    "tag": "IDENTITY",
+    "slots": [
+      "addr"
+    ],
+    "device": "sharpest reframe",
+    "weight": 5,
+    "tier": "medium",
+    "archetypes": [],
+    "text": "The wallet goes by {addr}. An identity assigned by arithmetic and defended by nobody."
+  },
+  {
+    "id": "ens_short",
+    "tag": "ENS",
+    "slots": [
+      "ens",
+      "ensLen"
+    ],
+    "device": "false respect",
+    "weight": 6,
+    "tier": "medium",
+    "archetypes": [
+      "whale_no_taste"
+    ],
+    "text": "{ens} is {ensLen} characters. You paid for brevity the way other people pay for confidence."
+  },
+  {
+    "id": "ens_short",
+    "tag": "ENS",
+    "slots": [
+      "ens",
+      "ensLen"
+    ],
+    "device": "sharpest reframe",
+    "weight": 5,
+    "tier": "medium",
+    "archetypes": [],
+    "text": "{ens}, {ensLen} characters of .eth. The shortest name available and still nothing to say with it."
+  },
+  {
+    "id": "ens_short",
+    "tag": "ENS",
+    "slots": [
+      "ens",
+      "ensLen"
+    ],
+    "device": "escalation",
+    "weight": 6,
+    "tier": "savage",
+    "archetypes": [
+      "whale_no_taste"
+    ],
+    "text": "A {ensLen} character .eth name for {ens}. You paid a premium for a nickname that fits a licence plate."
+  },
+  {
+    "id": "ens_long",
+    "tag": "ENS",
+    "slots": [
+      "ens",
+      "ensLen"
+    ],
+    "device": "sharpest reframe",
+    "weight": 3,
+    "tier": "gentle",
+    "archetypes": [
+      "degen_churner"
+    ],
+    "text": "{ens} runs {ensLen} characters. A name that long is a sentence you made strangers read."
+  },
+  {
+    "id": "ens_long",
+    "tag": "ENS",
+    "slots": [
+      "ens",
+      "ensLen"
+    ],
+    "device": "understatement",
+    "weight": 3,
+    "tier": "medium",
+    "archetypes": [],
+    "text": "Your .eth name, {ens}, is {ensLen} characters long. It resolves. It does not land."
+  },
+  {
+    "id": "ens_long",
+    "tag": "ENS",
+    "slots": [
+      "ens",
+      "ensLen"
+    ],
+    "device": "bureaucratic misregistration",
+    "weight": 3,
+    "tier": "medium",
+    "archetypes": [
+      "vesting_survivor"
+    ],
+    "text": "{ens} is {ensLen} characters of name. You typed a whole paragraph and filed it as a brand."
+  },
+  {
+    "id": "ens_numbered",
+    "tag": "ENS",
+    "slots": [
+      "ens",
+      "ensNumber"
+    ],
+    "device": "sharpest reframe",
+    "weight": 5,
+    "tier": "medium",
+    "archetypes": [
+      "farming_bot"
+    ],
+    "text": "{ens} carries the number {ensNumber}. Names run out. Numbers do not."
+  },
+  {
+    "id": "ens_numbered",
+    "tag": "ENS",
+    "slots": [
+      "ens",
+      "ensNumber"
+    ],
+    "device": "understatement",
+    "weight": 5,
+    "tier": "medium",
+    "archetypes": [],
+    "text": "The {ensNumber} in {ens} is doing all the work. It was the only part still available."
+  },
+  {
+    "id": "ens_numbered",
+    "tag": "ENS",
+    "slots": [
+      "ens",
+      "ensNumber"
+    ],
+    "device": "sharpest reframe",
+    "weight": 5,
+    "tier": "medium",
+    "archetypes": [
+      "ghost_account"
+    ],
+    "text": "{ens}, with {ensNumber} on the end. Somebody was there first and you signed it anyway."
+  },
+  {
+    "id": "ens_avatar_default",
+    "tag": "ENS",
+    "slots": [
+      "ens"
+    ],
+    "device": "false respect",
+    "weight": 4,
+    "tier": "medium",
+    "archetypes": [],
+    "text": "The ENS avatar on {ens} is the default gradient. You registered a name and declined to have a face."
+  },
+  {
+    "id": "ens_avatar_default",
+    "tag": "ENS",
+    "slots": [
+      "ens"
+    ],
+    "device": "sharpest reframe",
+    "weight": 4,
+    "tier": "medium",
+    "archetypes": [
+      "ghost_account"
+    ],
+    "text": "{ens} resolves to the default gradient avatar. Even your avatar did not show up."
+  },
+  {
+    "id": "ens_avatar_default",
+    "tag": "ENS",
+    "slots": [
+      "ens"
+    ],
+    "device": "understatement",
+    "weight": 3,
+    "tier": "gentle",
+    "archetypes": [],
+    "text": "Default gradient avatar on {ens}. You decorated nothing, which is at least consistent."
+  },
+  {
+    "id": "ens_links_nothing",
+    "tag": "ENS RECORD",
+    "slots": [
+      "ens",
+      "linkCount"
+    ],
+    "device": "sharpest reframe",
+    "weight": 5,
+    "tier": "medium",
+    "archetypes": [],
+    "text": "The record on {ens} exposes {linkCount} social links. A business card with the number scratched off."
+  },
+  {
+    "id": "ens_links_nothing",
+    "tag": "ENS RECORD",
+    "slots": [
+      "ens",
+      "linkCount"
+    ],
+    "device": "sharpest reframe",
+    "weight": 5,
+    "tier": "medium",
+    "archetypes": [
+      "ghost_account"
+    ],
+    "text": "{linkCount} social links on {ens}. A handshake held out to nobody in particular."
+  },
+  {
+    "id": "ens_links_nothing",
+    "tag": "ENS RECORD",
+    "slots": [
+      "ens",
+      "linkCount"
+    ],
+    "device": "understatement",
+    "weight": 4,
+    "tier": "medium",
+    "archetypes": [],
+    "text": "{linkCount} links on {ens}, all of them entered carefully. None of them worth following."
+  },
+  {
+    "id": "linked_github",
+    "tag": "GITHUB",
+    "slots": [
+      "ghUser",
+      "ghRepos",
+      "ghFollowers"
+    ],
+    "device": "sharpest reframe",
+    "weight": 4,
+    "tier": "medium",
+    "archetypes": [],
+    "text": "Linked GitHub {ghUser}: {ghRepos} repos, {ghFollowers} followers. A library with no borrowers."
+  },
+  {
+    "id": "linked_github",
+    "tag": "GITHUB",
+    "slots": [
+      "ghUser",
+      "ghRepos",
+      "ghFollowers"
+    ],
+    "device": "understatement",
+    "weight": 3,
+    "tier": "medium",
+    "archetypes": [
+      "farming_bot"
+    ],
+    "text": "{ghRepos} repositories on {ghUser}, {ghFollowers} followers. Publishing into a locked room."
+  },
+  {
+    "id": "linked_github",
+    "tag": "GITHUB",
+    "slots": [
+      "ghUser",
+      "ghRepos",
+      "ghFollowers"
+    ],
+    "device": "rule of three",
+    "weight": 4,
+    "tier": "medium",
+    "archetypes": [],
+    "text": "Your GitHub is {ghUser}: {ghRepos} repos and {ghFollowers} followers, all public, none read."
+  },
+  {
+    "id": "linked_telegram",
+    "tag": "TELEGRAM",
+    "slots": [
+      "tg"
+    ],
+    "device": "understatement",
+    "weight": 4,
+    "tier": "medium",
+    "archetypes": [],
+    "text": "Linked Telegram: {tg}. A handle that exists, which is the entire finding."
+  },
+  {
+    "id": "linked_telegram",
+    "tag": "TELEGRAM",
+    "slots": [
+      "tg"
+    ],
+    "device": "sharpest reframe",
+    "weight": 4,
+    "tier": "medium",
+    "archetypes": [
+      "degen_churner"
+    ],
+    "text": "{tg} is on the record and on Telegram. Somewhere a group chat continues without you."
+  },
+  {
+    "id": "linked_telegram",
+    "tag": "TELEGRAM",
+    "slots": [
+      "tg"
+    ],
+    "device": "bureaucratic misregistration",
+    "weight": 4,
+    "tier": "medium",
+    "archetypes": [
+      "airship_hopeful"
+    ],
+    "text": "The Telegram handle {tg} is attached to this wallet. Every position needs a back channel."
+  },
+  {
+    "id": "linked_x",
+    "tag": "X ACCOUNT",
+    "slots": [
+      "handle",
+      "followers"
+    ],
+    "device": "sharpest reframe",
+    "weight": 6,
+    "tier": "savage",
+    "archetypes": [
+      "degen_churner"
+    ],
+    "text": "You claim {handle} on X with {followers} followers. Posting is not a strategy, it is a paper trail."
+  },
+  {
+    "id": "linked_x",
+    "tag": "X ACCOUNT",
+    "slots": [
+      "handle",
+      "followers"
+    ],
+    "device": "understatement",
+    "weight": 5,
+    "tier": "medium",
+    "archetypes": [],
+    "text": "{handle} on X, {followers} followers. The account is verified. The thesis is not."
+  },
+  {
+    "id": "linked_x",
+    "tag": "X ACCOUNT",
+    "slots": [
+      "handle",
+      "followers"
+    ],
+    "device": "escalation",
+    "weight": 6,
+    "tier": "savage",
+    "archetypes": [
+      "exit_liquidity"
+    ],
+    "text": "{handle} has {followers} followers. High posting volume, no position worth posting about."
+  },
+  {
+    "id": "handle_squatted",
+    "tag": "HANDLE",
+    "slots": [
+      "handle",
+      "platformCount"
+    ],
+    "device": "sharpest reframe",
+    "weight": 5,
+    "tier": "medium",
+    "archetypes": [
+      "farming_bot"
+    ],
+    "text": "{handle} exists on {platformCount} unrelated platforms. Not a brand. A habit with paperwork."
+  },
+  {
+    "id": "handle_squatted",
+    "tag": "HANDLE",
+    "slots": [
+      "handle",
+      "platformCount"
+    ],
+    "device": "escalation",
+    "weight": 5,
+    "tier": "medium",
+    "archetypes": [],
+    "text": "The same handle, {handle}, on {platformCount} platforms. Consistency until it is the only virtue left."
+  },
+  {
+    "id": "handle_squatted",
+    "tag": "HANDLE",
+    "slots": [
+      "handle",
+      "platformCount"
+    ],
+    "device": "sharpest reframe",
+    "weight": 5,
+    "tier": "medium",
+    "archetypes": [
+      "ghost_account",
+      "farming_bot"
+    ],
+    "text": "{handle} sits on {platformCount} platforms. That is not reach, that is duplication with a login."
+  },
+  {
+    "id": "handle_squatted",
+    "tag": "HANDLE",
+    "slots": [
+      "handle",
+      "platformCount"
+    ],
+    "device": "understatement",
+    "weight": 5,
+    "tier": "medium",
+    "archetypes": [],
+    "text": "You registered {handle} across {platformCount} platforms. A username with a mortgage."
+  },
+  {
+    "id": "domain_old",
+    "tag": "DOMAIN",
+    "slots": [
+      "domain",
+      "domainAgeDays"
+    ],
+    "device": "sharpest reframe",
+    "weight": 6,
+    "tier": "medium",
+    "archetypes": [],
+    "text": "{domain} was registered {domainAgeDays} days before the token. The website was the warm-up act."
+  },
+  {
+    "id": "domain_old",
+    "tag": "DOMAIN",
+    "slots": [
+      "domain",
+      "domainAgeDays"
+    ],
+    "device": "escalation",
+    "weight": 6,
+    "tier": "savage",
+    "archetypes": [
+      "exit_liquidity"
+    ],
+    "text": "{domainAgeDays} days between buying {domain} and launching a token. Not readiness, that is staging."
+  },
+  {
+    "id": "domain_old",
+    "tag": "DOMAIN",
+    "slots": [
+      "domain",
+      "domainAgeDays"
+    ],
+    "device": "callback",
+    "weight": 5,
+    "tier": "medium",
+    "archetypes": [],
+    "text": "The bio links {domain}, bought {domainAgeDays} days before the token. Preparation is a timeline and yours is short."
+  },
+  {
+    "id": "domain_dead",
+    "tag": "DOMAIN",
+    "slots": [
+      "domain"
+    ],
+    "device": "sharpest reframe",
+    "weight": 6,
+    "tier": "medium",
+    "archetypes": [
+      "exit_liquidity"
+    ],
+    "text": "{domain} no longer resolves. The roadmap expired before the token did."
+  },
+  {
+    "id": "domain_dead",
+    "tag": "DOMAIN",
+    "slots": [
+      "domain"
+    ],
+    "device": "understatement",
+    "weight": 6,
+    "tier": "medium",
+    "archetypes": [],
+    "text": "The website in your bio, {domain}, is gone. The only thing that ever loaded was the pitch."
+  },
+  {
+    "id": "domain_dead",
+    "tag": "DOMAIN",
+    "slots": [
+      "domain"
+    ],
+    "device": "sharpest reframe",
+    "weight": 5,
+    "tier": "medium",
+    "archetypes": [
+      "airship_hopeful"
+    ],
+    "text": "{domain} does not resolve. You built a front page and forgot to keep the door."
+  },
+  {
+    "id": "contract_wallet",
+    "tag": "ADDRESS TYPE",
+    "slots": [
+      "addr"
+    ],
+    "device": "sharpest reframe",
+    "weight": 7,
+    "tier": "medium",
+    "archetypes": [
+      "contract_entity"
+    ],
+    "text": "{addr} is a contract. A wallet would have opinions, this one only has rules."
+  },
+  {
+    "id": "contract_wallet",
+    "tag": "ADDRESS TYPE",
+    "slots": [
+      "addr"
+    ],
+    "device": "bureaucratic misregistration",
+    "weight": 6,
+    "tier": "medium",
+    "archetypes": [
+      "contract_entity"
+    ],
+    "text": "The submitted address, {addr}, is a contract. You asked the engine to roast a program."
+  },
+  {
+    "id": "contract_wallet",
+    "tag": "ADDRESS TYPE",
+    "slots": [
+      "addr"
+    ],
+    "device": "understatement",
+    "weight": 6,
+    "tier": "medium",
+    "archetypes": [
+      "contract_entity"
+    ],
+    "text": "{addr} is a contract. Code does not get defensive about the receipt. You might."
+  },
+  {
+    "id": "contract_wallet",
+    "tag": "ADDRESS TYPE",
+    "slots": [
+      "addr"
+    ],
+    "device": "sharpest reframe",
+    "weight": 6,
+    "tier": "medium",
+    "archetypes": [
+      "contract_entity"
+    ],
+    "text": "This is a contract address. Nobody lives at {addr}, somebody just collects."
+  },
+  {
+    "id": "smart_account",
+    "tag": "DELEGATION",
+    "slots": [
+      "delegate"
+    ],
+    "device": "sharpest reframe",
+    "weight": 7,
+    "tier": "medium",
+    "archetypes": [],
+    "text": "The wallet is a smart account, delegated to {delegate}. You kept the keys and gave away the decisions."
+  },
+  {
+    "id": "smart_account",
+    "tag": "DELEGATION",
+    "slots": [
+      "delegate"
+    ],
+    "device": "escalation",
+    "weight": 7,
+    "tier": "savage",
+    "archetypes": [
+      "whale_no_taste"
+    ],
+    "text": "Delegated to {delegate}. You outsourced judgement and retained liability."
+  },
+  {
+    "id": "smart_account",
+    "tag": "DELEGATION",
+    "slots": [
+      "delegate"
+    ],
+    "device": "bureaucratic misregistration",
+    "weight": 6,
+    "tier": "medium",
+    "archetypes": [],
+    "text": "{delegate} can move this wallet. Permission granted in writing, side effects unread."
+  },
+  {
+    "id": "empty_address",
+    "tag": "ACTIVITY",
+    "slots": [
+      "chainsActive",
+      "addr"
+    ],
+    "device": "understatement",
+    "weight": 4,
+    "tier": "gentle",
+    "archetypes": [
+      "empty_wallet"
+    ],
+    "text": "Nothing has ever left {addr} on any of {chainsActive} chains. The most private wallet is an unused one."
+  },
+  {
+    "id": "empty_address",
+    "tag": "ACTIVITY",
+    "slots": [
+      "chainsActive",
+      "addr"
+    ],
+    "device": "rule of three",
+    "weight": 4,
+    "tier": "gentle",
+    "archetypes": [
+      "empty_wallet",
+      "silent_holder"
+    ],
+    "text": "{addr} has sent no transactions across {chainsActive} chains. Seated at every table, ordering water."
+  },
+  {
+    "id": "empty_address",
+    "tag": "ACTIVITY",
+    "slots": [
+      "chainsActive",
+      "addr"
+    ],
+    "device": "sharpest reframe",
+    "weight": 3,
+    "tier": "gentle",
+    "archetypes": [
+      "empty_wallet"
+    ],
+    "text": "Across {chainsActive} chains, {addr} has never sent. Silence is a strategy and it is a full-time one."
+  },
+  {
+    "id": "empty_address",
+    "tag": "ACTIVITY",
+    "slots": [
+      "chainsActive",
+      "addr"
+    ],
+    "device": "understatement",
+    "weight": 4,
+    "tier": "gentle",
+    "archetypes": [
+      "empty_wallet"
+    ],
+    "text": "No outgoing transaction on {addr} in {chainsActive} chains. The wallet is not hiding, it is waiting."
+  },
+  {
+    "id": "exchange_funded",
+    "tag": "FUNDING",
+    "slots": [
+      "netWorth"
+    ],
+    "device": "sharpest reframe",
+    "weight": 5,
+    "tier": "medium",
+    "archetypes": [],
+    "text": "Funded from an exchange hot wallet, now holding {netWorth}. The money arrived with a receipt and left without a plan."
+  },
+  {
+    "id": "exchange_funded",
+    "tag": "FUNDING",
+    "slots": [
+      "netWorth"
+    ],
+    "device": "callback",
+    "weight": 5,
+    "tier": "medium",
+    "archetypes": [
+      "degen_churner"
+    ],
+    "text": "Funded straight off a centralised exchange, now {netWorth}. The chain remembers who brought you."
+  },
+  {
+    "id": "exchange_funded",
+    "tag": "FUNDING",
+    "slots": [
+      "netWorth"
+    ],
+    "device": "understatement",
+    "weight": 4,
+    "tier": "medium",
+    "archetypes": [],
+    "text": "First deposit came from a CEX hot wallet. {netWorth} of conviction that entered through a company that keeps logs."
+  },
+  {
+    "id": "public_exposure",
+    "tag": "PUBLIC TRAIL",
+    "slots": [
+      "exposureCount",
+      "handle"
+    ],
+    "device": "sharpest reframe",
+    "weight": 8,
+    "tier": "savage",
+    "archetypes": [
+      "ghost_account"
+    ],
+    "text": "{exposureCount} public traces link this wallet to {handle}. You are not anonymous, you are just unfollowed."
+  },
+  {
+    "id": "public_exposure",
+    "tag": "PUBLIC TRAIL",
+    "slots": [
+      "exposureCount",
+      "handle"
+    ],
+    "device": "understatement",
+    "weight": 8,
+    "tier": "savage",
+    "archetypes": [],
+    "text": "The engine found {exposureCount} public trails from this wallet to {handle}. Nothing was breached. Nobody had to try."
+  },
+  {
+    "id": "public_exposure",
+    "tag": "PUBLIC TRAIL",
+    "slots": [
+      "exposureCount",
+      "handle"
+    ],
+    "device": "bureaucratic misregistration",
+    "weight": 7,
+    "tier": "medium",
+    "archetypes": [],
+    "text": "{exposureCount} public traces, one handle, {handle}. Privacy is a setting and you left it on default."
+  },
+  {
+    "id": "public_exposure",
+    "tag": "PUBLIC TRAIL",
+    "slots": [
+      "exposureCount",
+      "handle"
+    ],
+    "device": "sharpest reframe",
+    "weight": 8,
+    "tier": "savage",
+    "archetypes": [
+      "ghost_account"
+    ],
+    "text": "{exposureCount} separate public traces tie this wallet to {handle}. Not a dox. Housekeeping you skipped."
+  },
+  {
+    "id": "no_x",
+    "tag": "COVERAGE",
+    "slots": [],
+    "device": "sharpest reframe",
+    "weight": 3,
+    "tier": "gentle",
+    "archetypes": [],
+    "text": "No X account provided, so the receipt stays onchain. Your wallet does the talking."
+  },
+  {
+    "id": "no_x",
+    "tag": "COVERAGE",
+    "slots": [],
+    "device": "understatement",
+    "weight": 3,
+    "tier": "gentle",
+    "archetypes": [
+      "silent_holder"
+    ],
+    "text": "No X account in the file. Whatever you are, the chain said it first."
+  },
+  {
+    "id": "no_x",
+    "tag": "COVERAGE",
+    "slots": [],
+    "device": "rule of three",
+    "weight": 3,
+    "tier": "gentle",
+    "archetypes": [
+      "ghost_account"
+    ],
+    "text": "Chain-only receipt. No posts, no bio, no pinned conviction. Just settlement."
+  },
+  {
+    "id": "empty_wallet",
+    "tag": "ARCHETYPE",
+    "slots": [],
+    "device": "deadpan definition",
+    "weight": 0,
+    "tier": "medium",
+    "archetypes": [
+      "empty_wallet"
+    ],
+    "text": "A wallet whose history is short enough to read in one breath."
+  },
+  {
+    "id": "dust_collector",
+    "tag": "ARCHETYPE",
+    "slots": [],
+    "device": "deadpan definition",
+    "weight": 0,
+    "tier": "gentle",
+    "archetypes": [
+      "dust_collector"
+    ],
+    "text": "Holds many tokens, each too small to sell and too sad to delete."
+  },
+  {
+    "id": "silent_holder",
+    "tag": "ARCHETYPE",
+    "slots": [],
+    "device": "deadpan definition",
+    "weight": 0,
+    "tier": "medium",
+    "archetypes": [
+      "silent_holder"
+    ],
+    "text": "Buys once, says nothing, watches. A portfolio behind a closed door."
+  },
+  {
+    "id": "whale_no_taste",
+    "tag": "ARCHETYPE",
+    "slots": [],
+    "device": "deadpan definition",
+    "weight": 0,
+    "tier": "savage",
+    "archetypes": [
+      "whale_no_taste"
+    ],
+    "text": "Large balances, small convictions, buying whatever the timeline liked first."
+  },
+  {
+    "id": "stable_maxi",
+    "tag": "ARCHETYPE",
+    "slots": [],
+    "device": "deadpan definition",
+    "weight": 0,
+    "tier": "gentle",
+    "archetypes": [
+      "stable_maxi"
+    ],
+    "text": "Left the market years ago in the safest available way and never came back."
+  },
+  {
+    "id": "exit_liquidity",
+    "tag": "ARCHETYPE",
+    "slots": [],
+    "device": "deadpan definition",
+    "weight": 0,
+    "tier": "medium",
+    "archetypes": [
+      "exit_liquidity"
+    ],
+    "text": "Arrived after the pump, stayed for the correction, still posting about it."
+  },
+  {
+    "id": "degen_churner",
+    "tag": "ARCHETYPE",
+    "slots": [],
+    "device": "deadpan definition",
+    "weight": 0,
+    "tier": "medium",
+    "archetypes": [
+      "degen_churner"
+    ],
+    "text": "Trades constantly, finishes flat, and files the activity as a strategy."
+  },
+  {
+    "id": "airship_hopeful",
+    "tag": "ARCHETYPE",
+    "slots": [],
+    "device": "deadpan definition",
+    "weight": 0,
+    "tier": "medium",
+    "archetypes": [
+      "airship_hopeful"
+    ],
+    "text": "Holds one narrative coin and a theory that will be explained later."
+  },
+  {
+    "id": "ghost_account",
+    "tag": "ARCHETYPE",
+    "slots": [],
+    "device": "deadpan definition",
+    "weight": 0,
+    "tier": "medium",
+    "archetypes": [
+      "ghost_account"
+    ],
+    "text": "A public presence with no posts, no proof, and one wallet attached."
+  },
+  {
+    "id": "farming_bot",
+    "tag": "ARCHETYPE",
+    "slots": [],
+    "device": "deadpan definition",
+    "weight": 0,
+    "tier": "medium",
+    "archetypes": [
+      "farming_bot"
+    ],
+    "text": "Lives for point programs. Holds no asset, only eligibility."
+  },
+  {
+    "id": "vesting_survivor",
+    "tag": "ARCHETYPE",
+    "slots": [],
+    "device": "deadpan definition",
+    "weight": 0,
+    "tier": "medium",
+    "archetypes": [
+      "vesting_survivor"
+    ],
+    "text": "Stayed through the cliff, watched the unlock, and remained anyway."
+  },
+  {
+    "id": "contract_entity",
+    "tag": "ARCHETYPE",
+    "slots": [],
+    "device": "deadpan definition",
+    "weight": 0,
+    "tier": "medium",
+    "archetypes": [
+      "contract_entity"
+    ],
+    "text": "Not a person. A deployment that files receipts and cannot take offence."
+  },
+  {
+    "id": "verdict",
+    "tag": "VERDICT",
+    "slots": [],
+    "device": "sharpest reframe",
+    "weight": 0,
+    "tier": "medium",
+    "archetypes": [],
+    "text": "This receipt is not a leak. It is a self-portrait with timestamps."
+  },
+  {
+    "id": "verdict",
+    "tag": "VERDICT",
+    "slots": [],
+    "device": "sharpest reframe",
+    "weight": 0,
+    "tier": "medium",
+    "archetypes": [],
+    "text": "Nothing here was breached. You published it all and called it privacy."
+  },
+  {
+    "id": "verdict",
+    "tag": "VERDICT",
+    "slots": [],
+    "device": "sharpest reframe",
+    "weight": 0,
+    "tier": "medium",
+    "archetypes": [],
+    "text": "You are not a mystery, you are a paper trail with a ticker on top."
+  },
+  {
+    "id": "verdict",
+    "tag": "VERDICT",
+    "slots": [],
+    "device": "understatement",
+    "weight": 0,
+    "tier": "medium",
+    "archetypes": [],
+    "text": "The chain has your whole story, and it is shorter than the one you tell."
+  },
+  {
+    "id": "verdict",
+    "tag": "VERDICT",
+    "slots": [],
+    "device": "bureaucratic misregistration",
+    "weight": 0,
+    "tier": "medium",
+    "archetypes": [],
+    "text": "You have been consistent. That is the finding, not the compliment."
+  },
+  {
+    "id": "verdict",
+    "tag": "VERDICT",
+    "slots": [],
+    "device": "closing judgement",
+    "weight": 0,
+    "tier": "medium",
+    "archetypes": [],
+    "text": "You optimised the parts nobody measures and left the rest to luck."
+  },
+  {
+    "id": "verdict",
+    "tag": "VERDICT",
+    "slots": [],
+    "device": "closing judgement",
+    "weight": 0,
+    "tier": "medium",
+    "archetypes": [],
+    "text": "The wallet survived. The habits are what will follow it around."
+  },
+  {
+    "id": "verdict",
+    "tag": "VERDICT",
+    "slots": [],
+    "device": "sharpest reframe",
+    "weight": 0,
+    "tier": "medium",
+    "archetypes": [],
+    "text": "You are not early. You are first in a queue nobody else joined."
+  }
+]

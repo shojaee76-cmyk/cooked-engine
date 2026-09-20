@@ -1,0 +1,5663 @@
+{
+ "byId": {
+  "no_ens": [
+   {
+    "text": "No .eth name. {addr} is how you enter rooms, unannounced and unmissed.",
+    "slots": [
+     "addr"
+    ],
+    "device": "sharpest reframe",
+    "weight": 6,
+    "tier": "brutal",
+    "archetypes": []
+   },
+   {
+    "text": "No .eth name on {addr}. Not private. Just never worth being findable.",
+    "slots": [
+     "addr"
+    ],
+    "device": "humiliation by accuracy",
+    "weight": 6,
+    "tier": "brutal",
+    "archetypes": []
+   },
+   {
+    "text": "The wallet answers to {addr}. A name is something you build over years. You were busy buying.",
+    "slots": [
+     "addr"
+    ],
+    "device": "understatement",
+    "weight": 6,
+    "tier": "brutal",
+    "archetypes": []
+   },
+   {
+    "text": "No .eth name. {addr} is what the machines call you, and machines do not call back.",
+    "slots": [
+     "addr"
+    ],
+    "device": "the kill shot",
+    "weight": 7,
+    "tier": "brutal",
+    "archetypes": []
+   },
+   {
+    "text": "No .eth name. {addr} introduces itself by number, like a defendant.",
+    "slots": [
+     "addr"
+    ],
+    "device": "sharpest reframe",
+    "weight": 4,
+    "tier": "medium",
+    "archetypes": [
+     "ghost_account"
+    ]
+   },
+   {
+    "text": "You never registered a .eth name for {addr}. Not private, just unlisted, and the difference is a lookup.",
+    "slots": [
+     "addr"
+    ],
+    "device": "bureaucratic misregistration",
+    "weight": 3,
+    "tier": "gentle",
+    "archetypes": []
+   },
+   {
+    "text": "No .eth name on {addr}. You have been here long enough to be a number and nothing else.",
+    "slots": [
+     "addr"
+    ],
+    "device": "understatement",
+    "weight": 4,
+    "tier": "medium",
+    "archetypes": [
+     "empty_wallet",
+     "silent_holder"
+    ]
+   },
+   {
+    "text": "The wallet goes by {addr}. An identity assigned by arithmetic and defended by nobody.",
+    "slots": [
+     "addr"
+    ],
+    "device": "sharpest reframe",
+    "weight": 5,
+    "tier": "medium",
+    "archetypes": []
+   }
+  ],
+  "ens_short": [
+   {
+    "text": "{ens} is {ensLen} characters. You bought brevity the way other people buy confidence.",
+    "slots": [
+     "ens",
+     "ensLen"
+    ],
+    "device": "false respect",
+    "weight": 7,
+    "tier": "brutal",
+    "archetypes": []
+   },
+   {
+    "text": "{ens} is {ensLen} characters and nothing is written under it. The shortest signature in the room and still no statement.",
+    "slots": [
+     "ens",
+     "ensLen"
+    ],
+    "device": "humiliation by accuracy",
+    "weight": 7,
+    "tier": "brutal",
+    "archetypes": []
+   },
+   {
+    "text": "{ens} fits in {ensLen} characters. A license plate, and you never owned the car.",
+    "slots": [
+     "ens",
+     "ensLen"
+    ],
+    "device": "sharpest reframe",
+    "weight": 7,
+    "tier": "brutal",
+    "archetypes": []
+   },
+   {
+    "text": "The {ensLen} characters of {ens} are the whole asset. Short name, shorter record, nothing attached worth opening.",
+    "slots": [
+     "ens",
+     "ensLen"
+    ],
+    "device": "escalation",
+    "weight": 8,
+    "tier": "brutal",
+    "archetypes": []
+   },
+   {
+    "text": "{ens} is {ensLen} characters. You paid for brevity the way other people pay for confidence.",
+    "slots": [
+     "ens",
+     "ensLen"
+    ],
+    "device": "false respect",
+    "weight": 6,
+    "tier": "medium",
+    "archetypes": [
+     "whale_no_taste"
+    ]
+   },
+   {
+    "text": "{ens}, {ensLen} characters of .eth. The shortest name available and still nothing to say with it.",
+    "slots": [
+     "ens",
+     "ensLen"
+    ],
+    "device": "sharpest reframe",
+    "weight": 5,
+    "tier": "medium",
+    "archetypes": []
+   },
+   {
+    "text": "A {ensLen} character .eth name for {ens}. You paid a premium for a nickname that fits a licence plate.",
+    "slots": [
+     "ens",
+     "ensLen"
+    ],
+    "device": "escalation",
+    "weight": 6,
+    "tier": "savage",
+    "archetypes": [
+     "whale_no_taste"
+    ]
+   }
+  ],
+  "ens_long": [
+   {
+    "text": "{ens} runs {ensLen} characters. You typed a whole sentence and filed it as an identity.",
+    "slots": [
+     "ens",
+     "ensLen"
+    ],
+    "device": "sharpest reframe",
+    "weight": 6,
+    "tier": "brutal",
+    "archetypes": []
+   },
+   {
+    "text": "Your .eth name is {ens}, {ensLen} characters. Long enough to explain yourself and it still does not.",
+    "slots": [
+     "ens",
+     "ensLen"
+    ],
+    "device": "understatement",
+    "weight": 6,
+    "tier": "brutal",
+    "archetypes": []
+   },
+   {
+    "text": "{ensLen} characters of .eth to say {ens}. You filed a paragraph and called it a brand.",
+    "slots": [
+     "ens",
+     "ensLen"
+    ],
+    "device": "bureaucratic misregistration",
+    "weight": 6,
+    "tier": "brutal",
+    "archetypes": []
+   },
+   {
+    "text": "{ens} runs {ensLen} characters. A name that long is a sentence you made strangers read.",
+    "slots": [
+     "ens",
+     "ensLen"
+    ],
+    "device": "sharpest reframe",
+    "weight": 3,
+    "tier": "gentle",
+    "archetypes": [
+     "degen_churner"
+    ]
+   },
+   {
+    "text": "Your .eth name, {ens}, is {ensLen} characters long. It resolves. It does not land.",
+    "slots": [
+     "ens",
+     "ensLen"
+    ],
+    "device": "understatement",
+    "weight": 3,
+    "tier": "medium",
+    "archetypes": []
+   },
+   {
+    "text": "{ens} is {ensLen} characters of name. You typed a whole paragraph and filed it as a brand.",
+    "slots": [
+     "ens",
+     "ensLen"
+    ],
+    "device": "bureaucratic misregistration",
+    "weight": 3,
+    "tier": "medium",
+    "archetypes": [
+     "vesting_survivor"
+    ]
+   }
+  ],
+  "ens_numbered": [
+   {
+    "text": "{ens} ends in {ensNumber}. The name you wanted belonged to somebody with better timing.",
+    "slots": [
+     "ens",
+     "ensNumber"
+    ],
+    "device": "the kill shot",
+    "weight": 7,
+    "tier": "brutal",
+    "archetypes": []
+   },
+   {
+    "text": "{ensNumber} on the end of {ens} is the whole receipt. You bought the leftover and put it on your card.",
+    "slots": [
+     "ens",
+     "ensNumber"
+    ],
+    "device": "sharpest reframe",
+    "weight": 6,
+    "tier": "brutal",
+    "archetypes": []
+   },
+   {
+    "text": "{ens} carries the number {ensNumber}. Names run out first and so does patience.",
+    "slots": [
+     "ens",
+     "ensNumber"
+    ],
+    "device": "humiliation by accuracy",
+    "weight": 7,
+    "tier": "brutal",
+    "archetypes": []
+   },
+   {
+    "text": "{ens} carries the number {ensNumber}. Names run out. Numbers do not.",
+    "slots": [
+     "ens",
+     "ensNumber"
+    ],
+    "device": "sharpest reframe",
+    "weight": 5,
+    "tier": "medium",
+    "archetypes": [
+     "farming_bot"
+    ]
+   },
+   {
+    "text": "The {ensNumber} in {ens} is doing all the work. It was the only part still available.",
+    "slots": [
+     "ens",
+     "ensNumber"
+    ],
+    "device": "understatement",
+    "weight": 5,
+    "tier": "medium",
+    "archetypes": []
+   },
+   {
+    "text": "{ens}, with {ensNumber} on the end. Somebody was there first and you signed it anyway.",
+    "slots": [
+     "ens",
+     "ensNumber"
+    ],
+    "device": "sharpest reframe",
+    "weight": 5,
+    "tier": "medium",
+    "archetypes": [
+     "ghost_account"
+    ]
+   }
+  ],
+  "ens_avatar_default": [
+   {
+    "text": "The avatar on {ens} is the default gradient. You bought a name and declined to be a person.",
+    "slots": [
+     "ens"
+    ],
+    "device": "sharpest reframe",
+    "weight": 6,
+    "tier": "brutal",
+    "archetypes": []
+   },
+   {
+    "text": "{ens} resolves to a default gradient. Even your avatar did not bother showing up.",
+    "slots": [
+     "ens"
+    ],
+    "device": "the kill shot",
+    "weight": 6,
+    "tier": "brutal",
+    "archetypes": []
+   },
+   {
+    "text": "Default gradient on {ens}. You own the name and nothing that belongs on it.",
+    "slots": [
+     "ens"
+    ],
+    "device": "understatement",
+    "weight": 6,
+    "tier": "brutal",
+    "archetypes": []
+   },
+   {
+    "text": "The ENS avatar on {ens} is the default gradient. You registered a name and declined to have a face.",
+    "slots": [
+     "ens"
+    ],
+    "device": "false respect",
+    "weight": 4,
+    "tier": "medium",
+    "archetypes": []
+   },
+   {
+    "text": "{ens} resolves to the default gradient avatar. Even your avatar did not show up.",
+    "slots": [
+     "ens"
+    ],
+    "device": "sharpest reframe",
+    "weight": 4,
+    "tier": "medium",
+    "archetypes": [
+     "ghost_account"
+    ]
+   },
+   {
+    "text": "Default gradient avatar on {ens}. You decorated nothing, which is at least consistent.",
+    "slots": [
+     "ens"
+    ],
+    "device": "understatement",
+    "weight": 3,
+    "tier": "gentle",
+    "archetypes": []
+   }
+  ],
+  "ens_links_nothing": [
+   {
+    "text": "{linkCount} links on {ens} and not one worth opening. A handshake held out to an empty room.",
+    "slots": [
+     "ens",
+     "linkCount"
+    ],
+    "device": "sharpest reframe",
+    "weight": 6,
+    "tier": "brutal",
+    "archetypes": []
+   },
+   {
+    "text": "The {ens} record exposes {linkCount} social links. A business card for a business you never started.",
+    "slots": [
+     "ens",
+     "linkCount"
+    ],
+    "device": "humiliation by accuracy",
+    "weight": 6,
+    "tier": "brutal",
+    "archetypes": []
+   },
+   {
+    "text": "{linkCount} links on {ens}, zero destinations. A door built for every room you were never in.",
+    "slots": [
+     "ens",
+     "linkCount"
+    ],
+    "device": "escalation",
+    "weight": 6,
+    "tier": "brutal",
+    "archetypes": []
+   },
+   {
+    "text": "The record on {ens} exposes {linkCount} social links. A business card with the number scratched off.",
+    "slots": [
+     "ens",
+     "linkCount"
+    ],
+    "device": "sharpest reframe",
+    "weight": 5,
+    "tier": "medium",
+    "archetypes": []
+   },
+   {
+    "text": "{linkCount} social links on {ens}. A handshake held out to nobody in particular.",
+    "slots": [
+     "ens",
+     "linkCount"
+    ],
+    "device": "sharpest reframe",
+    "weight": 5,
+    "tier": "medium",
+    "archetypes": [
+     "ghost_account"
+    ]
+   },
+   {
+    "text": "{linkCount} links on {ens}, all of them entered carefully. None of them worth following.",
+    "slots": [
+     "ens",
+     "linkCount"
+    ],
+    "device": "understatement",
+    "weight": 4,
+    "tier": "medium",
+    "archetypes": []
+   }
+  ],
+  "linked_github": [
+   {
+    "text": "{ghRepos} repos on {ghUser}, {ghFollowers} followers. You published a body of work and nobody came to the viewing.",
+    "slots": [
+     "ghUser",
+     "ghRepos",
+     "ghFollowers"
+    ],
+    "device": "humiliation by accuracy",
+    "weight": 6,
+    "tier": "brutal",
+    "archetypes": []
+   },
+   {
+    "text": "GitHub {ghUser}: {ghRepos} repositories, {ghFollowers} followers. The forge does not clap.",
+    "slots": [
+     "ghUser",
+     "ghRepos",
+     "ghFollowers"
+    ],
+    "device": "the kill shot",
+    "weight": 6,
+    "tier": "brutal",
+    "archetypes": []
+   },
+   {
+    "text": "{ghRepos} repos, {ghFollowers} followers, one {ghUser}. Committing is not contributing.",
+    "slots": [
+     "ghUser",
+     "ghRepos",
+     "ghFollowers"
+    ],
+    "device": "rule of three",
+    "weight": 6,
+    "tier": "brutal",
+    "archetypes": []
+   },
+   {
+    "text": "Linked GitHub {ghUser}: {ghRepos} repos, {ghFollowers} followers. A library with no borrowers.",
+    "slots": [
+     "ghUser",
+     "ghRepos",
+     "ghFollowers"
+    ],
+    "device": "sharpest reframe",
+    "weight": 4,
+    "tier": "medium",
+    "archetypes": []
+   },
+   {
+    "text": "{ghRepos} repositories on {ghUser}, {ghFollowers} followers. Publishing into a locked room.",
+    "slots": [
+     "ghUser",
+     "ghRepos",
+     "ghFollowers"
+    ],
+    "device": "understatement",
+    "weight": 3,
+    "tier": "medium",
+    "archetypes": [
+     "farming_bot"
+    ]
+   },
+   {
+    "text": "Your GitHub is {ghUser}: {ghRepos} repos and {ghFollowers} followers, all public, none read.",
+    "slots": [
+     "ghUser",
+     "ghRepos",
+     "ghFollowers"
+    ],
+    "device": "rule of three",
+    "weight": 4,
+    "tier": "medium",
+    "archetypes": []
+   }
+  ],
+  "linked_telegram": [
+   {
+    "text": "Telegram {tg}, attached to this wallet. A back channel for decisions nobody asked you about.",
+    "slots": [
+     "tg"
+    ],
+    "device": "sharpest reframe",
+    "weight": 6,
+    "tier": "brutal",
+    "archetypes": []
+   },
+   {
+    "text": "{tg} is one message away from nobody, and the group chat moved on without you.",
+    "slots": [
+     "tg"
+    ],
+    "device": "humiliation by accuracy",
+    "weight": 6,
+    "tier": "brutal",
+    "archetypes": []
+   },
+   {
+    "text": "The handle {tg} sits on the record. Every position needs a hotline and yours rings out.",
+    "slots": [
+     "tg"
+    ],
+    "device": "bureaucratic misregistration",
+    "weight": 6,
+    "tier": "brutal",
+    "archetypes": []
+   },
+   {
+    "text": "Linked Telegram: {tg}. A handle that exists, which is the entire finding.",
+    "slots": [
+     "tg"
+    ],
+    "device": "understatement",
+    "weight": 4,
+    "tier": "medium",
+    "archetypes": []
+   },
+   {
+    "text": "{tg} is on the record and on Telegram. Somewhere a group chat continues without you.",
+    "slots": [
+     "tg"
+    ],
+    "device": "sharpest reframe",
+    "weight": 4,
+    "tier": "medium",
+    "archetypes": [
+     "degen_churner"
+    ]
+   },
+   {
+    "text": "The Telegram handle {tg} is attached to this wallet. Every position needs a back channel.",
+    "slots": [
+     "tg"
+    ],
+    "device": "bureaucratic misregistration",
+    "weight": 4,
+    "tier": "medium",
+    "archetypes": [
+     "airship_hopeful"
+    ]
+   }
+  ],
+  "linked_x": [
+   {
+    "text": "{handle} has {followers} followers and no position anybody would copy. Not a track record, a distribution list.",
+    "slots": [
+     "handle",
+     "followers"
+    ],
+    "device": "the kill shot",
+    "weight": 8,
+    "tier": "brutal",
+    "archetypes": []
+   },
+   {
+    "text": "{followers} followers on {handle}. You are influential the way a bus stop is influential.",
+    "slots": [
+     "handle",
+     "followers"
+    ],
+    "device": "false respect",
+    "weight": 7,
+    "tier": "brutal",
+    "archetypes": []
+   },
+   {
+    "text": "{handle}: {followers} followers, zero assets worth the audience. You are a media company with no inventory.",
+    "slots": [
+     "handle",
+     "followers"
+    ],
+    "device": "sharpest reframe",
+    "weight": 8,
+    "tier": "brutal",
+    "archetypes": []
+   },
+   {
+    "text": "{followers} followers, {handle}. Lots of reach, no conviction, and a timeline that outlived the thesis.",
+    "slots": [
+     "handle",
+     "followers"
+    ],
+    "device": "escalation",
+    "weight": 7,
+    "tier": "brutal",
+    "archetypes": []
+   },
+   {
+    "text": "You claim {handle} on X with {followers} followers. Posting is not a strategy, it is a paper trail.",
+    "slots": [
+     "handle",
+     "followers"
+    ],
+    "device": "sharpest reframe",
+    "weight": 6,
+    "tier": "savage",
+    "archetypes": [
+     "degen_churner"
+    ]
+   },
+   {
+    "text": "{handle} on X, {followers} followers. The account is verified. The thesis is not.",
+    "slots": [
+     "handle",
+     "followers"
+    ],
+    "device": "understatement",
+    "weight": 5,
+    "tier": "medium",
+    "archetypes": []
+   },
+   {
+    "text": "{handle} has {followers} followers. High posting volume, no position worth posting about.",
+    "slots": [
+     "handle",
+     "followers"
+    ],
+    "device": "escalation",
+    "weight": 6,
+    "tier": "savage",
+    "archetypes": [
+     "exit_liquidity"
+    ]
+   }
+  ],
+  "handle_squatted": [
+   {
+    "text": "{handle} on {platformCount} platforms. A brand is a promise. This is a reservation.",
+    "slots": [
+     "handle",
+     "platformCount"
+    ],
+    "device": "sharpest reframe",
+    "weight": 7,
+    "tier": "brutal",
+    "archetypes": []
+   },
+   {
+    "text": "{platformCount} platforms, one handle, {handle}. You built the name and never built the thing it fits.",
+    "slots": [
+     "handle",
+     "platformCount"
+    ],
+    "device": "humiliation by accuracy",
+    "weight": 7,
+    "tier": "brutal",
+    "archetypes": []
+   },
+   {
+    "text": "The same {handle} on {platformCount} sites. Consistency until it is the only virtue left standing.",
+    "slots": [
+     "handle",
+     "platformCount"
+    ],
+    "device": "escalation",
+    "weight": 6,
+    "tier": "brutal",
+    "archetypes": []
+   },
+   {
+    "text": "{handle} exists in {platformCount} places. You are a watermark on other people's work.",
+    "slots": [
+     "handle",
+     "platformCount"
+    ],
+    "device": "understatement",
+    "weight": 6,
+    "tier": "brutal",
+    "archetypes": []
+   },
+   {
+    "text": "{handle} exists on {platformCount} unrelated platforms. Not a brand. A habit with paperwork.",
+    "slots": [
+     "handle",
+     "platformCount"
+    ],
+    "device": "sharpest reframe",
+    "weight": 5,
+    "tier": "medium",
+    "archetypes": [
+     "farming_bot"
+    ]
+   },
+   {
+    "text": "The same handle, {handle}, on {platformCount} platforms. Consistency until it is the only virtue left.",
+    "slots": [
+     "handle",
+     "platformCount"
+    ],
+    "device": "escalation",
+    "weight": 5,
+    "tier": "medium",
+    "archetypes": []
+   },
+   {
+    "text": "{handle} sits on {platformCount} platforms. That is not reach, that is duplication with a login.",
+    "slots": [
+     "handle",
+     "platformCount"
+    ],
+    "device": "sharpest reframe",
+    "weight": 5,
+    "tier": "medium",
+    "archetypes": [
+     "ghost_account",
+     "farming_bot"
+    ]
+   },
+   {
+    "text": "You registered {handle} across {platformCount} platforms. A username with a mortgage.",
+    "slots": [
+     "handle",
+     "platformCount"
+    ],
+    "device": "understatement",
+    "weight": 5,
+    "tier": "medium",
+    "archetypes": []
+   }
+  ],
+  "domain_old": [
+   {
+    "text": "{domain} is {domainAgeDays} days old and still has nothing on it. You bought the shop before the inventory.",
+    "slots": [
+     "domain",
+     "domainAgeDays"
+    ],
+    "device": "humiliation by accuracy",
+    "weight": 7,
+    "tier": "brutal",
+    "archetypes": []
+   },
+   {
+    "text": "{domainAgeDays} days of {domain}. Preparation is a timeline and yours is a countdown to a token.",
+    "slots": [
+     "domain",
+     "domainAgeDays"
+    ],
+    "device": "escalation",
+    "weight": 7,
+    "tier": "brutal",
+    "archetypes": []
+   },
+   {
+    "text": "The bio links {domain}, bought {domainAgeDays} days ago. The website was the warm up act for the bag.",
+    "slots": [
+     "domain",
+     "domainAgeDays"
+    ],
+    "device": "callback",
+    "weight": 6,
+    "tier": "brutal",
+    "archetypes": []
+   },
+   {
+    "text": "{domain} was registered {domainAgeDays} days before the token. The website was the warm-up act.",
+    "slots": [
+     "domain",
+     "domainAgeDays"
+    ],
+    "device": "sharpest reframe",
+    "weight": 6,
+    "tier": "medium",
+    "archetypes": []
+   },
+   {
+    "text": "{domainAgeDays} days between buying {domain} and launching a token. Not readiness, that is staging.",
+    "slots": [
+     "domain",
+     "domainAgeDays"
+    ],
+    "device": "escalation",
+    "weight": 6,
+    "tier": "savage",
+    "archetypes": [
+     "exit_liquidity"
+    ]
+   },
+   {
+    "text": "The bio links {domain}, bought {domainAgeDays} days before the token. Preparation is a timeline and yours is short.",
+    "slots": [
+     "domain",
+     "domainAgeDays"
+    ],
+    "device": "callback",
+    "weight": 5,
+    "tier": "medium",
+    "archetypes": []
+   }
+  ],
+  "domain_dead": [
+   {
+    "text": "{domain} does not resolve. You built a homepage and let the front page outlive the company.",
+    "slots": [
+     "domain"
+    ],
+    "device": "the kill shot",
+    "weight": 7,
+    "tier": "brutal",
+    "archetypes": []
+   },
+   {
+    "text": "{domain} is gone. The only thing you ever kept running was the pitch.",
+    "slots": [
+     "domain"
+    ],
+    "device": "sharpest reframe",
+    "weight": 7,
+    "tier": "brutal",
+    "archetypes": []
+   },
+   {
+    "text": "{domain} no longer loads. Somewhere a roadmap sits in a folder nobody can open.",
+    "slots": [
+     "domain"
+    ],
+    "device": "understatement",
+    "weight": 6,
+    "tier": "brutal",
+    "archetypes": []
+   },
+   {
+    "text": "{domain} no longer resolves. The roadmap expired before the token did.",
+    "slots": [
+     "domain"
+    ],
+    "device": "sharpest reframe",
+    "weight": 6,
+    "tier": "medium",
+    "archetypes": [
+     "exit_liquidity"
+    ]
+   },
+   {
+    "text": "The website in your bio, {domain}, is gone. The only thing that ever loaded was the pitch.",
+    "slots": [
+     "domain"
+    ],
+    "device": "understatement",
+    "weight": 6,
+    "tier": "medium",
+    "archetypes": []
+   },
+   {
+    "text": "{domain} does not resolve. You built a front page and forgot to keep the door.",
+    "slots": [
+     "domain"
+    ],
+    "device": "sharpest reframe",
+    "weight": 5,
+    "tier": "medium",
+    "archetypes": [
+     "airship_hopeful"
+    ]
+   }
+  ],
+  "contract_wallet": [
+   {
+    "text": "{addr} is a contract. Nobody lives there. It collects and it does not have to explain itself.",
+    "slots": [
+     "addr"
+    ],
+    "device": "sharpest reframe",
+    "weight": 7,
+    "tier": "brutal",
+    "archetypes": []
+   },
+   {
+    "text": "{addr} is a deployment. Automated, faceless, and still better company than its owner.",
+    "slots": [
+     "addr"
+    ],
+    "device": "humiliation by accuracy",
+    "weight": 7,
+    "tier": "brutal",
+    "archetypes": []
+   },
+   {
+    "text": "The submitted address {addr} is a contract. You asked the engine to roast a program, which is honest of you.",
+    "slots": [
+     "addr"
+    ],
+    "device": "bureaucratic misregistration",
+    "weight": 7,
+    "tier": "brutal",
+    "archetypes": []
+   },
+   {
+    "text": "{addr} is code. It files receipts and cannot be offended. You might be a different case.",
+    "slots": [
+     "addr"
+    ],
+    "device": "understatement",
+    "weight": 6,
+    "tier": "brutal",
+    "archetypes": []
+   },
+   {
+    "text": "{addr} is a contract. A wallet would have opinions, this one only has rules.",
+    "slots": [
+     "addr"
+    ],
+    "device": "sharpest reframe",
+    "weight": 7,
+    "tier": "medium",
+    "archetypes": [
+     "contract_entity"
+    ]
+   },
+   {
+    "text": "The submitted address, {addr}, is a contract. You asked the engine to roast a program.",
+    "slots": [
+     "addr"
+    ],
+    "device": "bureaucratic misregistration",
+    "weight": 6,
+    "tier": "medium",
+    "archetypes": [
+     "contract_entity"
+    ]
+   },
+   {
+    "text": "{addr} is a contract. Code does not get defensive about the receipt. You might.",
+    "slots": [
+     "addr"
+    ],
+    "device": "understatement",
+    "weight": 6,
+    "tier": "medium",
+    "archetypes": [
+     "contract_entity"
+    ]
+   },
+   {
+    "text": "This is a contract address. Nobody lives at {addr}, somebody just collects.",
+    "slots": [
+     "addr"
+    ],
+    "device": "sharpest reframe",
+    "weight": 6,
+    "tier": "medium",
+    "archetypes": [
+     "contract_entity"
+    ]
+   }
+  ],
+  "smart_account": [
+   {
+    "text": "{delegate} can move this wallet. You outsourced the judgement and kept the consequences.",
+    "slots": [
+     "delegate"
+    ],
+    "device": "the kill shot",
+    "weight": 8,
+    "tier": "brutal",
+    "archetypes": []
+   },
+   {
+    "text": "Delegated to {delegate}. You built a machine to have opinions for you and it outperforms you on brevity.",
+    "slots": [
+     "delegate"
+    ],
+    "device": "sharpest reframe",
+    "weight": 7,
+    "tier": "brutal",
+    "archetypes": []
+   },
+   {
+    "text": "{delegate} holds the permission. You kept the keys, gave away the decisions, and kept the losses.",
+    "slots": [
+     "delegate"
+    ],
+    "device": "escalation",
+    "weight": 8,
+    "tier": "brutal",
+    "archetypes": []
+   },
+   {
+    "text": "The wallet is a smart account, delegated to {delegate}. You kept the keys and gave away the decisions.",
+    "slots": [
+     "delegate"
+    ],
+    "device": "sharpest reframe",
+    "weight": 7,
+    "tier": "medium",
+    "archetypes": []
+   },
+   {
+    "text": "Delegated to {delegate}. You outsourced judgement and retained liability.",
+    "slots": [
+     "delegate"
+    ],
+    "device": "escalation",
+    "weight": 7,
+    "tier": "savage",
+    "archetypes": [
+     "whale_no_taste"
+    ]
+   },
+   {
+    "text": "{delegate} can move this wallet. Permission granted in writing, side effects unread.",
+    "slots": [
+     "delegate"
+    ],
+    "device": "bureaucratic misregistration",
+    "weight": 6,
+    "tier": "medium",
+    "archetypes": []
+   }
+  ],
+  "empty_address": [
+   {
+    "text": "{addr} has sent nothing on {chainsActive} chains. A seat at every table and no appetite at any of them.",
+    "slots": [
+     "addr",
+     "chainsActive"
+    ],
+    "device": "humiliation by accuracy",
+    "weight": 6,
+    "tier": "brutal",
+    "archetypes": []
+   },
+   {
+    "text": "Nothing has ever left {addr} across {chainsActive} chains. Not caution. Absence with better branding.",
+    "slots": [
+     "addr",
+     "chainsActive"
+    ],
+    "device": "sharpest reframe",
+    "weight": 6,
+    "tier": "brutal",
+    "archetypes": []
+   },
+   {
+    "text": "{chainsActive} chains observe {addr} and see nothing. The wallet is not hidden, it is unfurnished.",
+    "slots": [
+     "addr",
+     "chainsActive"
+    ],
+    "device": "understatement",
+    "weight": 6,
+    "tier": "brutal",
+    "archetypes": []
+   },
+   {
+    "text": "Nothing has ever left {addr} on any of {chainsActive} chains. The most private wallet is an unused one.",
+    "slots": [
+     "chainsActive",
+     "addr"
+    ],
+    "device": "understatement",
+    "weight": 4,
+    "tier": "gentle",
+    "archetypes": [
+     "empty_wallet"
+    ]
+   },
+   {
+    "text": "{addr} has sent no transactions across {chainsActive} chains. Seated at every table, ordering water.",
+    "slots": [
+     "chainsActive",
+     "addr"
+    ],
+    "device": "rule of three",
+    "weight": 4,
+    "tier": "gentle",
+    "archetypes": [
+     "empty_wallet",
+     "silent_holder"
+    ]
+   },
+   {
+    "text": "Across {chainsActive} chains, {addr} has never sent. Silence is a strategy and it is a full-time one.",
+    "slots": [
+     "chainsActive",
+     "addr"
+    ],
+    "device": "sharpest reframe",
+    "weight": 3,
+    "tier": "gentle",
+    "archetypes": [
+     "empty_wallet"
+    ]
+   },
+   {
+    "text": "No outgoing transaction on {addr} in {chainsActive} chains. The wallet is not hiding, it is waiting.",
+    "slots": [
+     "chainsActive",
+     "addr"
+    ],
+    "device": "understatement",
+    "weight": 4,
+    "tier": "gentle",
+    "archetypes": [
+     "empty_wallet"
+    ]
+   }
+  ],
+  "public_exposure": [
+   {
+    "text": "{exposureCount} public traces tie this wallet to {handle}. You are not anonymous, you are simply unvisited.",
+    "slots": [
+     "exposureCount",
+     "handle"
+    ],
+    "device": "the kill shot",
+    "weight": 9,
+    "tier": "brutal",
+    "archetypes": []
+   },
+   {
+    "text": "{exposureCount} public trails, one handle, {handle}. Nobody breached anything. You posted it yourself.",
+    "slots": [
+     "exposureCount",
+     "handle"
+    ],
+    "device": "sharpest reframe",
+    "weight": 9,
+    "tier": "brutal",
+    "archetypes": []
+   },
+   {
+    "text": "The engine found {exposureCount} public routes from this wallet to {handle}. Privacy is a preference and you never stated one.",
+    "slots": [
+     "exposureCount",
+     "handle"
+    ],
+    "device": "humiliation by accuracy",
+    "weight": 8,
+    "tier": "brutal",
+    "archetypes": []
+   },
+   {
+    "text": "{exposureCount} public traces and one name, {handle}. Sloppy filing, done voluntarily, at your own pace.",
+    "slots": [
+     "exposureCount",
+     "handle"
+    ],
+    "device": "bureaucratic misregistration",
+    "weight": 8,
+    "tier": "brutal",
+    "archetypes": []
+   },
+   {
+    "text": "{exposureCount} public traces link this wallet to {handle}. You are not anonymous, you are just unfollowed.",
+    "slots": [
+     "exposureCount",
+     "handle"
+    ],
+    "device": "sharpest reframe",
+    "weight": 8,
+    "tier": "savage",
+    "archetypes": [
+     "ghost_account"
+    ]
+   },
+   {
+    "text": "The engine found {exposureCount} public trails from this wallet to {handle}. Nothing was breached. Nobody had to try.",
+    "slots": [
+     "exposureCount",
+     "handle"
+    ],
+    "device": "understatement",
+    "weight": 8,
+    "tier": "savage",
+    "archetypes": []
+   },
+   {
+    "text": "{exposureCount} public traces, one handle, {handle}. Privacy is a setting and you left it on default.",
+    "slots": [
+     "exposureCount",
+     "handle"
+    ],
+    "device": "bureaucratic misregistration",
+    "weight": 7,
+    "tier": "medium",
+    "archetypes": []
+   },
+   {
+    "text": "{exposureCount} separate public traces tie this wallet to {handle}. Not a dox. Housekeeping you skipped.",
+    "slots": [
+     "exposureCount",
+     "handle"
+    ],
+    "device": "sharpest reframe",
+    "weight": 8,
+    "tier": "savage",
+    "archetypes": [
+     "ghost_account"
+    ]
+   }
+  ],
+  "no_x": [
+   {
+    "text": "No X handle on file. The chain does the talking and it has less to say than you think.",
+    "slots": [],
+    "device": "sharpest reframe",
+    "weight": 6,
+    "tier": "brutal",
+    "archetypes": []
+   },
+   {
+    "text": "No handle provided. You left out the part of the receipt where you explain yourself.",
+    "slots": [],
+    "device": "the kill shot",
+    "weight": 6,
+    "tier": "brutal",
+    "archetypes": []
+   },
+   {
+    "text": "No X account attached. Even the version of you that posts stayed home.",
+    "slots": [],
+    "device": "understatement",
+    "weight": 6,
+    "tier": "brutal",
+    "archetypes": []
+   },
+   {
+    "text": "No profile submitted. The wallet builds your character unopposed and it is not being generous.",
+    "slots": [],
+    "device": "humiliation by accuracy",
+    "weight": 6,
+    "tier": "brutal",
+    "archetypes": []
+   },
+   {
+    "text": "No X account provided, so the receipt stays onchain. Your wallet does the talking.",
+    "slots": [],
+    "device": "sharpest reframe",
+    "weight": 3,
+    "tier": "gentle",
+    "archetypes": []
+   },
+   {
+    "text": "No X account in the file. Whatever you are, the chain said it first.",
+    "slots": [],
+    "device": "understatement",
+    "weight": 3,
+    "tier": "gentle",
+    "archetypes": [
+     "silent_holder"
+    ]
+   },
+   {
+    "text": "Chain-only receipt. No posts, no bio, no pinned conviction. Just settlement.",
+    "slots": [],
+    "device": "rule of three",
+    "weight": 3,
+    "tier": "gentle",
+    "archetypes": [
+     "ghost_account"
+    ]
+   },
+   {
+    "text": "No X account. The one place where being nobody is a growth strategy.",
+    "slots": [],
+    "device": "false respect",
+    "weight": 9,
+    "tier": "gentle",
+    "archetypes": []
+   },
+   {
+    "text": "No usable X account. No bio, no handle, no posts, no audience. Clean.",
+    "slots": [],
+    "device": "escalation",
+    "weight": 8,
+    "tier": "gentle",
+    "archetypes": []
+   },
+   {
+    "text": "No X account to measure. Nothing to farm, nothing to broadcast, nothing to check.",
+    "slots": [],
+    "device": "rule of three",
+    "weight": 9,
+    "tier": "gentle",
+    "archetypes": []
+   },
+   {
+    "text": "No X account. Your opsec is airtight and your reach is zero.",
+    "slots": [],
+    "device": "sharpest reframe",
+    "weight": 8,
+    "tier": "gentle",
+    "archetypes": []
+   }
+  ],
+  "total_usd": [
+   {
+    "text": "{netWorth} across {chainsActive} chains. You are not diversified, you are hedged against ever having been right.",
+    "slots": [
+     "netWorth",
+     "chainsActive"
+    ],
+    "device": "sharpest reframe",
+    "weight": 9,
+    "tier": "brutal",
+    "archetypes": []
+   },
+   {
+    "text": "Masters of allocation like yourself hold {netWorth} on {chainsActive} chains. Each chain is a separate apology.",
+    "slots": [
+     "netWorth",
+     "chainsActive"
+    ],
+    "device": "false respect",
+    "weight": 9,
+    "tier": "brutal",
+    "archetypes": []
+   },
+   {
+    "text": "{netWorth}, {chainsActive} chains, one owner. You have the footprint of a fund and the balance of a mistake.",
+    "slots": [
+     "netWorth",
+     "chainsActive"
+    ],
+    "device": "kill shot",
+    "weight": 9,
+    "tier": "brutal",
+    "archetypes": [
+     "whale_no_taste"
+    ]
+   },
+   {
+    "text": "{chainsActive} chains, {netWorth}, and years of effort. Two of those numbers are impressive and one of them is the total.",
+    "slots": [
+     "netWorth",
+     "chainsActive"
+    ],
+    "device": "escalation",
+    "weight": 9,
+    "tier": "brutal",
+    "archetypes": []
+   },
+   {
+    "text": "Your net worth is {netWorth} spread across {chainsActive} chains. Diversification, in the sense that none of them worked.",
+    "slots": [
+     "netWorth",
+     "chainsActive"
+    ],
+    "device": "sharpest reframe",
+    "weight": 9,
+    "tier": "medium",
+    "archetypes": [
+     "degen"
+    ]
+   },
+   {
+    "text": "Measured net worth {netWorth}, across {chainsActive} chains. Each chain is a separate opportunity to be early and be wrong.",
+    "slots": [
+     "netWorth",
+     "chainsActive"
+    ],
+    "device": "understatement",
+    "weight": 9,
+    "tier": "gentle",
+    "archetypes": []
+   },
+   {
+    "text": "{netWorth} and {chainsActive} chains. You have spread it thin enough that no single chain feels responsible.",
+    "slots": [
+     "netWorth",
+     "chainsActive"
+    ],
+    "device": "false respect",
+    "weight": 9,
+    "tier": "savage",
+    "archetypes": [
+     "whale_no_taste"
+    ]
+   },
+   {
+    "text": "Consolidated holdings: {netWorth}, filed across {chainsActive} chains. The filing is thorough. The holdings are the problem.",
+    "slots": [
+     "netWorth",
+     "chainsActive"
+    ],
+    "device": "bureaucratic misregistration",
+    "weight": 9,
+    "tier": "medium",
+    "archetypes": []
+   }
+  ],
+  "broke": [
+   {
+    "text": "You post like an authority on {chainsActive} chains and hold {netWorth}. The confidence and the balance have never met.",
+    "slots": [
+     "netWorth",
+     "chainsActive"
+    ],
+    "device": "sharpest reframe",
+    "weight": 7,
+    "tier": "brutal",
+    "archetypes": [
+     "small_wallet"
+    ]
+   },
+   {
+    "text": "{netWorth} across {chainsActive} chains. Your opinions are fully funded and your positions are not.",
+    "slots": [
+     "netWorth",
+     "chainsActive"
+    ],
+    "device": "humiliation by accuracy",
+    "weight": 7,
+    "tier": "brutal",
+    "archetypes": [
+     "small_wallet"
+    ]
+   },
+   {
+    "text": "{netWorth} on {chainsActive} chains. Loud in the group chat, quiet on the explorer, and only one of those is measured.",
+    "slots": [
+     "netWorth",
+     "chainsActive"
+    ],
+    "device": "kill shot",
+    "weight": 7,
+    "tier": "brutal",
+    "archetypes": []
+   },
+   {
+    "text": "{chainsActive} chains, {netWorth}, and a voice that carries. The wallet is the only thing here that was never leveraged.",
+    "slots": [
+     "netWorth",
+     "chainsActive"
+    ],
+    "device": "escalation",
+    "weight": 7,
+    "tier": "brutal",
+    "archetypes": []
+   },
+   {
+    "text": "{netWorth} across {chainsActive} chains. The gas to gather it would cost more than the gathering.",
+    "slots": [
+     "netWorth",
+     "chainsActive"
+    ],
+    "device": "sharpest reframe",
+    "weight": 7,
+    "tier": "gentle",
+    "archetypes": [
+     "small_wallet"
+    ]
+   },
+   {
+    "text": "You have wallets on {chainsActive} chains and {netWorth} between them. Spread wide, thin everywhere.",
+    "slots": [
+     "netWorth",
+     "chainsActive"
+    ],
+    "device": "bureaucratic misregistration",
+    "weight": 7,
+    "tier": "gentle",
+    "archetypes": []
+   },
+   {
+    "text": "Total on chain: {netWorth}, spread over {chainsActive} chains. You have the distribution of a whale and the balance of a receipt.",
+    "slots": [
+     "netWorth",
+     "chainsActive"
+    ],
+    "device": "understatement",
+    "weight": 7,
+    "tier": "gentle",
+    "archetypes": [
+     "small_wallet"
+    ]
+   },
+   {
+    "text": "{netWorth} on {chainsActive} chains. Multi chain presence, achieved without the inconvenience of value.",
+    "slots": [
+     "netWorth",
+     "chainsActive"
+    ],
+    "device": "false respect",
+    "weight": 7,
+    "tier": "gentle",
+    "archetypes": []
+   }
+  ],
+  "thin": [
+   {
+    "text": "{years} years in this market and {netWorth} to show for it. This is what you built, and you built it slowly.",
+    "slots": [
+     "netWorth",
+     "years"
+    ],
+    "device": "legacy reframe",
+    "weight": 6,
+    "tier": "brutal",
+    "archetypes": [
+     "veteran"
+    ]
+   },
+   {
+    "text": "After {years} years the balance is {netWorth}. You have been through every cycle and kept none of them.",
+    "slots": [
+     "netWorth",
+     "years"
+    ],
+    "device": "understatement",
+    "weight": 6,
+    "tier": "brutal",
+    "archetypes": [
+     "veteran"
+    ]
+   },
+   {
+    "text": "{years} years on chain, {netWorth} on the record. You are not a veteran, you are a witness who paid for the tickets.",
+    "slots": [
+     "netWorth",
+     "years"
+    ],
+    "device": "kill shot",
+    "weight": 6,
+    "tier": "brutal",
+    "archetypes": [
+     "veteran",
+     "small_wallet"
+    ]
+   },
+   {
+    "text": "{years} years of being early and {netWorth} of being wrong. Only one of those was supposed to compound.",
+    "slots": [
+     "netWorth",
+     "years"
+    ],
+    "device": "kill shot",
+    "weight": 6,
+    "tier": "brutal",
+    "archetypes": []
+   },
+   {
+    "text": "{years} years on chain and {netWorth} to show for it. Time is the only thing you have actually held.",
+    "slots": [
+     "netWorth",
+     "years"
+    ],
+    "device": "sharpest reframe",
+    "weight": 6,
+    "tier": "gentle",
+    "archetypes": [
+     "small_wallet",
+     "veteran"
+    ]
+   },
+   {
+    "text": "After {years} years the balance is {netWorth}. You have been early to everything except a result.",
+    "slots": [
+     "netWorth",
+     "years"
+    ],
+    "device": "understatement",
+    "weight": 6,
+    "tier": "gentle",
+    "archetypes": [
+     "veteran"
+    ]
+   },
+   {
+    "text": "{years} years in the market, {netWorth} on chain. You are not an investor, you are a witness with a wallet.",
+    "slots": [
+     "netWorth",
+     "years"
+    ],
+    "device": "false respect",
+    "weight": 6,
+    "tier": "gentle",
+    "archetypes": [
+     "veteran",
+     "small_wallet"
+    ]
+   }
+  ],
+  "dust": [
+   {
+    "text": "{dustCount} of your {tokenCount} tokens are under a dollar, {dustUsd} combined. That is not a portfolio, it is abandoned tabs.",
+    "slots": [
+     "dustCount",
+     "tokenCount",
+     "dustUsd"
+    ],
+    "device": "sharpest reframe",
+    "weight": 7,
+    "tier": "brutal",
+    "archetypes": [
+     "dust_collector"
+    ]
+   },
+   {
+    "text": "{dustCount} tokens under a dollar out of {tokenCount}. Nobody else owns this many and it is not a coincidence.",
+    "slots": [
+     "dustCount",
+     "tokenCount",
+     "dustUsd"
+    ],
+    "device": "kill shot",
+    "weight": 7,
+    "tier": "brutal",
+    "archetypes": [
+     "dust_collector"
+    ]
+   },
+   {
+    "text": "{dustCount} sub dollar tokens. {tokenCount} positions. {dustUsd} of value. Two of those numbers are doing all the work.",
+    "slots": [
+     "dustCount",
+     "tokenCount",
+     "dustUsd"
+    ],
+    "device": "rule of three",
+    "weight": 7,
+    "tier": "brutal",
+    "archetypes": [
+     "dust_collector",
+     "whale_no_taste"
+    ]
+   },
+   {
+    "text": "{dustUsd} of combined value across {dustCount} tokens. You have diversified into nothing, thoroughly, at {tokenCount} positions of scale.",
+    "slots": [
+     "dustCount",
+     "tokenCount",
+     "dustUsd"
+    ],
+    "device": "escalation",
+    "weight": 7,
+    "tier": "brutal",
+    "archetypes": []
+   },
+   {
+    "text": "{dustCount} of your {tokenCount} tokens are worth less than a coffee. Combined they reach {dustUsd}. A coffee, at airport prices.",
+    "slots": [
+     "dustCount",
+     "tokenCount",
+     "dustUsd"
+    ],
+    "device": "sharpest reframe",
+    "weight": 7,
+    "tier": "medium",
+    "archetypes": [
+     "dust_collector"
+    ]
+   },
+   {
+    "text": "You hold {dustCount} tokens under a dollar out of {tokenCount}. Liquidated they come to {dustUsd}. The gas would ask for more.",
+    "slots": [
+     "dustCount",
+     "tokenCount",
+     "dustUsd"
+    ],
+    "device": "understatement",
+    "weight": 7,
+    "tier": "gentle",
+    "archetypes": []
+   },
+   {
+    "text": "{dustCount} of {tokenCount} positions are below one dollar, {dustUsd} in aggregate. Your portfolio has a rounding error with a subportfolio.",
+    "slots": [
+     "dustCount",
+     "tokenCount",
+     "dustUsd"
+    ],
+    "device": "bureaucratic misregistration",
+    "weight": 7,
+    "tier": "medium",
+    "archetypes": [
+     "dust_collector"
+    ]
+   },
+   {
+    "text": "{dustCount} tokens under a dollar. {tokenCount} positions total. {dustUsd} of combined value. Two of those numbers are doing all the work.",
+    "slots": [
+     "dustCount",
+     "tokenCount",
+     "dustUsd"
+    ],
+    "device": "escalation",
+    "weight": 7,
+    "tier": "savage",
+    "archetypes": [
+     "dust_collector",
+     "whale_no_taste"
+    ]
+   }
+  ],
+  "unpriced": [
+   {
+    "text": "{unpricedCount} of your {tokenCount} tokens have no price. You do not own them, you are the last address that touched them.",
+    "slots": [
+     "unpricedCount",
+     "tokenCount"
+    ],
+    "device": "sharpest reframe",
+    "weight": 6,
+    "tier": "brutal",
+    "archetypes": [
+     "dust_collector"
+    ]
+   },
+   {
+    "text": "No market exists for {unpricedCount} of your {tokenCount} tokens. You have been right about them for years, in private.",
+    "slots": [
+     "unpricedCount",
+     "tokenCount"
+    ],
+    "device": "kill shot",
+    "weight": 6,
+    "tier": "brutal",
+    "archetypes": [
+     "dust_collector"
+    ]
+   },
+   {
+    "text": "{unpricedCount} of {tokenCount} tokens are unquotable. That is not a long term hold, that is a drawer you never open.",
+    "slots": [
+     "unpricedCount",
+     "tokenCount"
+    ],
+    "device": "understatement",
+    "weight": 6,
+    "tier": "brutal",
+    "archetypes": []
+   },
+   {
+    "text": "{unpricedCount} of your {tokenCount} tokens have nobody bidding. A price is a judgement and the market has withheld yours.",
+    "slots": [
+     "unpricedCount",
+     "tokenCount"
+    ],
+    "device": "humiliation by accuracy",
+    "weight": 6,
+    "tier": "brutal",
+    "archetypes": [
+     "dust_collector"
+    ]
+   },
+   {
+    "text": "{unpricedCount} of your {tokenCount} tokens have no price. Cheap needs a buyer. Unpriced needs nobody at all.",
+    "slots": [
+     "unpricedCount",
+     "tokenCount"
+    ],
+    "device": "sharpest reframe",
+    "weight": 6,
+    "tier": "medium",
+    "archetypes": [
+     "dust_collector"
+    ]
+   },
+   {
+    "text": "No quote exists for {unpricedCount} of your {tokenCount} tokens. A market that never opened cannot technically close.",
+    "slots": [
+     "unpricedCount",
+     "tokenCount"
+    ],
+    "device": "understatement",
+    "weight": 6,
+    "tier": "gentle",
+    "archetypes": []
+   },
+   {
+    "text": "{unpricedCount} of your {tokenCount} tokens are unquoted. That is not a long term hold, that is an absence of buyers with a ticker attached.",
+    "slots": [
+     "unpricedCount",
+     "tokenCount"
+    ],
+    "device": "sharpest reframe",
+    "weight": 6,
+    "tier": "savage",
+    "archetypes": [
+     "dust_collector"
+    ]
+   }
+  ],
+  "spam_usd": [
+   {
+    "text": "{spamUsd} arrived unsolicited and beat the {netWorth} you researched. Your best picks were made by strangers.",
+    "slots": [
+     "spamUsd",
+     "netWorth"
+    ],
+    "device": "sharpest reframe",
+    "weight": 6,
+    "tier": "brutal",
+    "archetypes": [
+     "spam_magnet"
+    ]
+   },
+   {
+    "text": "Airdrops nobody asked for: {spamUsd}. Everything you chose yourself: {netWorth}. The market shares on merit.",
+    "slots": [
+     "spamUsd",
+     "netWorth"
+    ],
+    "device": "humiliation by accuracy",
+    "weight": 6,
+    "tier": "brutal",
+    "archetypes": [
+     "spam_magnet"
+    ]
+   },
+   {
+    "text": "Free tokens worth {spamUsd}, chosen tokens worth {netWorth}. You are the only participant losing to junk mail.",
+    "slots": [
+     "spamUsd",
+     "netWorth"
+    ],
+    "device": "kill shot",
+    "weight": 6,
+    "tier": "brutal",
+    "archetypes": [
+     "spam_magnet",
+     "degen"
+    ]
+   },
+   {
+    "text": "{spamUsd} in tokens that came to you, {netWorth} in tokens you went to. The effort went the wrong way.",
+    "slots": [
+     "spamUsd",
+     "netWorth"
+    ],
+    "device": "escalation",
+    "weight": 6,
+    "tier": "brutal",
+    "archetypes": [
+     "spam_magnet"
+    ]
+   },
+   {
+    "text": "The airdrops you never asked for are worth {spamUsd}. What you deliberately bought is worth {netWorth}.",
+    "slots": [
+     "spamUsd",
+     "netWorth"
+    ],
+    "device": "sharpest reframe",
+    "weight": 6,
+    "tier": "medium",
+    "archetypes": [
+     "spam_magnet"
+    ]
+   },
+   {
+    "text": "Your unsolicited tokens total {spamUsd}. Your researched positions total {netWorth}. Somebody did the sending better.",
+    "slots": [
+     "spamUsd",
+     "netWorth"
+    ],
+    "device": "understatement",
+    "weight": 6,
+    "tier": "gentle",
+    "archetypes": [
+     "spam_magnet",
+     "small_wallet"
+    ]
+   },
+   {
+    "text": "Free tokens: {spamUsd}. Paid tokens: {netWorth}. Initiative: still pending.",
+    "slots": [
+     "spamUsd",
+     "netWorth"
+    ],
+    "device": "rule of three",
+    "weight": 6,
+    "tier": "medium",
+    "archetypes": [
+     "spam_magnet"
+    ]
+   },
+   {
+    "text": "{spamUsd} of your wallet arrived without your consent and outperformed the {netWorth} you chose yourself.",
+    "slots": [
+     "spamUsd",
+     "netWorth"
+    ],
+    "device": "false respect",
+    "weight": 6,
+    "tier": "savage",
+    "archetypes": [
+     "degen"
+    ]
+   }
+  ],
+  "dead_holders": [
+   {
+    "text": "{sym} has {holders} holders and {usd} of it is yours. You are not a member of a community, you are a remaining field.",
+    "slots": [
+     "sym",
+     "holders",
+     "usd"
+    ],
+    "device": "sharpest reframe",
+    "weight": 8,
+    "tier": "brutal",
+    "archetypes": [
+     "degen"
+    ]
+   },
+   {
+    "text": "{holders} holders of {sym}, {usd} of them are you. That is not a community, that is a waiting room for a closed project.",
+    "slots": [
+     "sym",
+     "holders",
+     "usd"
+    ],
+    "device": "kill shot",
+    "weight": 8,
+    "tier": "brutal",
+    "archetypes": [
+     "degen"
+    ]
+   },
+   {
+    "text": "{sym}, {holders} holders, {usd} of your money. The token is dead, the room is quiet, and you are still posting.",
+    "slots": [
+     "sym",
+     "holders",
+     "usd"
+    ],
+    "device": "escalation",
+    "weight": 8,
+    "tier": "brutal",
+    "archetypes": []
+   },
+   {
+    "text": "{sym} lists {holders} holders including you at {usd}. Nobody in that number is calling you back.",
+    "slots": [
+     "sym",
+     "holders",
+     "usd"
+    ],
+    "device": "humiliation by accuracy",
+    "weight": 8,
+    "tier": "brutal",
+    "archetypes": [
+     "small_wallet"
+    ]
+   },
+   {
+    "text": "You hold {sym} with {holders} holders including you, {usd} deep. That is not a community, that is a group chat you cannot leave.",
+    "slots": [
+     "sym",
+     "holders",
+     "usd"
+    ],
+    "device": "sharpest reframe",
+    "weight": 8,
+    "tier": "medium",
+    "archetypes": [
+     "degen"
+    ]
+   },
+   {
+    "text": "{sym} has {holders} holders and one of them is you, holding {usd} of it. Small rooms are intimate.",
+    "slots": [
+     "sym",
+     "holders",
+     "usd"
+    ],
+    "device": "understatement",
+    "weight": 8,
+    "tier": "gentle",
+    "archetypes": [
+     "small_wallet"
+    ]
+   },
+   {
+    "text": "{sym}: {holders} holders, {usd} of your money, no exit. Two of those are facts about the token. One is about your timing.",
+    "slots": [
+     "sym",
+     "holders",
+     "usd"
+    ],
+    "device": "rule of three",
+    "weight": 8,
+    "tier": "savage",
+    "archetypes": [
+     "degen"
+    ]
+   },
+   {
+    "text": "Holder register for {sym}: {holders} entries. Your {usd} makes you a founding member of something nobody founded.",
+    "slots": [
+     "sym",
+     "holders",
+     "usd"
+    ],
+    "device": "bureaucratic misregistration",
+    "weight": 8,
+    "tier": "medium",
+    "archetypes": []
+   }
+  ],
+  "fake_major": [
+   {
+    "text": "Your {sym} is the copy. Same ticker, wrong contract, and you were the one who did not check.",
+    "slots": [
+     "sym"
+    ],
+    "device": "kill shot",
+    "weight": 7,
+    "tier": "brutal",
+    "archetypes": [
+     "degen"
+    ]
+   },
+   {
+    "text": "That {sym} is an imitation. You bought the impersonation, which is the only part of it that was ever real.",
+    "slots": [
+     "sym"
+    ],
+    "device": "humiliation by accuracy",
+    "weight": 7,
+    "tier": "brutal",
+    "archetypes": []
+   },
+   {
+    "text": "The {sym} in your wallet is counterfeit. It cost you four seconds to verify and you spent them on believing.",
+    "slots": [
+     "sym"
+    ],
+    "device": "sharpest reframe",
+    "weight": 7,
+    "tier": "brutal",
+    "archetypes": [
+     "degen"
+    ]
+   },
+   {
+    "text": "Contract check on {sym}: signature invalid. You acquired the forgery and filed it as a thesis.",
+    "slots": [
+     "sym"
+    ],
+    "device": "bureaucratic misregistration",
+    "weight": 7,
+    "tier": "brutal",
+    "archetypes": []
+   },
+   {
+    "text": "Your {sym} is a forgery. Same ticker, different contract address, and you bought the one with the wrong address.",
+    "slots": [
+     "sym"
+    ],
+    "device": "sharpest reframe",
+    "weight": 7,
+    "tier": "medium",
+    "archetypes": [
+     "degen"
+    ]
+   },
+   {
+    "text": "That position in {sym} is a copy. The name matched the original. Very little else did.",
+    "slots": [
+     "sym"
+    ],
+    "device": "understatement",
+    "weight": 7,
+    "tier": "gentle",
+    "archetypes": []
+   },
+   {
+    "text": "Contract review on {sym}: counterfeit. You acquired the impersonation and paid for it.",
+    "slots": [
+     "sym"
+    ],
+    "device": "bureaucratic misregistration",
+    "weight": 7,
+    "tier": "savage",
+    "archetypes": [
+     "degen"
+    ]
+   }
+  ],
+  "concentration": [
+   {
+    "text": "{topSym} is {topPct}% of everything you have. That is not a bet, that is a personality with a ticker.",
+    "slots": [
+     "topPct",
+     "topSym",
+     "netWorth"
+    ],
+    "device": "kill shot",
+    "weight": 8,
+    "tier": "brutal",
+    "archetypes": [
+     "whale_no_taste",
+     "degen"
+    ]
+   },
+   {
+    "text": "{topPct}% of your {netWorth} sits in {topSym}. You are not concentrated, you are committed to one mistake at scale.",
+    "slots": [
+     "topPct",
+     "topSym",
+     "netWorth"
+    ],
+    "device": "sharpest reframe",
+    "weight": 8,
+    "tier": "brutal",
+    "archetypes": []
+   },
+   {
+    "text": "One position, {topPct}%, {topSym}, against {netWorth}. The rest of the wallet exists to make this look intentional.",
+    "slots": [
+     "topPct",
+     "topSym",
+     "netWorth"
+    ],
+    "device": "kill shot",
+    "weight": 8,
+    "tier": "brutal",
+    "archetypes": []
+   },
+   {
+    "text": "{topSym} holds {topPct}% of your {netWorth}. You call it conviction because you are out of arguments.",
+    "slots": [
+     "topPct",
+     "topSym",
+     "netWorth"
+    ],
+    "device": "humiliation by accuracy",
+    "weight": 8,
+    "tier": "brutal",
+    "archetypes": [
+     "whale_no_taste"
+    ]
+   },
+   {
+    "text": "{topSym} is {topPct}% of your {netWorth}. That is not a portfolio, that is one position and some scenery.",
+    "slots": [
+     "topPct",
+     "topSym",
+     "netWorth"
+    ],
+    "device": "sharpest reframe",
+    "weight": 8,
+    "tier": "savage",
+    "archetypes": [
+     "whale_no_taste",
+     "degen"
+    ]
+   },
+   {
+    "text": "{topPct}% of your {netWorth} sits in {topSym}. You call it conviction. The engine files it as a single point of failure.",
+    "slots": [
+     "topPct",
+     "topSym",
+     "netWorth"
+    ],
+    "device": "false respect",
+    "weight": 8,
+    "tier": "medium",
+    "archetypes": []
+   },
+   {
+    "text": "You are {topPct}% {topSym}, against a total of {netWorth}. The rest of the wallet is decoration on a single bet.",
+    "slots": [
+     "topPct",
+     "topSym",
+     "netWorth"
+    ],
+    "device": "understatement",
+    "weight": 8,
+    "tier": "gentle",
+    "archetypes": [
+     "small_wallet"
+    ]
+   }
+  ],
+  "micro_top": [
+   {
+    "text": "Your flagship is {topUsd} of {topSym}, a token whose entire market is {topMcap}. You are not early, you are the market.",
+    "slots": [
+     "topUsd",
+     "topMcap",
+     "topSym"
+    ],
+    "device": "kill shot",
+    "weight": 7,
+    "tier": "brutal",
+    "archetypes": [
+     "degen"
+    ]
+   },
+   {
+    "text": "{topUsd} in {topSym} against a total cap of {topMcap}. You do not hold a share, you hold the float.",
+    "slots": [
+     "topUsd",
+     "topMcap",
+     "topSym"
+    ],
+    "device": "sharpest reframe",
+    "weight": 7,
+    "tier": "brutal",
+    "archetypes": [
+     "degen",
+     "whale_no_taste"
+    ]
+   },
+   {
+    "text": "Your top position is {topUsd} of {topSym}. The whole token is worth {topMcap} and nobody noticed you enter.",
+    "slots": [
+     "topUsd",
+     "topMcap",
+     "topSym"
+    ],
+    "device": "humiliation by accuracy",
+    "weight": 7,
+    "tier": "brutal",
+    "archetypes": []
+   },
+   {
+    "text": "{topUsd} of {topSym}, out of a {topMcap} market. You are the largest thing happening to a rounding error.",
+    "slots": [
+     "topUsd",
+     "topMcap",
+     "topSym"
+    ],
+    "device": "escalation",
+    "weight": 7,
+    "tier": "brutal",
+    "archetypes": []
+   },
+   {
+    "text": "Your largest position is {topUsd} of {topSym}, a token with a {topMcap} market cap. You are not early, you are the float.",
+    "slots": [
+     "topUsd",
+     "topMcap",
+     "topSym"
+    ],
+    "device": "sharpest reframe",
+    "weight": 7,
+    "tier": "savage",
+    "archetypes": [
+     "degen",
+     "whale_no_taste"
+    ]
+   },
+   {
+    "text": "{topUsd} of {topSym} is your flagship position. Its entire market cap is {topMcap}. You are a measurable share of a rounding error.",
+    "slots": [
+     "topUsd",
+     "topMcap",
+     "topSym"
+    ],
+    "device": "understatement",
+    "weight": 7,
+    "tier": "medium",
+    "archetypes": []
+   },
+   {
+    "text": "You put {topUsd} into {topSym}. All of {topSym} is worth {topMcap}. You are a named shareholder in a rounding error.",
+    "slots": [
+     "topUsd",
+     "topMcap",
+     "topSym"
+    ],
+    "device": "false respect",
+    "weight": 7,
+    "tier": "savage",
+    "archetypes": [
+     "degen"
+    ]
+   }
+  ],
+  "top_loser": [
+   {
+    "text": "{sym} is down {chg7}% in a week, {lossUsd} gone out of {netWorth}. You did not sell, because that needs a decision.",
+    "slots": [
+     "sym",
+     "chg7",
+     "lossUsd",
+     "netWorth"
+    ],
+    "device": "kill shot",
+    "weight": 7,
+    "tier": "brutal",
+    "archetypes": [
+     "degen"
+    ]
+   },
+   {
+    "text": "{sym} fell {chg7}% this week and took {lossUsd} with it. Out of {netWorth}. You are still holding, which is generous.",
+    "slots": [
+     "sym",
+     "chg7",
+     "lossUsd",
+     "netWorth"
+    ],
+    "device": "humiliation by accuracy",
+    "weight": 7,
+    "tier": "brutal",
+    "archetypes": [
+     "degen"
+    ]
+   },
+   {
+    "text": "Weekly filing for {sym}: {chg7}% lower, {lossUsd} lost against {netWorth}. Cause of loss: the original purchase.",
+    "slots": [
+     "sym",
+     "chg7",
+     "lossUsd",
+     "netWorth"
+    ],
+    "device": "bureaucratic misregistration",
+    "weight": 7,
+    "tier": "brutal",
+    "archetypes": []
+   },
+   {
+    "text": "{chg7}% off {sym} in seven days, {lossUsd} of a {netWorth} wallet. The losing is running faster than the holding.",
+    "slots": [
+     "sym",
+     "chg7",
+     "lossUsd",
+     "netWorth"
+    ],
+    "device": "understatement",
+    "weight": 7,
+    "tier": "brutal",
+    "archetypes": []
+   },
+   {
+    "text": "{sym} is down {chg7}% in seven days. That is {lossUsd} out of your {netWorth}. A week is a long time to lose {lossUsd}.",
+    "slots": [
+     "sym",
+     "chg7",
+     "lossUsd",
+     "netWorth"
+    ],
+    "device": "sharpest reframe",
+    "weight": 7,
+    "tier": "medium",
+    "archetypes": [
+     "degen"
+    ]
+   },
+   {
+    "text": "{chg7}% off in seven days on {sym}, costing {lossUsd}. Your total is {netWorth}. The losing is running faster than the holding.",
+    "slots": [
+     "sym",
+     "chg7",
+     "lossUsd",
+     "netWorth"
+    ],
+    "device": "understatement",
+    "weight": 7,
+    "tier": "gentle",
+    "archetypes": [
+     "small_wallet"
+    ]
+   },
+   {
+    "text": "Weekly report for {sym}: down {chg7}%. Loss recorded at {lossUsd} against {netWorth}. Cause of entry: the purchase.",
+    "slots": [
+     "sym",
+     "chg7",
+     "lossUsd",
+     "netWorth"
+    ],
+    "device": "bureaucratic misregistration",
+    "weight": 7,
+    "tier": "savage",
+    "archetypes": [
+     "degen"
+    ]
+   }
+  ],
+  "stable_dust": [
+   {
+    "text": "{stableUsd} in stablecoins against {netWorth}. Dry powder, in the sense that there is too little of it to get wet.",
+    "slots": [
+     "stableUsd",
+     "netWorth"
+    ],
+    "device": "sharpest reframe",
+    "weight": 6,
+    "tier": "brutal",
+    "archetypes": [
+     "no_stables"
+    ]
+   },
+   {
+    "text": "Admirable risk management: {stableUsd} stable, {netWorth} exposed. One of those numbers is doing its job.",
+    "slots": [
+     "stableUsd",
+     "netWorth"
+    ],
+    "device": "false respect",
+    "weight": 6,
+    "tier": "brutal",
+    "archetypes": [
+     "whale_no_taste"
+    ]
+   },
+   {
+    "text": "Your cash buffer is {stableUsd} on a wallet of {netWorth}. You have prepared for a very small emergency.",
+    "slots": [
+     "stableUsd",
+     "netWorth"
+    ],
+    "device": "kill shot",
+    "weight": 6,
+    "tier": "brutal",
+    "archetypes": []
+   },
+   {
+    "text": "{stableUsd} held back out of {netWorth}. You are not hedging, you are carrying change into a casino.",
+    "slots": [
+     "stableUsd",
+     "netWorth"
+    ],
+    "device": "understatement",
+    "weight": 6,
+    "tier": "brutal",
+    "archetypes": []
+   },
+   {
+    "text": "Your stablecoin position is {stableUsd} against a portfolio of {netWorth}. That is not a cash buffer, that is a tip.",
+    "slots": [
+     "stableUsd",
+     "netWorth"
+    ],
+    "device": "sharpest reframe",
+    "weight": 5,
+    "tier": "medium",
+    "archetypes": [
+     "no_stables"
+    ]
+   },
+   {
+    "text": "{stableUsd} in stables out of {netWorth}. You have hedged like somebody expecting a very small emergency.",
+    "slots": [
+     "stableUsd",
+     "netWorth"
+    ],
+    "device": "understatement",
+    "weight": 5,
+    "tier": "gentle",
+    "archetypes": []
+   },
+   {
+    "text": "You hold {stableUsd} stable and {netWorth} volatile. Dry powder, described generously.",
+    "slots": [
+     "stableUsd",
+     "netWorth"
+    ],
+    "device": "false respect",
+    "weight": 5,
+    "tier": "savage",
+    "archetypes": [
+     "whale_no_taste"
+    ]
+   }
+  ],
+  "no_stables": [
+   {
+    "text": "Zero stablecoins against {netWorth}. You are fully exposed and completely calm, which is the worse combination.",
+    "slots": [
+     "netWorth"
+    ],
+    "device": "kill shot",
+    "weight": 6,
+    "tier": "brutal",
+    "archetypes": [
+     "no_stables",
+     "degen"
+    ]
+   },
+   {
+    "text": "{netWorth} on chain and not one stablecoin. You call it being invested. The engine files it as having no options.",
+    "slots": [
+     "netWorth"
+    ],
+    "device": "sharpest reframe",
+    "weight": 6,
+    "tier": "brutal",
+    "archetypes": [
+     "no_stables"
+    ]
+   },
+   {
+    "text": "No stables on {netWorth}. Every position is a bet and none of them can be closed on terms you chose.",
+    "slots": [
+     "netWorth"
+    ],
+    "device": "humiliation by accuracy",
+    "weight": 6,
+    "tier": "brutal",
+    "archetypes": [
+     "no_stables"
+    ]
+   },
+   {
+    "text": "{netWorth}, zero cash, one direction. That is not a thesis, that is a decision you cannot revisit.",
+    "slots": [
+     "netWorth"
+    ],
+    "device": "escalation",
+    "weight": 6,
+    "tier": "brutal",
+    "archetypes": [
+     "no_stables",
+     "degen"
+    ]
+   },
+   {
+    "text": "Zero stablecoins. {netWorth} on chain and no cash. You are fully exposed and apparently rehearsed.",
+    "slots": [
+     "netWorth"
+    ],
+    "device": "sharpest reframe",
+    "weight": 6,
+    "tier": "savage",
+    "archetypes": [
+     "no_stables",
+     "degen"
+    ]
+   },
+   {
+    "text": "No stablecoins at all, against {netWorth}. You have built a position with no brakes and no stated plan for them.",
+    "slots": [
+     "netWorth"
+    ],
+    "device": "understatement",
+    "weight": 6,
+    "tier": "gentle",
+    "archetypes": [
+     "small_wallet"
+    ]
+   },
+   {
+    "text": "{netWorth} on chain, zero stables, one direction. That is a thesis with no second act.",
+    "slots": [
+     "netWorth"
+    ],
+    "device": "rule of three",
+    "weight": 6,
+    "tier": "medium",
+    "archetypes": [
+     "no_stables"
+    ]
+   }
+  ],
+  "gas_burner_abs": [
+   {
+    "text": "{gasUsd} in gas to end up holding {netWorth}. You have been paying rent on a position you do not own.",
+    "slots": [
+     "gasUsd",
+     "netWorth"
+    ],
+    "device": "kill shot",
+    "weight": 9,
+    "tier": "brutal",
+    "archetypes": [
+     "gas_burner",
+     "degen"
+    ]
+   },
+   {
+    "text": "Lifetime fees: {gasUsd}. Final holdings: {netWorth}. You funded the network's business, not your own.",
+    "slots": [
+     "gasUsd",
+     "netWorth"
+    ],
+    "device": "humiliation by accuracy",
+    "weight": 9,
+    "tier": "brutal",
+    "archetypes": [
+     "gas_burner"
+    ]
+   },
+   {
+    "text": "You paid {gasUsd} in fees to hold {netWorth}. The validators remember you. Nobody else does.",
+    "slots": [
+     "gasUsd",
+     "netWorth"
+    ],
+    "device": "false respect",
+    "weight": 9,
+    "tier": "brutal",
+    "archetypes": []
+   },
+   {
+    "text": "{gasUsd} burned in gas for {netWorth} of result. You are the customer this industry was designed around.",
+    "slots": [
+     "gasUsd",
+     "netWorth"
+    ],
+    "device": "sharpest reframe",
+    "weight": 9,
+    "tier": "brutal",
+    "archetypes": [
+     "gas_burner",
+     "degen"
+    ]
+   },
+   {
+    "text": "You have paid {gasUsd} in gas to end up holding {netWorth}. The journey was the entire product.",
+    "slots": [
+     "gasUsd",
+     "netWorth"
+    ],
+    "device": "sharpest reframe",
+    "weight": 9,
+    "tier": "savage",
+    "archetypes": [
+     "gas_burner",
+     "degen"
+    ]
+   },
+   {
+    "text": "You have paid {gasUsd} in gas to hold {netWorth}. You did not buy assets, you rented blockspace at retail.",
+    "slots": [
+     "gasUsd",
+     "netWorth"
+    ],
+    "device": "false respect",
+    "weight": 9,
+    "tier": "medium",
+    "archetypes": []
+   },
+   {
+    "text": "{gasUsd} paid in network fees to arrive at {netWorth}. You funded the chain, not the portfolio.",
+    "slots": [
+     "gasUsd",
+     "netWorth"
+    ],
+    "device": "understatement",
+    "weight": 9,
+    "tier": "gentle",
+    "archetypes": []
+   },
+   {
+    "text": "Lifetime gas paid: {gasUsd}. Resulting holdings: {netWorth}. The validators speak of you warmly.",
+    "slots": [
+     "gasUsd",
+     "netWorth"
+    ],
+    "device": "sharpest reframe",
+    "weight": 9,
+    "tier": "medium",
+    "archetypes": [
+     "gas_burner"
+    ]
+   }
+  ],
+  "gas_burner_pct": [
+   {
+    "text": "Your gas is {gasPct}% of your net worth. {gasUsd} paid to keep {netWorth}. That is a hobby with fees attached.",
+    "slots": [
+     "gasUsd",
+     "gasPct",
+     "netWorth"
+    ],
+    "device": "kill shot",
+    "weight": 8,
+    "tier": "brutal",
+    "archetypes": [
+     "gas_burner"
+    ]
+   },
+   {
+    "text": "{gasPct}% of everything you have went to gas. {gasUsd} for {netWorth}. The chain thanks you personally.",
+    "slots": [
+     "gasUsd",
+     "gasPct",
+     "netWorth"
+    ],
+    "device": "humiliation by accuracy",
+    "weight": 8,
+    "tier": "brutal",
+    "archetypes": []
+   },
+   {
+    "text": "Fee schedule: {gasPct}% of assets, {gasUsd} on {netWorth}. You have paid a broker who only ever takes.",
+    "slots": [
+     "gasUsd",
+     "gasPct",
+     "netWorth"
+    ],
+    "device": "bureaucratic misregistration",
+    "weight": 8,
+    "tier": "brutal",
+    "archetypes": [
+     "gas_burner"
+    ]
+   },
+   {
+    "text": "Gas at {gasPct}% of {netWorth}, {gasUsd} in total. You are not a trader, you are a toll booth that pays itself.",
+    "slots": [
+     "gasUsd",
+     "gasPct",
+     "netWorth"
+    ],
+    "device": "sharpest reframe",
+    "weight": 8,
+    "tier": "brutal",
+    "archetypes": []
+   },
+   {
+    "text": "Your gas is {gasPct}% of your net worth. {gasUsd} paid to keep {netWorth}. That ratio is a hobby, not a strategy.",
+    "slots": [
+     "gasUsd",
+     "gasPct",
+     "netWorth"
+    ],
+    "device": "sharpest reframe",
+    "weight": 8,
+    "tier": "savage",
+    "archetypes": [
+     "gas_burner"
+    ]
+   },
+   {
+    "text": "{gasUsd} in fees equals {gasPct}% of the {netWorth} you still have. You tipped a protocol that never asked.",
+    "slots": [
+     "gasUsd",
+     "gasPct",
+     "netWorth"
+    ],
+    "device": "understatement",
+    "weight": 8,
+    "tier": "medium",
+    "archetypes": []
+   },
+   {
+    "text": "Fee disclosure: {gasPct}% of assets, {gasUsd} on {netWorth}. You have paid a broker who provides no advice and takes no calls.",
+    "slots": [
+     "gasUsd",
+     "gasPct",
+     "netWorth"
+    ],
+    "device": "bureaucratic misregistration",
+    "weight": 8,
+    "tier": "savage",
+    "archetypes": [
+     "gas_burner"
+    ]
+   }
+  ],
+  "churn": [
+   {
+    "text": "{txCount} transactions averaging {avgUsd} to end at {netWorth}. You have the activity of a market maker and no market.",
+    "slots": [
+     "txCount",
+     "netWorth",
+     "avgUsd"
+    ],
+    "device": "kill shot",
+    "weight": 6,
+    "tier": "brutal",
+    "archetypes": [
+     "churner",
+     "degen"
+    ]
+   },
+   {
+    "text": "{txCount} moves at {avgUsd} apiece, final total {netWorth}. You are not trading, you are keeping a pulse on chain.",
+    "slots": [
+     "txCount",
+     "netWorth",
+     "avgUsd"
+    ],
+    "device": "humiliation by accuracy",
+    "weight": 6,
+    "tier": "brutal",
+    "archetypes": [
+     "churner"
+    ]
+   },
+   {
+    "text": "{txCount} transactions. {avgUsd} average. {netWorth} final. The volume is real and the outcome is a rounding error.",
+    "slots": [
+     "txCount",
+     "netWorth",
+     "avgUsd"
+    ],
+    "device": "escalation",
+    "weight": 6,
+    "tier": "brutal",
+    "archetypes": [
+     "churner",
+     "degen"
+    ]
+   },
+   {
+    "text": "{txCount} on chain actions to arrive at {netWorth}. You mistook movement for progress and the explorer kept score.",
+    "slots": [
+     "txCount",
+     "netWorth",
+     "avgUsd"
+    ],
+    "device": "sharpest reframe",
+    "weight": 6,
+    "tier": "brutal",
+    "archetypes": []
+   },
+   {
+    "text": "{txCount} transactions at an average of {avgUsd} to arrive at {netWorth}. Considerable effort in service of very little.",
+    "slots": [
+     "txCount",
+     "netWorth",
+     "avgUsd"
+    ],
+    "device": "sharpest reframe",
+    "weight": 6,
+    "tier": "medium",
+    "archetypes": [
+     "churner"
+    ]
+   },
+   {
+    "text": "{txCount} on chain moves averaging {avgUsd}, ending at {netWorth}. You are not trading, you are pacing.",
+    "slots": [
+     "txCount",
+     "netWorth",
+     "avgUsd"
+    ],
+    "device": "understatement",
+    "weight": 6,
+    "tier": "gentle",
+    "archetypes": []
+   },
+   {
+    "text": "{txCount} transactions. Average size {avgUsd}. Final total {netWorth}. You have the activity of a market maker and the balance of a tourist.",
+    "slots": [
+     "txCount",
+     "netWorth",
+     "avgUsd"
+    ],
+    "device": "escalation",
+    "weight": 6,
+    "tier": "savage",
+    "archetypes": [
+     "churner",
+     "degen"
+    ]
+   }
+  ],
+  "churn_lite": [
+   {
+    "text": "{txCount} transactions and {netWorth} at the end. Busy is not the same as right, and you are proving it at volume.",
+    "slots": [
+     "txCount",
+     "netWorth"
+    ],
+    "device": "kill shot",
+    "weight": 6,
+    "tier": "brutal",
+    "archetypes": [
+     "churner"
+    ]
+   },
+   {
+    "text": "Impressive throughput: {txCount} transactions, {netWorth} to show. Effort and outcome have stopped speaking.",
+    "slots": [
+     "txCount",
+     "netWorth"
+    ],
+    "device": "false respect",
+    "weight": 6,
+    "tier": "brutal",
+    "archetypes": [
+     "churner"
+    ]
+   },
+   {
+    "text": "{txCount} moves on chain, closing balance {netWorth}. You have been busy for years and arrived nowhere.",
+    "slots": [
+     "txCount",
+     "netWorth"
+    ],
+    "device": "humiliation by accuracy",
+    "weight": 6,
+    "tier": "brutal",
+    "archetypes": []
+   },
+   {
+    "text": "{netWorth} after {txCount} transactions. The record is complete and the record is all you have.",
+    "slots": [
+     "txCount",
+     "netWorth"
+    ],
+    "device": "kill shot",
+    "weight": 6,
+    "tier": "brutal",
+    "archetypes": [
+     "churner",
+     "small_wallet"
+    ]
+   },
+   {
+    "text": "{txCount} transactions and {netWorth} to show for it. Activity is not progress, but it does fill a wallet history.",
+    "slots": [
+     "txCount",
+     "netWorth"
+    ],
+    "device": "sharpest reframe",
+    "weight": 5,
+    "tier": "medium",
+    "archetypes": [
+     "churner"
+    ]
+   },
+   {
+    "text": "Your wallet holds {netWorth} after {txCount} transactions. A busy file with a small result.",
+    "slots": [
+     "txCount",
+     "netWorth"
+    ],
+    "device": "understatement",
+    "weight": 5,
+    "tier": "gentle",
+    "archetypes": []
+   },
+   {
+    "text": "{txCount} logged transactions, closing balance {netWorth}. The record is complete. The record is the only complete thing here.",
+    "slots": [
+     "txCount",
+     "netWorth"
+    ],
+    "device": "bureaucratic misregistration",
+    "weight": 5,
+    "tier": "medium",
+    "archetypes": [
+     "churner"
+    ]
+   }
+  ],
+  "nft_dust": [
+   {
+    "text": "{nftCount} NFTs, {nftPriced} with a quote, floor at {nftFloor}. You collected the part of the internet nobody buys back.",
+    "slots": [
+     "nftCount",
+     "nftPriced",
+     "nftFloor"
+    ],
+    "device": "kill shot",
+    "weight": 6,
+    "tier": "brutal",
+    "archetypes": [
+     "nft_hoarder"
+    ]
+   },
+   {
+    "text": "{nftCount} pieces of provenance, {nftPriced} priced, {nftFloor} at the floor. You are a custodian of unsold files.",
+    "slots": [
+     "nftCount",
+     "nftPriced",
+     "nftFloor"
+    ],
+    "device": "sharpest reframe",
+    "weight": 6,
+    "tier": "brutal",
+    "archetypes": [
+     "nft_hoarder",
+     "whale_no_taste"
+    ]
+   },
+   {
+    "text": "{nftPriced} of your {nftCount} NFTs carry a price. The floor is {nftFloor}. The rest are simply yours forever.",
+    "slots": [
+     "nftCount",
+     "nftPriced",
+     "nftFloor"
+    ],
+    "device": "understatement",
+    "weight": 6,
+    "tier": "brutal",
+    "archetypes": []
+   },
+   {
+    "text": "You own {nftCount} NFTs and the market has quoted {nftPriced} at {nftFloor}. A gallery with one visitor and he is not buying.",
+    "slots": [
+     "nftCount",
+     "nftPriced",
+     "nftFloor"
+    ],
+    "device": "humiliation by accuracy",
+    "weight": 6,
+    "tier": "brutal",
+    "archetypes": [
+     "nft_hoarder"
+    ]
+   },
+   {
+    "text": "{nftCount} NFTs, and only {nftPriced} of them have a price. The floor is {nftFloor}. The rest is a folder.",
+    "slots": [
+     "nftCount",
+     "nftPriced",
+     "nftFloor"
+    ],
+    "device": "sharpest reframe",
+    "weight": 6,
+    "tier": "medium",
+    "archetypes": [
+     "nft_hoarder"
+    ]
+   },
+   {
+    "text": "You own {nftCount} NFTs and {nftPriced} carry a quote. Floor: {nftFloor}. The market has answered partially.",
+    "slots": [
+     "nftCount",
+     "nftPriced",
+     "nftFloor"
+    ],
+    "device": "understatement",
+    "weight": 6,
+    "tier": "gentle",
+    "archetypes": []
+   },
+   {
+    "text": "{nftCount} pieces of provenance. {nftPriced} priced. {nftFloor} at the floor. You collected the part of the internet that cannot be sold.",
+    "slots": [
+     "nftCount",
+     "nftPriced",
+     "nftFloor"
+    ],
+    "device": "escalation",
+    "weight": 6,
+    "tier": "savage",
+    "archetypes": [
+     "nft_hoarder",
+     "whale_no_taste"
+    ]
+   }
+  ],
+  "tickers_over_dollars": [
+   {
+    "text": "{tickerCount} tickers worth {netWorth} combined. You own the index of everything you were afraid to commit to.",
+    "slots": [
+     "tickerCount",
+     "netWorth"
+    ],
+    "device": "kill shot",
+    "weight": 6,
+    "tier": "brutal",
+    "archetypes": [
+     "ticker_hoarder",
+     "whale_no_taste"
+    ]
+   },
+   {
+    "text": "{tickerCount} symbols and {netWorth} of substance. Breadth this wide is a way of never being responsible for one thing.",
+    "slots": [
+     "tickerCount",
+     "netWorth"
+    ],
+    "device": "sharpest reframe",
+    "weight": 6,
+    "tier": "brutal",
+    "archetypes": [
+     "ticker_hoarder"
+    ]
+   },
+   {
+    "text": "Your wallet carries {tickerCount} tickers against {netWorth}. You collect names the way others collect unread receipts.",
+    "slots": [
+     "tickerCount",
+     "netWorth"
+    ],
+    "device": "humiliation by accuracy",
+    "weight": 6,
+    "tier": "brutal",
+    "archetypes": []
+   },
+   {
+    "text": "A portfolio of {tickerCount} names totalling {netWorth}. You are not diversified, you are unwilling to be judged.",
+    "slots": [
+     "tickerCount",
+     "netWorth"
+    ],
+    "device": "false respect",
+    "weight": 6,
+    "tier": "brutal",
+    "archetypes": [
+     "ticker_hoarder"
+    ]
+   },
+   {
+    "text": "{tickerCount} ticker symbols and {netWorth} behind them. You have collected symbols the way other people collect stamps.",
+    "slots": [
+     "tickerCount",
+     "netWorth"
+    ],
+    "device": "sharpest reframe",
+    "weight": 5,
+    "tier": "medium",
+    "archetypes": [
+     "ticker_hoarder"
+    ]
+   },
+   {
+    "text": "Your portfolio lists {tickerCount} tickers worth {netWorth} combined. Breadth without weight.",
+    "slots": [
+     "tickerCount",
+     "netWorth"
+    ],
+    "device": "understatement",
+    "weight": 5,
+    "tier": "gentle",
+    "archetypes": []
+   },
+   {
+    "text": "{tickerCount} symbols, {netWorth} of substance. You own the index of everything you declined to commit to.",
+    "slots": [
+     "tickerCount",
+     "netWorth"
+    ],
+    "device": "false respect",
+    "weight": 5,
+    "tier": "savage",
+    "archetypes": [
+     "ticker_hoarder",
+     "whale_no_taste"
+    ]
+   }
+  ],
+  "snapshot_vs_price": [
+   {
+    "text": "Snapshot at {netWorth} while the market moved {ethChg}%. You are holding a position in a market that does not see you.",
+    "slots": [
+     "netWorth",
+     "ethChg"
+    ],
+    "device": "kill shot",
+    "weight": 6,
+    "tier": "brutal",
+    "archetypes": [
+     "degen"
+    ]
+   },
+   {
+    "text": "{netWorth} on chain and a {ethChg}% market move in the same hour. Only one of those involved a decision.",
+    "slots": [
+     "netWorth",
+     "ethChg"
+    ],
+    "device": "sharpest reframe",
+    "weight": 6,
+    "tier": "brutal",
+    "archetypes": []
+   },
+   {
+    "text": "The market moved {ethChg}% today. Your wallet held {netWorth} and did nothing. You are a spectator with a login.",
+    "slots": [
+     "netWorth",
+     "ethChg"
+    ],
+    "device": "humiliation by accuracy",
+    "weight": 6,
+    "tier": "brutal",
+    "archetypes": []
+   },
+   {
+    "text": "Filed at {netWorth}. Market movement recorded at {ethChg}%. You were present for both and responsible for neither.",
+    "slots": [
+     "netWorth",
+     "ethChg"
+    ],
+    "device": "bureaucratic misregistration",
+    "weight": 6,
+    "tier": "brutal",
+    "archetypes": []
+   },
+   {
+    "text": "Your wallet reads {netWorth} at this snapshot. The market moved {ethChg}% today without asking you first.",
+    "slots": [
+     "netWorth",
+     "ethChg"
+    ],
+    "device": "understatement",
+    "weight": 4,
+    "tier": "gentle",
+    "archetypes": []
+   },
+   {
+    "text": "Snapshot at {netWorth}. Market move recorded at {ethChg}%. Both figures are accurate. Only one of them involved you.",
+    "slots": [
+     "netWorth",
+     "ethChg"
+    ],
+    "device": "bureaucratic misregistration",
+    "weight": 4,
+    "tier": "gentle",
+    "archetypes": []
+   },
+   {
+    "text": "{netWorth} on chain while the market moved {ethChg}%. You are holding a position and a receipt for the same hour.",
+    "slots": [
+     "netWorth",
+     "ethChg"
+    ],
+    "device": "sharpest reframe",
+    "weight": 4,
+    "tier": "medium",
+    "archetypes": [
+     "degen"
+    ]
+   }
+  ],
+  "ratio": [
+   {
+    "text": "{following} follows. {followers} followers. Ratio {ratio}. You are not early, you are the only one in the room.",
+    "slots": [
+     "followers",
+     "following",
+     "ratio"
+    ],
+    "device": "sharpest reframe",
+    "weight": 9,
+    "tier": "brutal",
+    "archetypes": [
+     "lurker",
+     "engagement_farmer"
+    ]
+   },
+   {
+    "text": "{followers} follow you back and you follow {following}. A ratio of {ratio}. The audience you built is a list of people who owe you nothing.",
+    "slots": [
+     "followers",
+     "following",
+     "ratio"
+    ],
+    "device": "kill shot",
+    "weight": 9,
+    "tier": "brutal",
+    "archetypes": [
+     "lurker"
+    ]
+   },
+   {
+    "text": "Ratio {ratio}. You follow {following} and {followers} follow back. You did the following. They did not do it back.",
+    "slots": [
+     "followers",
+     "following",
+     "ratio"
+    ],
+    "device": "understatement",
+    "weight": 9,
+    "tier": "brutal",
+    "archetypes": [
+     "lurker",
+     "engagement_farmer"
+    ]
+   },
+   {
+    "text": "{following} accounts get your attention. {followers} return it. {ratio} is the tally. This is not a network, it is a waiting room.",
+    "slots": [
+     "followers",
+     "following",
+     "ratio"
+    ],
+    "device": "receipt-as-verdict",
+    "weight": 9,
+    "tier": "brutal",
+    "archetypes": [
+     "lurker"
+    ]
+   },
+   {
+    "text": "You follow {following} accounts and {followers} follow back. A ratio of {ratio}. You are the audience, not the show.",
+    "slots": [
+     "followers",
+     "following",
+     "ratio"
+    ],
+    "device": "sharpest reframe",
+    "weight": 9,
+    "tier": "savage",
+    "archetypes": [
+     "engagement_farmer",
+     "lurker"
+    ]
+   },
+   {
+    "text": "{following} follows, {followers} followers, {ratio}. You have subscribed to the timeline and supplied your own attendance.",
+    "slots": [
+     "followers",
+     "following",
+     "ratio"
+    ],
+    "device": "bureaucratic misregistration",
+    "weight": 8,
+    "tier": "savage",
+    "archetypes": [
+     "engagement_farmer",
+     "lurker"
+    ]
+   },
+   {
+    "text": "Your follow ratio is {ratio}. {following} people get your attention. {followers} return it.",
+    "slots": [
+     "followers",
+     "following",
+     "ratio"
+    ],
+    "device": "specific numbers over adjectives",
+    "weight": 9,
+    "tier": "medium",
+    "archetypes": [
+     "engagement_farmer",
+     "lurker"
+    ]
+   },
+   {
+    "text": "{following} accounts against {ratio}. You built a reading list and called it a brand.",
+    "slots": [
+     "followers",
+     "following",
+     "ratio"
+    ],
+    "device": "understatement",
+    "weight": 8,
+    "tier": "medium",
+    "archetypes": [
+     "engagement_farmer",
+     "lurker"
+    ]
+   }
+  ],
+  "engagement": [
+   {
+    "text": "{likesPerPost} likes per post across {tweets} posts, {likes} in total. Not an audience, passing traffic with a phone.",
+    "slots": [
+     "likes",
+     "tweets",
+     "likesPerPost"
+    ],
+    "device": "sharpest reframe",
+    "weight": 8,
+    "tier": "brutal",
+    "archetypes": [
+     "broadcaster"
+    ]
+   },
+   {
+    "text": "{likes} likes from {tweets} posts. {likesPerPost} each. The market has priced your opinions and moved on.",
+    "slots": [
+     "likes",
+     "tweets",
+     "likesPerPost"
+    ],
+    "device": "humiliation by accuracy",
+    "weight": 8,
+    "tier": "brutal",
+    "archetypes": [
+     "broadcaster"
+    ]
+   },
+   {
+    "text": "{likesPerPost} likes a post and {tweets} posts in, {likes} likes deep. Nobody is waiting for the next one.",
+    "slots": [
+     "likes",
+     "tweets",
+     "likesPerPost"
+    ],
+    "device": "nobody line",
+    "weight": 8,
+    "tier": "brutal",
+    "archetypes": [
+     "broadcaster"
+    ]
+   },
+   {
+    "text": "{tweets} posts produced {likes} likes at {likesPerPost} apiece. This is not engagement, it is a diary nobody opens.",
+    "slots": [
+     "likes",
+     "tweets",
+     "likesPerPost"
+    ],
+    "device": "receipt-as-verdict",
+    "weight": 7,
+    "tier": "brutal",
+    "archetypes": [
+     "broadcaster"
+    ]
+   },
+   {
+    "text": "{likes} likes across {tweets} posts. {likesPerPost} per post. You are broadcasting into a room with the lights off.",
+    "slots": [
+     "likes",
+     "tweets",
+     "likesPerPost"
+    ],
+    "device": "sharpest reframe",
+    "weight": 8,
+    "tier": "medium",
+    "archetypes": [
+     "broadcaster"
+    ]
+   },
+   {
+    "text": "{likesPerPost} likes per post over {tweets} posts. The audience is present. The audience is not moved.",
+    "slots": [
+     "likes",
+     "tweets",
+     "likesPerPost"
+    ],
+    "device": "understatement",
+    "weight": 7,
+    "tier": "medium",
+    "archetypes": [
+     "broadcaster"
+    ]
+   },
+   {
+    "text": "{tweets} posts produced {likes} likes, {likesPerPost} each. That is not engagement, that is a receipt for silence.",
+    "slots": [
+     "likes",
+     "tweets",
+     "likesPerPost"
+    ],
+    "device": "specific numbers over adjectives",
+    "weight": 8,
+    "tier": "medium",
+    "archetypes": [
+     "broadcaster"
+    ]
+   },
+   {
+    "text": "You have earned {likes} likes from {tweets} posts. {likesPerPost} per post. The crowd has seen you and chosen to continue.",
+    "slots": [
+     "likes",
+     "tweets",
+     "likesPerPost"
+    ],
+    "device": "escalation",
+    "weight": 7,
+    "tier": "medium",
+    "archetypes": [
+     "broadcaster"
+    ]
+   }
+  ],
+  "engagement_low": [
+   {
+    "text": "{tweets} posts and {likes} likes. You send. You never receive. This is a correspondence with yourself, filed in public.",
+    "slots": [
+     "tweets",
+     "likes"
+    ],
+    "device": "sharpest reframe",
+    "weight": 8,
+    "tier": "brutal",
+    "archetypes": [
+     "broadcaster",
+     "ghost"
+    ]
+   },
+   {
+    "text": "{likes} likes against {tweets} posts. Nobody answers, and you keep the line open anyway.",
+    "slots": [
+     "tweets",
+     "likes"
+    ],
+    "device": "understatement",
+    "weight": 8,
+    "tier": "brutal",
+    "archetypes": [
+     "broadcaster",
+     "ghost"
+    ]
+   },
+   {
+    "text": "{tweets} posts, {likes} likes. You are holding a monologue in a room that left years ago.",
+    "slots": [
+     "tweets",
+     "likes"
+    ],
+    "device": "nobody line",
+    "weight": 8,
+    "tier": "brutal",
+    "archetypes": [
+     "broadcaster",
+     "ghost"
+    ]
+   },
+   {
+    "text": "{likes} likes from {tweets} posts. You are not a broadcaster, you are a rounding error with opinions.",
+    "slots": [
+     "tweets",
+     "likes"
+    ],
+    "device": "kill shot",
+    "weight": 7,
+    "tier": "brutal",
+    "archetypes": [
+     "broadcaster",
+     "ghost"
+    ]
+   },
+   {
+    "text": "{tweets} posts and {likes} likes. You send. You never receive. This is a one-way correspondence.",
+    "slots": [
+     "tweets",
+     "likes"
+    ],
+    "device": "sharpest reframe",
+    "weight": 8,
+    "tier": "savage",
+    "archetypes": [
+     "broadcaster",
+     "ghost"
+    ]
+   },
+   {
+    "text": "You have posted {tweets} times and collected {likes} likes. Nobody answers, and you keep the line open.",
+    "slots": [
+     "tweets",
+     "likes"
+    ],
+    "device": "understatement",
+    "weight": 7,
+    "tier": "savage",
+    "archetypes": [
+     "broadcaster",
+     "ghost"
+    ]
+   },
+   {
+    "text": "{tweets} posts against {likes} likes. You are holding a monologue in a room that has already left.",
+    "slots": [
+     "tweets",
+     "likes"
+    ],
+    "device": "understatement",
+    "weight": 8,
+    "tier": "medium",
+    "archetypes": [
+     "broadcaster",
+     "ghost"
+    ]
+   },
+   {
+    "text": "{likes} likes across {tweets} posts. You broadcast. You do not belong to anything.",
+    "slots": [
+     "tweets",
+     "likes"
+    ],
+    "device": "escalation",
+    "weight": 7,
+    "tier": "medium",
+    "archetypes": [
+     "broadcaster",
+     "ghost"
+    ]
+   }
+  ],
+  "firehose": [
+   {
+    "text": "{postsPerDay} posts a day for {years} years. {tweets} times you mistook speaking for mattering.",
+    "slots": [
+     "tweets",
+     "years",
+     "postsPerDay"
+    ],
+    "device": "the nobody line",
+    "weight": 8,
+    "tier": "brutal",
+    "archetypes": [
+     "broadcaster",
+     "degen"
+    ]
+   },
+   {
+    "text": "{tweets} posts in {years} years, {postsPerDay} a day. The firehose ran the whole time and nothing ever landed.",
+    "slots": [
+     "tweets",
+     "years",
+     "postsPerDay"
+    ],
+    "device": "escalation",
+    "weight": 8,
+    "tier": "brutal",
+    "archetypes": [
+     "broadcaster",
+     "degen"
+    ]
+   },
+   {
+    "text": "{postsPerDay} a day, {years} years, {tweets} posts. Output without demand is a hobby with a receipt.",
+    "slots": [
+     "tweets",
+     "years",
+     "postsPerDay"
+    ],
+    "device": "sharpest reframe",
+    "weight": 8,
+    "tier": "brutal",
+    "archetypes": [
+     "broadcaster",
+     "degen"
+    ]
+   },
+   {
+    "text": "{years} years at {postsPerDay} posts a day, {tweets} in total. Nobody has ever waited for one of them.",
+    "slots": [
+     "tweets",
+     "years",
+     "postsPerDay"
+    ],
+    "device": "legacy line",
+    "weight": 7,
+    "tier": "brutal",
+    "archetypes": [
+     "broadcaster",
+     "degen"
+    ]
+   },
+   {
+    "text": "{tweets} posts over {years} years. {postsPerDay} a day. You have produced a body of work nobody has read once.",
+    "slots": [
+     "tweets",
+     "years",
+     "postsPerDay"
+    ],
+    "device": "sharpest reframe",
+    "weight": 8,
+    "tier": "savage",
+    "archetypes": [
+     "broadcaster",
+     "degen"
+    ]
+   },
+   {
+    "text": "{postsPerDay} posts a day for {years} years, {tweets} in total. The firehose has never been off. Nothing has arrived.",
+    "slots": [
+     "tweets",
+     "years",
+     "postsPerDay"
+    ],
+    "device": "escalation",
+    "weight": 7,
+    "tier": "savage",
+    "archetypes": [
+     "broadcaster",
+     "degen"
+    ]
+   },
+   {
+    "text": "In {years} years you posted {tweets} times, {postsPerDay} a day. Most people stop. You cannot be stopped.",
+    "slots": [
+     "tweets",
+     "years",
+     "postsPerDay"
+    ],
+    "device": "rule of three",
+    "weight": 8,
+    "tier": "medium",
+    "archetypes": [
+     "broadcaster",
+     "degen"
+    ]
+   },
+   {
+    "text": "{postsPerDay} a day for {years} years and {tweets} items filed. The archive has a volume problem and an audience problem.",
+    "slots": [
+     "tweets",
+     "years",
+     "postsPerDay"
+    ],
+    "device": "specific numbers over adjectives",
+    "weight": 7,
+    "tier": "medium",
+    "archetypes": [
+     "broadcaster",
+     "degen"
+    ]
+   }
+  ],
+  "posts_per_day": [
+   {
+    "text": "{postsPerDay} posts a day for {years} years. {tweets} posts. That is not dedication, that is a nervous habit with data.",
+    "slots": [
+     "postsPerDay",
+     "years",
+     "tweets"
+    ],
+    "device": "sharpest reframe",
+    "weight": 8,
+    "tier": "brutal",
+    "archetypes": [
+     "broadcaster",
+     "degen"
+    ]
+   },
+   {
+    "text": "{postsPerDay} a day, {years} years, {tweets} posts. You have out-published every person who stopped listening.",
+    "slots": [
+     "postsPerDay",
+     "years",
+     "tweets"
+    ],
+    "device": "humiliation by accuracy",
+    "weight": 8,
+    "tier": "brutal",
+    "archetypes": [
+     "broadcaster",
+     "degen"
+    ]
+   },
+   {
+    "text": "{postsPerDay} posts a day for {years} years and {tweets} posts on file. Most people would call that a job. Nobody has called.",
+    "slots": [
+     "postsPerDay",
+     "years",
+     "tweets"
+    ],
+    "device": "understatement",
+    "weight": 7,
+    "tier": "brutal",
+    "archetypes": [
+     "broadcaster"
+    ]
+   },
+   {
+    "text": "{tweets} posts in {years} years at {postsPerDay} a day. Frequency is the only thing here that ever went up.",
+    "slots": [
+     "postsPerDay",
+     "years",
+     "tweets"
+    ],
+    "device": "kill shot",
+    "weight": 7,
+    "tier": "brutal",
+    "archetypes": [
+     "broadcaster",
+     "degen"
+    ]
+   },
+   {
+    "text": "{postsPerDay} posts a day for {years} years. {tweets} in total. You turned attention into a quota and met it.",
+    "slots": [
+     "postsPerDay",
+     "years",
+     "tweets"
+    ],
+    "device": "sharpest reframe",
+    "weight": 7,
+    "tier": "medium",
+    "archetypes": [
+     "broadcaster"
+    ]
+   },
+   {
+    "text": "{postsPerDay} a day for {years} years. {tweets} posts. Nobody requested this and you kept the schedule anyway.",
+    "slots": [
+     "postsPerDay",
+     "years",
+     "tweets"
+    ],
+    "device": "understatement",
+    "weight": 6,
+    "tier": "medium",
+    "archetypes": [
+     "broadcaster"
+    ]
+   },
+   {
+    "text": "Your output is {postsPerDay} posts per day, {tweets} so far, {years} years running. Volume is not a position.",
+    "slots": [
+     "postsPerDay",
+     "years",
+     "tweets"
+    ],
+    "device": "false respect",
+    "weight": 7,
+    "tier": "medium",
+    "archetypes": [
+     "broadcaster"
+    ]
+   },
+   {
+    "text": "{postsPerDay} posts daily for {years} years, {tweets} total. The only growing number is the ledger of them.",
+    "slots": [
+     "postsPerDay",
+     "years",
+     "tweets"
+    ],
+    "device": "bureaucratic misregistration",
+    "weight": 6,
+    "tier": "medium",
+    "archetypes": [
+     "broadcaster"
+    ]
+   }
+  ],
+  "ghost": [
+   {
+    "text": "{followers} followers, {tweets} posts, {years} years. You have an account, not a presence.",
+    "slots": [
+     "followers",
+     "tweets",
+     "years"
+    ],
+    "device": "sharpest reframe",
+    "weight": 7,
+    "tier": "brutal",
+    "archetypes": [
+     "ghost",
+     "lurker"
+    ]
+   },
+   {
+    "text": "{tweets} posts in {years} years and {followers} people still following. They are waiting for a person who left.",
+    "slots": [
+     "followers",
+     "tweets",
+     "years"
+    ],
+    "device": "nobody line",
+    "weight": 7,
+    "tier": "brutal",
+    "archetypes": [
+     "ghost",
+     "lurker"
+    ]
+   },
+   {
+    "text": "{followers} followers, {tweets} posts, {years} years on file. The account exists. The person never attended.",
+    "slots": [
+     "followers",
+     "tweets",
+     "years"
+    ],
+    "device": "bureaucratic misregistration",
+    "weight": 7,
+    "tier": "brutal",
+    "archetypes": [
+     "ghost",
+     "lurker"
+    ]
+   },
+   {
+    "text": "{years} years old, {tweets} posts, {followers} followers. You registered and never bothered to arrive.",
+    "slots": [
+     "followers",
+     "tweets",
+     "years"
+    ],
+    "device": "legacy line",
+    "weight": 6,
+    "tier": "brutal",
+    "archetypes": [
+     "ghost",
+     "lurker"
+    ]
+   },
+   {
+    "text": "{followers} followers and {tweets} posts across {years} years. You have an account, not a presence.",
+    "slots": [
+     "followers",
+     "tweets",
+     "years"
+    ],
+    "device": "sharpest reframe",
+    "weight": 7,
+    "tier": "medium",
+    "archetypes": [
+     "ghost",
+     "lurker"
+    ]
+   },
+   {
+    "text": "{years} years old, {tweets} posts, {followers} followers. You registered and then left the room standing.",
+    "slots": [
+     "followers",
+     "tweets",
+     "years"
+    ],
+    "device": "understatement",
+    "weight": 6,
+    "tier": "medium",
+    "archetypes": [
+     "ghost",
+     "lurker"
+    ]
+   },
+   {
+    "text": "{tweets} posts in {years} years, watched by {followers} people. The account exists. The person is on sabbatical.",
+    "slots": [
+     "followers",
+     "tweets",
+     "years"
+    ],
+    "device": "bureaucratic misregistration",
+    "weight": 7,
+    "tier": "medium",
+    "archetypes": [
+     "ghost",
+     "lurker"
+    ]
+   },
+   {
+    "text": "{followers} followers waiting on {tweets} posts. You built a stage in {years} years and never came on.",
+    "slots": [
+     "followers",
+     "tweets",
+     "years"
+    ],
+    "device": "callback",
+    "weight": 6,
+    "tier": "medium",
+    "archetypes": [
+     "ghost",
+     "lurker"
+    ]
+   }
+  ],
+  "text_wall": [
+   {
+    "text": "{tweets} posts and {media} images. You have never once let the reader rest.",
+    "slots": [
+     "tweets",
+     "media"
+    ],
+    "device": "sharpest reframe",
+    "weight": 6,
+    "tier": "brutal",
+    "archetypes": [
+     "broadcaster"
+    ]
+   },
+   {
+    "text": "{media} media across {tweets} posts. The wall of text is the strategy, and the strategy works on nobody.",
+    "slots": [
+     "tweets",
+     "media"
+    ],
+    "device": "escalation",
+    "weight": 6,
+    "tier": "brutal",
+    "archetypes": [
+     "broadcaster"
+    ]
+   },
+   {
+    "text": "{tweets} posts, {media} of them illustrated. You write like the scroll does not exist, which is why it scrolls.",
+    "slots": [
+     "tweets",
+     "media"
+    ],
+    "device": "understatement",
+    "weight": 6,
+    "tier": "brutal",
+    "archetypes": [
+     "broadcaster"
+    ]
+   },
+   {
+    "text": "{tweets} posts and {media} images. You have chosen the written word, at length, unedited.",
+    "slots": [
+     "tweets",
+     "media"
+    ],
+    "device": "sharpest reframe",
+    "weight": 5,
+    "tier": "medium",
+    "archetypes": [
+     "broadcaster",
+     "anon"
+    ]
+   },
+   {
+    "text": "{tweets} posts against {media} images. You have never once let a picture do the work.",
+    "slots": [
+     "tweets",
+     "media"
+    ],
+    "device": "understatement",
+    "weight": 4,
+    "tier": "medium",
+    "archetypes": [
+     "broadcaster",
+     "anon"
+    ]
+   },
+   {
+    "text": "{media} images across {tweets} posts. Your timeline reads like a terms of service update nobody agreed to.",
+    "slots": [
+     "tweets",
+     "media"
+    ],
+    "device": "rule of three",
+    "weight": 5,
+    "tier": "medium",
+    "archetypes": [
+     "broadcaster",
+     "anon"
+    ]
+   },
+   {
+    "text": "{tweets} posts, {media} of them illustrated. The remaining text is doing a lot of unpaid labour.",
+    "slots": [
+     "tweets",
+     "media"
+    ],
+    "device": "callback",
+    "weight": 4,
+    "tier": "medium",
+    "archetypes": [
+     "broadcaster",
+     "anon"
+    ]
+   }
+  ],
+  "not_verified": [
+   {
+    "text": "{years} years and {followers} followers, and the company still has no idea who you are.",
+    "slots": [
+     "years",
+     "followers"
+    ],
+    "device": "sharpest reframe",
+    "weight": 6,
+    "tier": "brutal",
+    "archetypes": []
+   },
+   {
+    "text": "{followers} followers after {years} years. Not verified, not notable, not missed.",
+    "slots": [
+     "years",
+     "followers"
+    ],
+    "device": "rule of three",
+    "weight": 6,
+    "tier": "brutal",
+    "archetypes": []
+   },
+   {
+    "text": "{years} years on this app and {followers} followers and no badge. The badge goes to people who matter. You are the control group.",
+    "slots": [
+     "years",
+     "followers"
+    ],
+    "device": "humiliation by accuracy",
+    "weight": 6,
+    "tier": "brutal",
+    "archetypes": []
+   },
+   {
+    "text": "{years} years, {followers} followers, no verification. Nothing here is confirmed except your attendance.",
+    "slots": [
+     "years",
+     "followers"
+    ],
+    "device": "bureaucratic misregistration",
+    "weight": 5,
+    "tier": "medium",
+    "archetypes": []
+   },
+   {
+    "text": "{followers} followers after {years} years and still not verified. You paid for nothing and got the lifetime rate.",
+    "slots": [
+     "years",
+     "followers"
+    ],
+    "device": "specific numbers over adjectives",
+    "weight": 4,
+    "tier": "medium",
+    "archetypes": []
+   },
+   {
+    "text": "{years} years on the timeline with {followers} followers and no badge. The badge was never the problem.",
+    "slots": [
+     "years",
+     "followers"
+    ],
+    "device": "understatement",
+    "weight": 5,
+    "tier": "medium",
+    "archetypes": []
+   },
+   {
+    "text": "{followers} followers in {years} years, unverified. Some accounts are born famous. Yours is doing community service.",
+    "slots": [
+     "years",
+     "followers"
+    ],
+    "device": "sharpest reframe",
+    "weight": 4,
+    "tier": "medium",
+    "archetypes": []
+   }
+  ],
+  "bio_dyor": [
+   {
+    "text": "Your bio says {bio}. Your timeline says otherwise. The bio is the ambition, the posts are the evidence.",
+    "slots": [
+     "bio"
+    ],
+    "device": "sharpest reframe",
+    "weight": 6,
+    "tier": "brutal",
+    "archetypes": [
+     "builder_cosplayer"
+    ]
+   },
+   {
+    "text": "{bio}, filed under your name. That is not a biography, that is a wish list.",
+    "slots": [
+     "bio"
+    ],
+    "device": "receipt-as-verdict",
+    "weight": 6,
+    "tier": "brutal",
+    "archetypes": [
+     "builder_cosplayer"
+    ]
+   },
+   {
+    "text": "Your bio says {bio}. Nobody has ever checked. Nobody has ever needed to.",
+    "slots": [
+     "bio"
+    ],
+    "device": "understatement",
+    "weight": 6,
+    "tier": "brutal",
+    "archetypes": [
+     "builder_cosplayer"
+    ]
+   },
+   {
+    "text": "Your bio says {bio}. Ambitious. The timeline, unfortunately, has not been informed.",
+    "slots": [
+     "bio"
+    ],
+    "device": "false respect",
+    "weight": 6,
+    "tier": "brutal",
+    "archetypes": [
+     "builder_cosplayer"
+    ]
+   },
+   {
+    "text": "Your bio says {bio}. You wrote a disclaimer before you wrote a thesis.",
+    "slots": [
+     "bio"
+    ],
+    "device": "sharpest reframe",
+    "weight": 6,
+    "tier": "savage",
+    "archetypes": [
+     "shiller"
+    ]
+   },
+   {
+    "text": "{bio}. Not financial advice is the one item in your bio you have verified.",
+    "slots": [
+     "bio"
+    ],
+    "device": "understatement",
+    "weight": 5,
+    "tier": "savage",
+    "archetypes": [
+     "shiller"
+    ]
+   },
+   {
+    "text": "Your bio reads {bio}. You accepted zero responsibility for the thing you came here to sell.",
+    "slots": [
+     "bio"
+    ],
+    "device": "bureaucratic misregistration",
+    "weight": 6,
+    "tier": "medium",
+    "archetypes": [
+     "shiller"
+    ]
+   },
+   {
+    "text": "{bio}. The warning is in the bio and the receipts are in the timeline. Only one of them is real.",
+    "slots": [
+     "bio"
+    ],
+    "device": "false respect",
+    "weight": 5,
+    "tier": "medium",
+    "archetypes": [
+     "shiller"
+    ]
+   }
+  ],
+  "bio_builder": [
+   {
+    "text": "Your bio says {bio} and {followers} followers are the proof of concept. The title shipped before the product.",
+    "slots": [
+     "bio",
+     "followers"
+    ],
+    "device": "sharpest reframe",
+    "weight": 7,
+    "tier": "brutal",
+    "archetypes": [
+     "builder_cosplayer"
+    ]
+   },
+   {
+    "text": "{bio}, with {followers} followers. Every founder has a bio. The ones who ship have users.",
+    "slots": [
+     "bio",
+     "followers"
+    ],
+    "device": "understatement",
+    "weight": 7,
+    "tier": "brutal",
+    "archetypes": [
+     "builder_cosplayer"
+    ]
+   },
+   {
+    "text": "{bio} and {followers} followers. You announced the company. The company has not announced you.",
+    "slots": [
+     "bio",
+     "followers"
+    ],
+    "device": "kill shot",
+    "weight": 6,
+    "tier": "brutal",
+    "archetypes": [
+     "builder_cosplayer"
+    ]
+   },
+   {
+    "text": "Your bio says {bio}. {followers} followers is the market cap of the idea.",
+    "slots": [
+     "bio",
+     "followers"
+    ],
+    "device": "humiliation by accuracy",
+    "weight": 6,
+    "tier": "brutal",
+    "archetypes": [
+     "builder_cosplayer"
+    ]
+   },
+   {
+    "text": "Your bio says {bio}. {followers} followers have seen the paperwork.",
+    "slots": [
+     "bio",
+     "followers"
+    ],
+    "device": "understatement",
+    "weight": 7,
+    "tier": "savage",
+    "archetypes": [
+     "builder_cosplayer"
+    ]
+   },
+   {
+    "text": "{bio}, with {followers} followers to show for it. Founders usually ship before they announce.",
+    "slots": [
+     "bio",
+     "followers"
+    ],
+    "device": "rule of three",
+    "weight": 6,
+    "tier": "savage",
+    "archetypes": [
+     "builder_cosplayer"
+    ]
+   },
+   {
+    "text": "Your bio says {bio} and your audience is {followers}. The title arrived before the product. It always does.",
+    "slots": [
+     "bio",
+     "followers"
+    ],
+    "device": "sharpest reframe",
+    "weight": 7,
+    "tier": "medium",
+    "archetypes": [
+     "builder_cosplayer"
+    ]
+   },
+   {
+    "text": "{bio}. {followers} followers. The pitch is the bio and the runway is the timeline.",
+    "slots": [
+     "bio",
+     "followers"
+    ],
+    "device": "false respect",
+    "weight": 6,
+    "tier": "medium",
+    "archetypes": [
+     "builder_cosplayer"
+    ]
+   }
+  ],
+  "bio_degen": [
+   {
+    "text": "Your bio says {bio}. It is the most honest thing you have ever written.",
+    "slots": [
+     "bio"
+    ],
+    "device": "false respect",
+    "weight": 6,
+    "tier": "brutal",
+    "archetypes": [
+     "degen"
+    ]
+   },
+   {
+    "text": "Your bio says {bio} in plain text, as if anyone needed the warning label spelled out.",
+    "slots": [
+     "bio"
+    ],
+    "device": "understatement",
+    "weight": 6,
+    "tier": "brutal",
+    "archetypes": [
+     "degen"
+    ]
+   },
+   {
+    "text": "Your bio says {bio}. You turned a habit into a personality and a personality into nothing.",
+    "slots": [
+     "bio"
+    ],
+    "device": "sharpest reframe",
+    "weight": 6,
+    "tier": "brutal",
+    "archetypes": [
+     "degen"
+    ]
+   },
+   {
+    "text": "Your bio says {bio}. You described the exact way you lose money and then expected a floor.",
+    "slots": [
+     "bio"
+    ],
+    "device": "sharpest reframe",
+    "weight": 6,
+    "tier": "medium",
+    "archetypes": [
+     "degen"
+    ]
+   },
+   {
+    "text": "{bio}. You put the failure mode in the bio because it read like a personality.",
+    "slots": [
+     "bio"
+    ],
+    "device": "understatement",
+    "weight": 5,
+    "tier": "medium",
+    "archetypes": [
+     "degen"
+    ]
+   },
+   {
+    "text": "Your bio reads {bio}. At least the warning was voluntary and the losses were not.",
+    "slots": [
+     "bio"
+    ],
+    "device": "false respect",
+    "weight": 6,
+    "tier": "medium",
+    "archetypes": [
+     "degen"
+    ]
+   },
+   {
+    "text": "{bio}. You announced the gambling before anyone was watching. Frank, at least.",
+    "slots": [
+     "bio"
+    ],
+    "device": "bureaucratic misregistration",
+    "weight": 5,
+    "tier": "medium",
+    "archetypes": [
+     "degen"
+    ]
+   }
+  ],
+  "bio_noob": [
+   {
+    "text": "{tweets} posts in and the bio is still a trailer for a person who has not arrived.",
+    "slots": [
+     "tweets"
+    ],
+    "device": "sharpest reframe",
+    "weight": 6,
+    "tier": "brutal",
+    "archetypes": []
+   },
+   {
+    "text": "{tweets} posts. Still no idea. The bio is a rough draft you forgot to submit.",
+    "slots": [
+     "tweets"
+    ],
+    "device": "understatement",
+    "weight": 6,
+    "tier": "brutal",
+    "archetypes": []
+   },
+   {
+    "text": "You have posted {tweets} times and the bio still reads like someone waiting to become interesting.",
+    "slots": [
+     "tweets"
+    ],
+    "device": "escalation",
+    "weight": 6,
+    "tier": "brutal",
+    "archetypes": []
+   },
+   {
+    "text": "No bio, no name, {tweets} posts. You walked into a public square and introduced yourself to the floor.",
+    "slots": [
+     "tweets"
+    ],
+    "device": "sharpest reframe",
+    "weight": 5,
+    "tier": "gentle",
+    "archetypes": [
+     "anon",
+     "noob"
+    ]
+   },
+   {
+    "text": "{tweets} posts and no bio. The account has a voice and no face, which is a strategy.",
+    "slots": [
+     "tweets"
+    ],
+    "device": "understatement",
+    "weight": 4,
+    "tier": "gentle",
+    "archetypes": [
+     "anon",
+     "noob"
+    ]
+   },
+   {
+    "text": "Your profile is empty except for {tweets} posts. Anonymous, which is normally a decision.",
+    "slots": [
+     "tweets"
+    ],
+    "device": "false respect",
+    "weight": 5,
+    "tier": "gentle",
+    "archetypes": [
+     "anon",
+     "noob"
+    ]
+   },
+   {
+    "text": "{tweets} posts against an empty bio. You are the loudest blank page on the internet.",
+    "slots": [
+     "tweets"
+    ],
+    "device": "callback",
+    "weight": 4,
+    "tier": "gentle",
+    "archetypes": [
+     "anon",
+     "noob"
+    ]
+   }
+  ],
+  "bio_copypaste": [
+   {
+    "text": "Your bio says {bio}. Someone else wrote that first, and they meant it.",
+    "slots": [
+     "bio"
+    ],
+    "device": "sharpest reframe",
+    "weight": 6,
+    "tier": "brutal",
+    "archetypes": []
+   },
+   {
+    "text": "{bio} reads like a copy because it is one. You borrowed it from someone who meant it.",
+    "slots": [
+     "bio"
+    ],
+    "device": "understatement",
+    "weight": 6,
+    "tier": "brutal",
+    "archetypes": []
+   },
+   {
+    "text": "Your bio says {bio}. It is a template and you are the fill-in-the-blank.",
+    "slots": [
+     "bio"
+    ],
+    "device": "bureaucratic misregistration",
+    "weight": 6,
+    "tier": "brutal",
+    "archetypes": []
+   },
+   {
+    "text": "Your bio is {bio}. A list of nouns. You describe yourself the way a landing page describes a product nobody needs.",
+    "slots": [
+     "bio"
+    ],
+    "device": "sharpest reframe",
+    "weight": 6,
+    "tier": "medium",
+    "archetypes": [
+     "builder_cosplayer",
+     "anon"
+    ]
+   },
+   {
+    "text": "{bio}. Every noun separated by a slash, and none of them a job.",
+    "slots": [
+     "bio"
+    ],
+    "device": "rule of three",
+    "weight": 5,
+    "tier": "medium",
+    "archetypes": [
+     "builder_cosplayer",
+     "anon"
+    ]
+   },
+   {
+    "text": "Your bio reads {bio}. Slashes are not credentials and the list is not a career.",
+    "slots": [
+     "bio"
+    ],
+    "device": "understatement",
+    "weight": 6,
+    "tier": "medium",
+    "archetypes": [
+     "builder_cosplayer",
+     "anon"
+    ]
+   },
+   {
+    "text": "{bio}. You have bundled yourself like a pricing page with one tier.",
+    "slots": [
+     "bio"
+    ],
+    "device": "false respect",
+    "weight": 5,
+    "tier": "medium",
+    "archetypes": [
+     "builder_cosplayer",
+     "anon"
+    ]
+   }
+  ],
+  "handle_numbered": [
+   {
+    "text": "{handle}, with {handleNumber} on the end. The number is there because the name was taken, and so was everything else.",
+    "slots": [
+     "handle",
+     "handleNumber"
+    ],
+    "device": "sharpest reframe",
+    "weight": 6,
+    "tier": "brutal",
+    "archetypes": []
+   },
+   {
+    "text": "{handle} and the {handleNumber}. You took the version of the name nobody else wanted.",
+    "slots": [
+     "handle",
+     "handleNumber"
+    ],
+    "device": "humiliation by accuracy",
+    "weight": 6,
+    "tier": "brutal",
+    "archetypes": []
+   },
+   {
+    "text": "The {handleNumber} in {handle} is not a style choice. It is the queue you were standing in.",
+    "slots": [
+     "handle",
+     "handleNumber"
+    ],
+    "device": "understatement",
+    "weight": 6,
+    "tier": "brutal",
+    "archetypes": []
+   },
+   {
+    "text": "Your handle is {handle}, with {handleNumber} attached. That is a birth year and an apology for arriving late.",
+    "slots": [
+     "handle",
+     "handleNumber"
+    ],
+    "device": "sharpest reframe",
+    "weight": 6,
+    "tier": "medium",
+    "archetypes": [
+     "anon"
+    ]
+   },
+   {
+    "text": "{handle}. {handleNumber}. Every good name was gone and you took the number.",
+    "slots": [
+     "handle",
+     "handleNumber"
+    ],
+    "device": "understatement",
+    "weight": 5,
+    "tier": "medium",
+    "archetypes": [
+     "anon"
+    ]
+   },
+   {
+    "text": "{handleNumber} on the end of {handle}. You registered the way people pick a PIN.",
+    "slots": [
+     "handle",
+     "handleNumber"
+    ],
+    "device": "specific numbers over adjectives",
+    "weight": 6,
+    "tier": "medium",
+    "archetypes": [
+     "anon"
+    ]
+   },
+   {
+    "text": "Your handle is {handle}. The {handleNumber} is standing in for a name and not hiding it.",
+    "slots": [
+     "handle",
+     "handleNumber"
+    ],
+    "device": "false respect",
+    "weight": 5,
+    "tier": "medium",
+    "archetypes": [
+     "anon"
+    ]
+   }
+  ],
+  "handle_long": [
+   {
+    "text": "{handleLength} characters for a name. Shorter handles went to people who arrived first, and {handle} is the receipt.",
+    "slots": [
+     "handle",
+     "handleLength"
+    ],
+    "device": "sharpest reframe",
+    "weight": 6,
+    "tier": "brutal",
+    "archetypes": []
+   },
+   {
+    "text": "{handle} is {handleLength} characters long. Nobody types that to find you, and nobody has tried.",
+    "slots": [
+     "handle",
+     "handleLength"
+    ],
+    "device": "nobody line",
+    "weight": 6,
+    "tier": "brutal",
+    "archetypes": []
+   },
+   {
+    "text": "{handleLength} characters in {handle}. The handle is long and the reach is short.",
+    "slots": [
+     "handle",
+     "handleLength"
+    ],
+    "device": "kill shot",
+    "weight": 6,
+    "tier": "brutal",
+    "archetypes": []
+   },
+   {
+    "text": "Your handle is {handle}. {handleLength} characters. Nobody has ever spelled it correctly and nobody will.",
+    "slots": [
+     "handle",
+     "handleLength"
+    ],
+    "device": "specific numbers over adjectives",
+    "weight": 5,
+    "tier": "medium",
+    "archetypes": [
+     "anon",
+     "noob"
+    ]
+   },
+   {
+    "text": "{handle}, {handleLength} characters long. Your name is a full sentence with no punctuation.",
+    "slots": [
+     "handle",
+     "handleLength"
+    ],
+    "device": "rule of three",
+    "weight": 4,
+    "tier": "medium",
+    "archetypes": [
+     "anon",
+     "noob"
+    ]
+   },
+   {
+    "text": "{handleLength} characters in {handle}. You have made yourself a captcha.",
+    "slots": [
+     "handle",
+     "handleLength"
+    ],
+    "device": "sharpest reframe",
+    "weight": 5,
+    "tier": "medium",
+    "archetypes": [
+     "anon",
+     "noob"
+    ]
+   },
+   {
+    "text": "Your handle is {handle}, {handleLength} characters. It reads like a randomiser and it was not one.",
+    "slots": [
+     "handle",
+     "handleLength"
+    ],
+    "device": "understatement",
+    "weight": 4,
+    "tier": "medium",
+    "archetypes": [
+     "anon",
+     "noob"
+    ]
+   }
+  ],
+  "joined_old": [
+   {
+    "text": "{years} years on this app, {followers} followers, {tweets} posts. A long tenure in being optional.",
+    "slots": [
+     "years",
+     "followers",
+     "tweets"
+    ],
+    "device": "legacy line",
+    "weight": 7,
+    "tier": "brutal",
+    "archetypes": [
+     "shiller",
+     "degen"
+    ]
+   },
+   {
+    "text": "You joined {years} years ago and have {tweets} posts and {followers} followers to show for it. Time served is not a reputation.",
+    "slots": [
+     "years",
+     "followers",
+     "tweets"
+    ],
+    "device": "sharpest reframe",
+    "weight": 7,
+    "tier": "brutal",
+    "archetypes": [
+     "shiller",
+     "degen"
+    ]
+   },
+   {
+    "text": "{years} years, {tweets} posts, {followers} followers. You were early to a place that never became anything, including for you.",
+    "slots": [
+     "years",
+     "followers",
+     "tweets"
+    ],
+    "device": "receipt-as-verdict",
+    "weight": 6,
+    "tier": "brutal",
+    "archetypes": [
+     "shiller",
+     "degen"
+    ]
+   },
+   {
+    "text": "{years} years here, {tweets} posts, {followers} people who noticed. The rest of the years were just the wait.",
+    "slots": [
+     "years",
+     "followers",
+     "tweets"
+    ],
+    "device": "kill shot",
+    "weight": 6,
+    "tier": "brutal",
+    "archetypes": [
+     "shiller",
+     "degen"
+    ]
+   },
+   {
+    "text": "{years} years on this app for {followers} followers and {tweets} posts. Older than the product you are shilling.",
+    "slots": [
+     "years",
+     "followers",
+     "tweets"
+    ],
+    "device": "sharpest reframe",
+    "weight": 7,
+    "tier": "savage",
+    "archetypes": [
+     "shiller",
+     "degen"
+    ]
+   },
+   {
+    "text": "You joined {years} years ago and have {followers} followers. You are older than the token, the chain and most of its holders.",
+    "slots": [
+     "years",
+     "followers",
+     "tweets"
+    ],
+    "device": "callback",
+    "weight": 6,
+    "tier": "savage",
+    "archetypes": [
+     "shiller",
+     "degen"
+    ]
+   },
+   {
+    "text": "{years} years of history and {tweets} posts. The coin you are shilling is younger than your login.",
+    "slots": [
+     "years",
+     "followers",
+     "tweets"
+    ],
+    "device": "understatement",
+    "weight": 7,
+    "tier": "medium",
+    "archetypes": [
+     "shiller",
+     "degen"
+    ]
+   },
+   {
+    "text": "{years} years and {followers} followers. You were here before the tokens and you will be here after them.",
+    "slots": [
+     "years",
+     "followers",
+     "tweets"
+    ],
+    "device": "escalation",
+    "weight": 6,
+    "tier": "medium",
+    "archetypes": [
+     "shiller",
+     "degen"
+    ]
+   }
+  ],
+  "name_mismatch": [
+   {
+    "text": "The display name reads {name} and the handle reads {handle}. Pick one person to be.",
+    "slots": [
+     "name",
+     "handle"
+    ],
+    "device": "sharpest reframe",
+    "weight": 6,
+    "tier": "brutal",
+    "archetypes": []
+   },
+   {
+    "text": "{name} in the name field, {handle} in the URL. Two people, one account, neither of them going anywhere.",
+    "slots": [
+     "name",
+     "handle"
+    ],
+    "device": "escalation",
+    "weight": 6,
+    "tier": "brutal",
+    "archetypes": []
+   },
+   {
+    "text": "{name} and {handle} do not match, which is consistent with the rest of the account.",
+    "slots": [
+     "name",
+     "handle"
+    ],
+    "device": "bureaucratic misregistration",
+    "weight": 6,
+    "tier": "brutal",
+    "archetypes": []
+   },
+   {
+    "text": "Your name is {name} and your handle is {handle}. Neither one is a brand and neither one is the point.",
+    "slots": [
+     "name",
+     "handle"
+    ],
+    "device": "understatement",
+    "weight": 6,
+    "tier": "brutal",
+    "archetypes": []
+   },
+   {
+    "text": "Your name is {name}. Your handle is {handle}. Neither of them is a person.",
+    "slots": [
+     "name",
+     "handle"
+    ],
+    "device": "rule of three",
+    "weight": 6,
+    "tier": "medium",
+    "archetypes": [
+     "anon",
+     "builder_cosplayer"
+    ]
+   },
+   {
+    "text": "{name} at {handle}. A brand name and a serial number pretending to be an introduction.",
+    "slots": [
+     "name",
+     "handle"
+    ],
+    "device": "sharpest reframe",
+    "weight": 5,
+    "tier": "medium",
+    "archetypes": [
+     "anon",
+     "builder_cosplayer"
+    ]
+   },
+   {
+    "text": "You go by {name}, which is a noun phrase, on {handle}, which is a string. The introduction is the product.",
+    "slots": [
+     "name",
+     "handle"
+    ],
+    "device": "bureaucratic misregistration",
+    "weight": 6,
+    "tier": "medium",
+    "archetypes": [
+     "anon",
+     "builder_cosplayer"
+    ]
+   },
+   {
+    "text": "{name}. {handle}. You have introduced yourself twice and not once as yourself.",
+    "slots": [
+     "name",
+     "handle"
+    ],
+    "device": "understatement",
+    "weight": 5,
+    "tier": "medium",
+    "archetypes": [
+     "anon",
+     "builder_cosplayer"
+    ]
+   }
+  ],
+  "per_follower": [
+   {
+    "text": "{followers} followers at {valuePerFollower} each. {tweets} posts to produce a headcount the benchmark beats with one thread.",
+    "slots": [
+     "followers",
+     "tweets",
+     "valuePerFollower"
+    ],
+    "device": "sharpest reframe",
+    "weight": 7,
+    "tier": "brutal",
+    "archetypes": [
+     "engagement_farmer"
+    ]
+   },
+   {
+    "text": "{valuePerFollower} per follower for {followers} followers across {tweets} posts. The benchmark spends less and collects more.",
+    "slots": [
+     "followers",
+     "tweets",
+     "valuePerFollower"
+    ],
+    "device": "humiliation by accuracy",
+    "weight": 7,
+    "tier": "brutal",
+    "archetypes": [
+     "engagement_farmer"
+    ]
+   },
+   {
+    "text": "{followers} followers at {valuePerFollower} a head, bought with {tweets} posts. An audience at a price nobody would pay twice.",
+    "slots": [
+     "followers",
+     "tweets",
+     "valuePerFollower"
+    ],
+    "device": "understatement",
+    "weight": 6,
+    "tier": "brutal",
+    "archetypes": [
+     "engagement_farmer"
+    ]
+   },
+   {
+    "text": "{valuePerFollower} each for {followers} followers and {tweets} posts to land them. Not a following, inventory nobody bids on.",
+    "slots": [
+     "followers",
+     "tweets",
+     "valuePerFollower"
+    ],
+    "device": "receipt-as-verdict",
+    "weight": 6,
+    "tier": "brutal",
+    "archetypes": [
+     "engagement_farmer"
+    ]
+   },
+   {
+    "text": "Your {followers} followers put you at {valuePerFollower} a head against the benchmark. Your audience is an asset with a bad price.",
+    "slots": [
+     "followers",
+     "tweets",
+     "valuePerFollower"
+    ],
+    "device": "sharpest reframe",
+    "weight": 7,
+    "tier": "medium",
+    "archetypes": [
+     "engagement_farmer"
+    ]
+   },
+   {
+    "text": "{tweets} posts bought you {followers} followers at {valuePerFollower} each. The benchmark spends less and collects more. Note the margin.",
+    "slots": [
+     "followers",
+     "tweets",
+     "valuePerFollower"
+    ],
+    "device": "understatement",
+    "weight": 6,
+    "tier": "medium",
+    "archetypes": [
+     "engagement_farmer"
+    ]
+   },
+   {
+    "text": "Benchmark accounts with {followers} followers clear more than {valuePerFollower}. You have a crowd and no yield.",
+    "slots": [
+     "followers",
+     "tweets",
+     "valuePerFollower"
+    ],
+    "device": "specific numbers over adjectives",
+    "weight": 7,
+    "tier": "medium",
+    "archetypes": [
+     "engagement_farmer"
+    ]
+   },
+   {
+    "text": "{valuePerFollower} per follower, measured against accounts that do this properly. Your {followers} people are the cheap seats.",
+    "slots": [
+     "followers",
+     "tweets",
+     "valuePerFollower"
+    ],
+    "device": "false respect",
+    "weight": 6,
+    "tier": "medium",
+    "archetypes": [
+     "engagement_farmer"
+    ]
+   }
+  ],
+  "per_tweet_value": [
+   {
+    "text": "{tweets} posts produced {followers} followers at {valuePerFollower} each. Every post you add makes the average worse.",
+    "slots": [
+     "valuePerFollower",
+     "tweets",
+     "followers"
+    ],
+    "device": "sharpest reframe",
+    "weight": 7,
+    "tier": "brutal",
+    "archetypes": [
+     "engagement_farmer"
+    ]
+   },
+   {
+    "text": "{valuePerFollower} per follower after {tweets} posts, {followers} followers in. You are not compounding, you are diluting.",
+    "slots": [
+     "valuePerFollower",
+     "tweets",
+     "followers"
+    ],
+    "device": "humiliation by accuracy",
+    "weight": 7,
+    "tier": "brutal",
+    "archetypes": [
+     "engagement_farmer"
+    ]
+   },
+   {
+    "text": "{tweets} posts for {followers} followers at {valuePerFollower} a head. The marginal post has never once mattered.",
+    "slots": [
+     "valuePerFollower",
+     "tweets",
+     "followers"
+    ],
+    "device": "kill shot",
+    "weight": 6,
+    "tier": "brutal",
+    "archetypes": [
+     "engagement_farmer"
+    ]
+   },
+   {
+    "text": "{valuePerFollower} a follower, {tweets} posts and {followers} followers to get there. Volume and value have never met.",
+    "slots": [
+     "valuePerFollower",
+     "tweets",
+     "followers"
+    ],
+    "device": "receipt-as-verdict",
+    "weight": 6,
+    "tier": "brutal",
+    "archetypes": [
+     "engagement_farmer"
+    ]
+   },
+   {
+    "text": "{tweets} posts for {followers} followers at {valuePerFollower} each. Every new post makes the average worse.",
+    "slots": [
+     "valuePerFollower",
+     "tweets",
+     "followers"
+    ],
+    "device": "sharpest reframe",
+    "weight": 7,
+    "tier": "savage",
+    "archetypes": [
+     "engagement_farmer"
+    ]
+   },
+   {
+    "text": "{valuePerFollower} per follower, {tweets} posts in and {followers} out. Volume and value have never met.",
+    "slots": [
+     "valuePerFollower",
+     "tweets",
+     "followers"
+    ],
+    "device": "understatement",
+    "weight": 6,
+    "tier": "savage",
+    "archetypes": [
+     "engagement_farmer"
+    ]
+   },
+   {
+    "text": "Your followers are worth {valuePerFollower} each. You wrote {tweets} posts to get them. That is the entire business.",
+    "slots": [
+     "valuePerFollower",
+     "tweets",
+     "followers"
+    ],
+    "device": "bureaucratic misregistration",
+    "weight": 7,
+    "tier": "medium",
+    "archetypes": [
+     "engagement_farmer"
+    ]
+   },
+   {
+    "text": "{tweets} posts produced {followers} followers at {valuePerFollower} a head. The marginal post changed nothing.",
+    "slots": [
+     "valuePerFollower",
+     "tweets",
+     "followers"
+    ],
+    "device": "specific numbers over adjectives",
+    "weight": 6,
+    "tier": "medium",
+    "archetypes": [
+     "engagement_farmer"
+    ]
+   }
+  ],
+  "x_summary": [
+   {
+    "text": "{followers} followers, {tweets} posts, {years} years. This is the whole public record and it is a long silence with timestamps.",
+    "slots": [
+     "followers",
+     "tweets",
+     "years"
+    ],
+    "device": "kill shot",
+    "weight": 10,
+    "tier": "brutal",
+    "archetypes": []
+   },
+   {
+    "text": "{years} years, {tweets} posts, {followers} followers. You were loud for a decade and the room stayed empty.",
+    "slots": [
+     "followers",
+     "tweets",
+     "years"
+    ],
+    "device": "legacy line",
+    "weight": 10,
+    "tier": "brutal",
+    "archetypes": []
+   },
+   {
+    "text": "{followers} followers after {tweets} posts and {years} years. That is not a presence, that is attendance.",
+    "slots": [
+     "followers",
+     "tweets",
+     "years"
+    ],
+    "device": "sharpest reframe",
+    "weight": 10,
+    "tier": "brutal",
+    "archetypes": []
+   },
+   {
+    "text": "{tweets} posts, {years} years, {followers} followers. You have been publishing your irrelevance on a schedule.",
+    "slots": [
+     "followers",
+     "tweets",
+     "years"
+    ],
+    "device": "receipt-as-verdict",
+    "weight": 10,
+    "tier": "brutal",
+    "archetypes": []
+   },
+   {
+    "text": "{followers} followers, {tweets} posts, {years} years. A long career in being overlooked.",
+    "slots": [
+     "followers",
+     "tweets",
+     "years"
+    ],
+    "device": "sharpest reframe",
+    "weight": 10,
+    "tier": "savage",
+    "archetypes": []
+   },
+   {
+    "text": "{years} years, {tweets} posts, {followers} followers. The gap between the first and the last tells the whole story.",
+    "slots": [
+     "followers",
+     "tweets",
+     "years"
+    ],
+    "device": "escalation",
+    "weight": 9,
+    "tier": "savage",
+    "archetypes": []
+   },
+   {
+    "text": "{followers} followers after {years} years and {tweets} posts. A full-time broadcaster with a part-time audience.",
+    "slots": [
+     "followers",
+     "tweets",
+     "years"
+    ],
+    "device": "specific numbers over adjectives",
+    "weight": 10,
+    "tier": "medium",
+    "archetypes": []
+   },
+   {
+    "text": "{tweets} posts in {years} years for {followers} followers. Volume up, reach flat, story over.",
+    "slots": [
+     "followers",
+     "tweets",
+     "years"
+    ],
+    "device": "rule of three",
+    "weight": 9,
+    "tier": "medium",
+    "archetypes": []
+   }
+  ],
+  "exchange_funded": [
+   {
+    "text": "Funded from an exchange hot wallet, now holding {netWorth}. The money arrived with a receipt and left without a plan.",
+    "slots": [
+     "netWorth"
+    ],
+    "device": "sharpest reframe",
+    "weight": 5,
+    "tier": "medium",
+    "archetypes": []
+   },
+   {
+    "text": "Funded straight off a centralised exchange, now {netWorth}. The chain remembers who brought you.",
+    "slots": [
+     "netWorth"
+    ],
+    "device": "callback",
+    "weight": 5,
+    "tier": "medium",
+    "archetypes": [
+     "degen_churner"
+    ]
+   },
+   {
+    "text": "First deposit came from a CEX hot wallet. {netWorth} of conviction that entered through a company that keeps logs.",
+    "slots": [
+     "netWorth"
+    ],
+    "device": "understatement",
+    "weight": 4,
+    "tier": "medium",
+    "archetypes": []
+   }
+  ],
+  "sol_spam": [
+   {
+    "text": "{solSpam} SPL tokens in the wallet. Real value: {solUsd}. Solana hands out tokens the way conferences hand out lanyards.",
+    "slots": [
+     "solSpam",
+     "solUsd"
+    ],
+    "device": "sharpest reframe",
+    "weight": 6,
+    "tier": "medium",
+    "archetypes": [
+     "sol_only",
+     "spam_magnet"
+    ]
+   },
+   {
+    "text": "{solSpam} tokens on Solana, {solUsd} of actual value. The balance arrived unsolicited and stayed.",
+    "slots": [
+     "solSpam",
+     "solUsd"
+    ],
+    "device": "understatement",
+    "weight": 6,
+    "tier": "gentle",
+    "archetypes": []
+   },
+   {
+    "text": "{solSpam} tokens. {solUsd} of value. One wallet. The maths has already made its decision.",
+    "slots": [
+     "solSpam",
+     "solUsd"
+    ],
+    "device": "rule of three",
+    "weight": 6,
+    "tier": "savage",
+    "archetypes": [
+     "sol_only",
+     "spam_magnet"
+    ]
+   }
+  ]
+ },
+ "tags": {
+  "no_ens": "IDENTITY",
+  "ens_short": "ENS",
+  "ens_long": "ENS",
+  "ens_numbered": "ENS",
+  "ens_avatar_default": "ENS",
+  "ens_links_nothing": "ENS RECORD",
+  "linked_github": "GITHUB",
+  "linked_telegram": "TELEGRAM",
+  "linked_x": "X ACCOUNT",
+  "handle_squatted": "HANDLE",
+  "domain_old": "DOMAIN",
+  "domain_dead": "DOMAIN",
+  "contract_wallet": "ADDRESS TYPE",
+  "smart_account": "DELEGATION",
+  "empty_address": "ACTIVITY",
+  "public_exposure": "PUBLIC TRAIL",
+  "no_x": "COVERAGE",
+  "total_usd": "TOTAL VALUE",
+  "broke": "TOTAL ON-CHAIN",
+  "thin": "TIME ON-CHAIN",
+  "dust": "DUST",
+  "unpriced": "UNPRICED",
+  "spam_usd": "SPAM TOKENS",
+  "dead_holders": "HOLDERS",
+  "fake_major": "CONTRACT CHECK",
+  "concentration": "CONCENTRATION",
+  "micro_top": "LARGEST POSITION",
+  "top_loser": "SEVEN DAYS",
+  "stable_dust": "STABLE DUST",
+  "no_stables": "STABLECOINS",
+  "gas_burner_abs": "GAS PAID",
+  "gas_burner_pct": "GAS RATIO",
+  "churn": "ACTIVITY",
+  "churn_lite": "ACTIVITY",
+  "nft_dust": "NFT HOLDINGS",
+  "tickers_over_dollars": "TICKERS",
+  "snapshot_vs_price": "SNAPSHOT",
+  "ratio": "FOLLOW RATIO",
+  "engagement": "ENGAGEMENT",
+  "engagement_low": "ONE WAY",
+  "firehose": "POST VOLUME",
+  "posts_per_day": "DAILY OUTPUT",
+  "ghost": "DORMANT",
+  "text_wall": "TEXT ONLY",
+  "not_verified": "UNVERIFIED",
+  "bio_dyor": "BIO",
+  "bio_builder": "BIO",
+  "bio_degen": "BIO",
+  "bio_noob": "BIO",
+  "bio_copypaste": "BIO",
+  "handle_numbered": "HANDLE",
+  "handle_long": "HANDLE",
+  "joined_old": "ACCOUNT AGE",
+  "name_mismatch": "DISPLAY NAME",
+  "per_follower": "PER FOLLOWER",
+  "per_tweet_value": "VALUE PER TWEET",
+  "x_summary": "PROFILE",
+  "exchange_funded": "FUNDING",
+  "sol_spam": "SPL TOKENS"
+ },
+ "verdicts": [
+  {
+   "text": "You are not a mystery. You are a paper trail with a wallet attached and no readers.",
+   "tier": "brutal"
+  },
+  {
+   "text": "The receipts are not the punishment. Being this easy to read is.",
+   "tier": "brutal"
+  },
+  {
+   "text": "Nothing here was breached. You handed it over slowly and called it a following.",
+   "tier": "brutal"
+  },
+  {
+   "text": "You built a footprint for years and never once checked where it pointed.",
+   "tier": "brutal"
+  },
+  {
+   "text": "You are not anonymous. You are uninteresting enough that nobody looked twice.",
+   "tier": "brutal"
+  },
+  {
+   "text": "This is not a leak. This is a house with the door open and nobody who wanted in.",
+   "tier": "brutal"
+  },
+  {
+   "text": "You are not the main character. You are scenery in somebody else's receipt.",
+   "tier": "brutal"
+  },
+  {
+   "text": "The chain will not forget you. It will just stop mentioning you, and it already has.",
+   "tier": "brutal"
+  },
+  {
+   "text": "You are not early. You are a timestamp nobody will ever bother to look up.",
+   "tier": "brutal"
+  },
+  {
+   "text": "The verdict is not that you lost. It is that the whole thing was legible the entire time.",
+   "tier": "brutal"
+  },
+  {
+   "text": "This receipt is not a leak. It is a self-portrait with timestamps.",
+   "tier": "medium"
+  },
+  {
+   "text": "Nothing here was breached. You published it all and called it privacy.",
+   "tier": "medium"
+  },
+  {
+   "text": "You are not a mystery, you are a paper trail with a ticker on top.",
+   "tier": "medium"
+  },
+  {
+   "text": "The chain has your whole story, and it is shorter than the one you tell.",
+   "tier": "medium"
+  },
+  {
+   "text": "You have been consistent. That is the finding, not the compliment.",
+   "tier": "medium"
+  },
+  {
+   "text": "You optimised the parts nobody measures and left the rest to luck.",
+   "tier": "medium"
+  },
+  {
+   "text": "The wallet survived. The habits are what will follow it around.",
+   "tier": "medium"
+  },
+  {
+   "text": "You are not early. You are first in a queue nobody else joined.",
+   "tier": "medium"
+  }
+ ],
+ "archetypeDesc": {
+  "empty_wallet": [
+   {
+    "text": "A wallet with no history and a habit of turning up anyway.",
+    "tier": "brutal"
+   },
+   {
+    "text": "A wallet whose history is short enough to read in one breath.",
+    "tier": "medium"
+   }
+  ],
+  "dust_collector": [
+   {
+    "text": "An archaeologist of your own bad calls. Digs, catalogues, never sells.",
+    "tier": "brutal"
+   },
+   {
+    "text": "Holds many tokens, each too small to sell and too sad to delete.",
+    "tier": "gentle"
+   }
+  ],
+  "silent_holder": [
+   {
+    "text": "Buys once, says nothing, and calls the silence a thesis.",
+    "tier": "brutal"
+   },
+   {
+    "text": "Buys once, says nothing, watches. A portfolio behind a closed door.",
+    "tier": "medium"
+   }
+  ],
+  "whale_no_taste": [
+   {
+    "text": "Big numbers, borrowed opinions, buying whatever trended while you slept.",
+    "tier": "brutal"
+   },
+   {
+    "text": "Large balances, small convictions, buying whatever the timeline liked first.",
+    "tier": "savage"
+   }
+  ],
+  "stable_maxi": [
+   {
+    "text": "Left at the top of your own confidence and never risked a cent again.",
+    "tier": "brutal"
+   },
+   {
+    "text": "Left the market years ago in the safest available way and never came back.",
+    "tier": "gentle"
+   }
+  ],
+  "exit_liquidity": [
+   {
+    "text": "The last buyer on every chart, still writing threads about the entry.",
+    "tier": "brutal"
+   },
+   {
+    "text": "Arrived after the pump, stayed for the correction, still posting about it.",
+    "tier": "medium"
+   }
+  ],
+  "degen_churner": [
+   {
+    "text": "Trades all day, finishes flat, and files the activity as research.",
+    "tier": "brutal"
+   },
+   {
+    "text": "Trades constantly, finishes flat, and files the activity as a strategy.",
+    "tier": "medium"
+   }
+  ],
+  "airship_hopeful": [
+   {
+    "text": "One narrative coin, one theory, and a countdown to the explanation.",
+    "tier": "brutal"
+   },
+   {
+    "text": "Holds one narrative coin and a theory that will be explained later.",
+    "tier": "medium"
+   }
+  ],
+  "ghost_account": [
+   {
+    "text": "A public presence with no posts and nothing worth being public about.",
+    "tier": "brutal"
+   },
+   {
+    "text": "A public presence with no posts, no proof, and one wallet attached.",
+    "tier": "medium"
+   }
+  ],
+  "farming_bot": [
+   {
+    "text": "Farms points for protocols that will not remember the address.",
+    "tier": "brutal"
+   },
+   {
+    "text": "Lives for point programs. Holds no asset, only eligibility.",
+    "tier": "medium"
+   }
+  ],
+  "vesting_survivor": [
+   {
+    "text": "Waited out the cliff, watched the unlock, and stayed to watch the rest.",
+    "tier": "brutal"
+   },
+   {
+    "text": "Stayed through the cliff, watched the unlock, and remained anyway.",
+    "tier": "medium"
+   }
+  ],
+  "contract_entity": [
+   {
+    "text": "Not a person. A deployment that files receipts and cannot feel this.",
+    "tier": "brutal"
+   },
+   {
+    "text": "Not a person. A deployment that files receipts and cannot take offence.",
+    "tier": "medium"
+   }
+  ]
+ },
+ "tiers": {
+  "brutal": 211,
+  "medium": 126,
+  "gentle": 43,
+  "savage": 43
+ }
+}

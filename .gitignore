@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+shots/before/
+shots/after/
+local_server.log
+nohup.out
+cf_token.txt

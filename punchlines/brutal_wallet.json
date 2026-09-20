@@ -1,0 +1,1186 @@
+[
+  {
+    "id": "total_usd",
+    "tag": "TOTAL VALUE",
+    "slots": [
+      "netWorth",
+      "chainsActive"
+    ],
+    "device": "sharpest reframe",
+    "weight": 9,
+    "tier": "brutal",
+    "archetypes": [],
+    "text": "{netWorth} across {chainsActive} chains. You are not diversified, you are hedged against ever having been right."
+  },
+  {
+    "id": "total_usd",
+    "tag": "TOTAL VALUE",
+    "slots": [
+      "netWorth",
+      "chainsActive"
+    ],
+    "device": "false respect",
+    "weight": 9,
+    "tier": "brutal",
+    "archetypes": [],
+    "text": "Masters of allocation like yourself hold {netWorth} on {chainsActive} chains. Each chain is a separate apology."
+  },
+  {
+    "id": "total_usd",
+    "tag": "TOTAL VALUE",
+    "slots": [
+      "netWorth",
+      "chainsActive"
+    ],
+    "device": "kill shot",
+    "weight": 9,
+    "tier": "brutal",
+    "archetypes": [
+      "whale_no_taste"
+    ],
+    "text": "{netWorth}, {chainsActive} chains, one owner. You have the footprint of a fund and the balance of a mistake."
+  },
+  {
+    "id": "total_usd",
+    "tag": "TOTAL VALUE",
+    "slots": [
+      "netWorth",
+      "chainsActive"
+    ],
+    "device": "escalation",
+    "weight": 9,
+    "tier": "brutal",
+    "archetypes": [],
+    "text": "{chainsActive} chains, {netWorth}, and years of effort. Two of those numbers are impressive and one of them is the total."
+  },
+  {
+    "id": "broke",
+    "tag": "TOTAL ON-CHAIN",
+    "slots": [
+      "netWorth",
+      "chainsActive"
+    ],
+    "device": "sharpest reframe",
+    "weight": 7,
+    "tier": "brutal",
+    "archetypes": [
+      "small_wallet"
+    ],
+    "text": "You post like an authority on {chainsActive} chains and hold {netWorth}. The confidence and the balance have never met."
+  },
+  {
+    "id": "broke",
+    "tag": "TOTAL ON-CHAIN",
+    "slots": [
+      "netWorth",
+      "chainsActive"
+    ],
+    "device": "humiliation by accuracy",
+    "weight": 7,
+    "tier": "brutal",
+    "archetypes": [
+      "small_wallet"
+    ],
+    "text": "{netWorth} across {chainsActive} chains. Your opinions are fully funded and your positions are not."
+  },
+  {
+    "id": "broke",
+    "tag": "TOTAL ON-CHAIN",
+    "slots": [
+      "netWorth",
+      "chainsActive"
+    ],
+    "device": "kill shot",
+    "weight": 7,
+    "tier": "brutal",
+    "archetypes": [],
+    "text": "{netWorth} on {chainsActive} chains. Loud in the group chat, quiet on the explorer, and only one of those is measured."
+  },
+  {
+    "id": "broke",
+    "tag": "TOTAL ON-CHAIN",
+    "slots": [
+      "netWorth",
+      "chainsActive"
+    ],
+    "device": "escalation",
+    "weight": 7,
+    "tier": "brutal",
+    "archetypes": [],
+    "text": "{chainsActive} chains, {netWorth}, and a voice that carries. The wallet is the only thing here that was never leveraged."
+  },
+  {
+    "id": "thin",
+    "tag": "TIME ON-CHAIN",
+    "slots": [
+      "netWorth",
+      "years"
+    ],
+    "device": "legacy reframe",
+    "weight": 6,
+    "tier": "brutal",
+    "archetypes": [
+      "veteran"
+    ],
+    "text": "{years} years in this market and {netWorth} to show for it. This is what you built, and you built it slowly."
+  },
+  {
+    "id": "thin",
+    "tag": "TIME ON-CHAIN",
+    "slots": [
+      "netWorth",
+      "years"
+    ],
+    "device": "understatement",
+    "weight": 6,
+    "tier": "brutal",
+    "archetypes": [
+      "veteran"
+    ],
+    "text": "After {years} years the balance is {netWorth}. You have been through every cycle and kept none of them."
+  },
+  {
+    "id": "thin",
+    "tag": "TIME ON-CHAIN",
+    "slots": [
+      "netWorth",
+      "years"
+    ],
+    "device": "kill shot",
+    "weight": 6,
+    "tier": "brutal",
+    "archetypes": [
+      "veteran",
+      "small_wallet"
+    ],
+    "text": "{years} years on chain, {netWorth} on the record. You are not a veteran, you are a witness who paid for the tickets."
+  },
+  {
+    "id": "thin",
+    "tag": "TIME ON-CHAIN",
+    "slots": [
+      "netWorth",
+      "years"
+    ],
+    "device": "kill shot",
+    "weight": 6,
+    "tier": "brutal",
+    "archetypes": [],
+    "text": "{years} years of being early and {netWorth} of being wrong. Only one of those was supposed to compound."
+  },
+  {
+    "id": "dust",
+    "tag": "DUST",
+    "slots": [
+      "dustCount",
+      "tokenCount",
+      "dustUsd"
+    ],
+    "device": "sharpest reframe",
+    "weight": 7,
+    "tier": "brutal",
+    "archetypes": [
+      "dust_collector"
+    ],
+    "text": "{dustCount} of your {tokenCount} tokens are under a dollar, {dustUsd} combined. That is not a portfolio, it is abandoned tabs."
+  },
+  {
+    "id": "dust",
+    "tag": "DUST",
+    "slots": [
+      "dustCount",
+      "tokenCount",
+      "dustUsd"
+    ],
+    "device": "kill shot",
+    "weight": 7,
+    "tier": "brutal",
+    "archetypes": [
+      "dust_collector"
+    ],
+    "text": "{dustCount} tokens under a dollar out of {tokenCount}. Nobody else owns this many and it is not a coincidence."
+  },
+  {
+    "id": "dust",
+    "tag": "DUST",
+    "slots": [
+      "dustCount",
+      "tokenCount",
+      "dustUsd"
+    ],
+    "device": "rule of three",
+    "weight": 7,
+    "tier": "brutal",
+    "archetypes": [
+      "dust_collector",
+      "whale_no_taste"
+    ],
+    "text": "{dustCount} sub dollar tokens. {tokenCount} positions. {dustUsd} of value. Two of those numbers are doing all the work."
+  },
+  {
+    "id": "dust",
+    "tag": "DUST",
+    "slots": [
+      "dustCount",
+      "tokenCount",
+      "dustUsd"
+    ],
+    "device": "escalation",
+    "weight": 7,
+    "tier": "brutal",
+    "archetypes": [],
+    "text": "{dustUsd} of combined value across {dustCount} tokens. You have diversified into nothing, thoroughly, at {tokenCount} positions of scale."
+  },
+  {
+    "id": "unpriced",
+    "tag": "UNPRICED",
+    "slots": [
+      "unpricedCount",
+      "tokenCount"
+    ],
+    "device": "sharpest reframe",
+    "weight": 6,
+    "tier": "brutal",
+    "archetypes": [
+      "dust_collector"
+    ],
+    "text": "{unpricedCount} of your {tokenCount} tokens have no price. You do not own them, you are the last address that touched them."
+  },
+  {
+    "id": "unpriced",
+    "tag": "UNPRICED",
+    "slots": [
+      "unpricedCount",
+      "tokenCount"
+    ],
+    "device": "kill shot",
+    "weight": 6,
+    "tier": "brutal",
+    "archetypes": [
+      "dust_collector"
+    ],
+    "text": "No market exists for {unpricedCount} of your {tokenCount} tokens. You have been right about them for years, in private."
+  },
+  {
+    "id": "unpriced",
+    "tag": "UNPRICED",
+    "slots": [
+      "unpricedCount",
+      "tokenCount"
+    ],
+    "device": "understatement",
+    "weight": 6,
+    "tier": "brutal",
+    "archetypes": [],
+    "text": "{unpricedCount} of {tokenCount} tokens are unquotable. That is not a long term hold, that is a drawer you never open."
+  },
+  {
+    "id": "unpriced",
+    "tag": "UNPRICED",
+    "slots": [
+      "unpricedCount",
+      "tokenCount"
+    ],
+    "device": "humiliation by accuracy",
+    "weight": 6,
+    "tier": "brutal",
+    "archetypes": [
+      "dust_collector"
+    ],
+    "text": "{unpricedCount} of your {tokenCount} tokens have nobody bidding. A price is a judgement and the market has withheld yours."
+  },
+  {
+    "id": "spam_usd",
+    "tag": "SPAM TOKENS",
+    "slots": [
+      "spamUsd",
+      "netWorth"
+    ],
+    "device": "sharpest reframe",
+    "weight": 6,
+    "tier": "brutal",
+    "archetypes": [
+      "spam_magnet"
+    ],
+    "text": "{spamUsd} arrived unsolicited and beat the {netWorth} you researched. Your best picks were made by strangers."
+  },
+  {
+    "id": "spam_usd",
+    "tag": "SPAM TOKENS",
+    "slots": [
+      "spamUsd",
+      "netWorth"
+    ],
+    "device": "humiliation by accuracy",
+    "weight": 6,
+    "tier": "brutal",
+    "archetypes": [
+      "spam_magnet"
+    ],
+    "text": "Airdrops nobody asked for: {spamUsd}. Everything you chose yourself: {netWorth}. The market shares on merit."
+  },
+  {
+    "id": "spam_usd",
+    "tag": "SPAM TOKENS",
+    "slots": [
+      "spamUsd",
+      "netWorth"
+    ],
+    "device": "kill shot",
+    "weight": 6,
+    "tier": "brutal",
+    "archetypes": [
+      "spam_magnet",
+      "degen"
+    ],
+    "text": "Free tokens worth {spamUsd}, chosen tokens worth {netWorth}. You are the only participant losing to junk mail."
+  },
+  {
+    "id": "spam_usd",
+    "tag": "SPAM TOKENS",
+    "slots": [
+      "spamUsd",
+      "netWorth"
+    ],
+    "device": "escalation",
+    "weight": 6,
+    "tier": "brutal",
+    "archetypes": [
+      "spam_magnet"
+    ],
+    "text": "{spamUsd} in tokens that came to you, {netWorth} in tokens you went to. The effort went the wrong way."
+  },
+  {
+    "id": "dead_holders",
+    "tag": "HOLDERS",
+    "slots": [
+      "sym",
+      "holders",
+      "usd"
+    ],
+    "device": "sharpest reframe",
+    "weight": 8,
+    "tier": "brutal",
+    "archetypes": [
+      "degen"
+    ],
+    "text": "{sym} has {holders} holders and {usd} of it is yours. You are not a member of a community, you are a remaining field."
+  },
+  {
+    "id": "dead_holders",
+    "tag": "HOLDERS",
+    "slots": [
+      "sym",
+      "holders",
+      "usd"
+    ],
+    "device": "kill shot",
+    "weight": 8,
+    "tier": "brutal",
+    "archetypes": [
+      "degen"
+    ],
+    "text": "{holders} holders of {sym}, {usd} of them are you. That is not a community, that is a waiting room for a closed project."
+  },
+  {
+    "id": "dead_holders",
+    "tag": "HOLDERS",
+    "slots": [
+      "sym",
+      "holders",
+      "usd"
+    ],
+    "device": "escalation",
+    "weight": 8,
+    "tier": "brutal",
+    "archetypes": [],
+    "text": "{sym}, {holders} holders, {usd} of your money. The token is dead, the room is quiet, and you are still posting."
+  },
+  {
+    "id": "dead_holders",
+    "tag": "HOLDERS",
+    "slots": [
+      "sym",
+      "holders",
+      "usd"
+    ],
+    "device": "humiliation by accuracy",
+    "weight": 8,
+    "tier": "brutal",
+    "archetypes": [
+      "small_wallet"
+    ],
+    "text": "{sym} lists {holders} holders including you at {usd}. Nobody in that number is calling you back."
+  },
+  {
+    "id": "fake_major",
+    "tag": "CONTRACT CHECK",
+    "slots": [
+      "sym"
+    ],
+    "device": "kill shot",
+    "weight": 7,
+    "tier": "brutal",
+    "archetypes": [
+      "degen"
+    ],
+    "text": "Your {sym} is the copy. Same ticker, wrong contract, and you were the one who did not check."
+  },
+  {
+    "id": "fake_major",
+    "tag": "CONTRACT CHECK",
+    "slots": [
+      "sym"
+    ],
+    "device": "humiliation by accuracy",
+    "weight": 7,
+    "tier": "brutal",
+    "archetypes": [],
+    "text": "That {sym} is an imitation. You bought the impersonation, which is the only part of it that was ever real."
+  },
+  {
+    "id": "fake_major",
+    "tag": "CONTRACT CHECK",
+    "slots": [
+      "sym"
+    ],
+    "device": "sharpest reframe",
+    "weight": 7,
+    "tier": "brutal",
+    "archetypes": [
+      "degen"
+    ],
+    "text": "The {sym} in your wallet is counterfeit. It cost you four seconds to verify and you spent them on believing."
+  },
+  {
+    "id": "fake_major",
+    "tag": "CONTRACT CHECK",
+    "slots": [
+      "sym"
+    ],
+    "device": "bureaucratic misregistration",
+    "weight": 7,
+    "tier": "brutal",
+    "archetypes": [],
+    "text": "Contract check on {sym}: signature invalid. You acquired the forgery and filed it as a thesis."
+  },
+  {
+    "id": "concentration",
+    "tag": "CONCENTRATION",
+    "slots": [
+      "topPct",
+      "topSym",
+      "netWorth"
+    ],
+    "device": "kill shot",
+    "weight": 8,
+    "tier": "brutal",
+    "archetypes": [
+      "whale_no_taste",
+      "degen"
+    ],
+    "text": "{topSym} is {topPct}% of everything you have. That is not a bet, that is a personality with a ticker."
+  },
+  {
+    "id": "concentration",
+    "tag": "CONCENTRATION",
+    "slots": [
+      "topPct",
+      "topSym",
+      "netWorth"
+    ],
+    "device": "sharpest reframe",
+    "weight": 8,
+    "tier": "brutal",
+    "archetypes": [],
+    "text": "{topPct}% of your {netWorth} sits in {topSym}. You are not concentrated, you are committed to one mistake at scale."
+  },
+  {
+    "id": "concentration",
+    "tag": "CONCENTRATION",
+    "slots": [
+      "topPct",
+      "topSym",
+      "netWorth"
+    ],
+    "device": "kill shot",
+    "weight": 8,
+    "tier": "brutal",
+    "archetypes": [],
+    "text": "One position, {topPct}%, {topSym}, against {netWorth}. The rest of the wallet exists to make this look intentional."
+  },
+  {
+    "id": "concentration",
+    "tag": "CONCENTRATION",
+    "slots": [
+      "topPct",
+      "topSym",
+      "netWorth"
+    ],
+    "device": "humiliation by accuracy",
+    "weight": 8,
+    "tier": "brutal",
+    "archetypes": [
+      "whale_no_taste"
+    ],
+    "text": "{topSym} holds {topPct}% of your {netWorth}. You call it conviction because you are out of arguments."
+  },
+  {
+    "id": "micro_top",
+    "tag": "LARGEST POSITION",
+    "slots": [
+      "topUsd",
+      "topMcap",
+      "topSym"
+    ],
+    "device": "kill shot",
+    "weight": 7,
+    "tier": "brutal",
+    "archetypes": [
+      "degen"
+    ],
+    "text": "Your flagship is {topUsd} of {topSym}, a token whose entire market is {topMcap}. You are not early, you are the market."
+  },
+  {
+    "id": "micro_top",
+    "tag": "LARGEST POSITION",
+    "slots": [
+      "topUsd",
+      "topMcap",
+      "topSym"
+    ],
+    "device": "sharpest reframe",
+    "weight": 7,
+    "tier": "brutal",
+    "archetypes": [
+      "degen",
+      "whale_no_taste"
+    ],
+    "text": "{topUsd} in {topSym} against a total cap of {topMcap}. You do not hold a share, you hold the float."
+  },
+  {
+    "id": "micro_top",
+    "tag": "LARGEST POSITION",
+    "slots": [
+      "topUsd",
+      "topMcap",
+      "topSym"
+    ],
+    "device": "humiliation by accuracy",
+    "weight": 7,
+    "tier": "brutal",
+    "archetypes": [],
+    "text": "Your top position is {topUsd} of {topSym}. The whole token is worth {topMcap} and nobody noticed you enter."
+  },
+  {
+    "id": "micro_top",
+    "tag": "LARGEST POSITION",
+    "slots": [
+      "topUsd",
+      "topMcap",
+      "topSym"
+    ],
+    "device": "escalation",
+    "weight": 7,
+    "tier": "brutal",
+    "archetypes": [],
+    "text": "{topUsd} of {topSym}, out of a {topMcap} market. You are the largest thing happening to a rounding error."
+  },
+  {
+    "id": "top_loser",
+    "tag": "SEVEN DAYS",
+    "slots": [
+      "sym",
+      "chg7",
+      "lossUsd",
+      "netWorth"
+    ],
+    "device": "kill shot",
+    "weight": 7,
+    "tier": "brutal",
+    "archetypes": [
+      "degen"
+    ],
+    "text": "{sym} is down {chg7}% in a week, {lossUsd} gone out of {netWorth}. You did not sell, because that needs a decision."
+  },
+  {
+    "id": "top_loser",
+    "tag": "SEVEN DAYS",
+    "slots": [
+      "sym",
+      "chg7",
+      "lossUsd",
+      "netWorth"
+    ],
+    "device": "humiliation by accuracy",
+    "weight": 7,
+    "tier": "brutal",
+    "archetypes": [
+      "degen"
+    ],
+    "text": "{sym} fell {chg7}% this week and took {lossUsd} with it. Out of {netWorth}. You are still holding, which is generous."
+  },
+  {
+    "id": "top_loser",
+    "tag": "SEVEN DAYS",
+    "slots": [
+      "sym",
+      "chg7",
+      "lossUsd",
+      "netWorth"
+    ],
+    "device": "bureaucratic misregistration",
+    "weight": 7,
+    "tier": "brutal",
+    "archetypes": [],
+    "text": "Weekly filing for {sym}: {chg7}% lower, {lossUsd} lost against {netWorth}. Cause of loss: the original purchase."
+  },
+  {
+    "id": "top_loser",
+    "tag": "SEVEN DAYS",
+    "slots": [
+      "sym",
+      "chg7",
+      "lossUsd",
+      "netWorth"
+    ],
+    "device": "understatement",
+    "weight": 7,
+    "tier": "brutal",
+    "archetypes": [],
+    "text": "{chg7}% off {sym} in seven days, {lossUsd} of a {netWorth} wallet. The losing is running faster than the holding."
+  },
+  {
+    "id": "stable_dust",
+    "tag": "STABLE DUST",
+    "slots": [
+      "stableUsd",
+      "netWorth"
+    ],
+    "device": "sharpest reframe",
+    "weight": 6,
+    "tier": "brutal",
+    "archetypes": [
+      "no_stables"
+    ],
+    "text": "{stableUsd} in stablecoins against {netWorth}. Dry powder, in the sense that there is too little of it to get wet."
+  },
+  {
+    "id": "stable_dust",
+    "tag": "STABLE DUST",
+    "slots": [
+      "stableUsd",
+      "netWorth"
+    ],
+    "device": "false respect",
+    "weight": 6,
+    "tier": "brutal",
+    "archetypes": [
+      "whale_no_taste"
+    ],
+    "text": "Admirable risk management: {stableUsd} stable, {netWorth} exposed. One of those numbers is doing its job."
+  },
+  {
+    "id": "stable_dust",
+    "tag": "STABLE DUST",
+    "slots": [
+      "stableUsd",
+      "netWorth"
+    ],
+    "device": "kill shot",
+    "weight": 6,
+    "tier": "brutal",
+    "archetypes": [],
+    "text": "Your cash buffer is {stableUsd} on a wallet of {netWorth}. You have prepared for a very small emergency."
+  },
+  {
+    "id": "stable_dust",
+    "tag": "STABLE DUST",
+    "slots": [
+      "stableUsd",
+      "netWorth"
+    ],
+    "device": "understatement",
+    "weight": 6,
+    "tier": "brutal",
+    "archetypes": [],
+    "text": "{stableUsd} held back out of {netWorth}. You are not hedging, you are carrying change into a casino."
+  },
+  {
+    "id": "no_stables",
+    "tag": "STABLECOINS",
+    "slots": [
+      "netWorth"
+    ],
+    "device": "kill shot",
+    "weight": 6,
+    "tier": "brutal",
+    "archetypes": [
+      "no_stables",
+      "degen"
+    ],
+    "text": "Zero stablecoins against {netWorth}. You are fully exposed and completely calm, which is the worse combination."
+  },
+  {
+    "id": "no_stables",
+    "tag": "STABLECOINS",
+    "slots": [
+      "netWorth"
+    ],
+    "device": "sharpest reframe",
+    "weight": 6,
+    "tier": "brutal",
+    "archetypes": [
+      "no_stables"
+    ],
+    "text": "{netWorth} on chain and not one stablecoin. You call it being invested. The engine files it as having no options."
+  },
+  {
+    "id": "no_stables",
+    "tag": "STABLECOINS",
+    "slots": [
+      "netWorth"
+    ],
+    "device": "humiliation by accuracy",
+    "weight": 6,
+    "tier": "brutal",
+    "archetypes": [
+      "no_stables"
+    ],
+    "text": "No stables on {netWorth}. Every position is a bet and none of them can be closed on terms you chose."
+  },
+  {
+    "id": "no_stables",
+    "tag": "STABLECOINS",
+    "slots": [
+      "netWorth"
+    ],
+    "device": "escalation",
+    "weight": 6,
+    "tier": "brutal",
+    "archetypes": [
+      "no_stables",
+      "degen"
+    ],
+    "text": "{netWorth}, zero cash, one direction. That is not a thesis, that is a decision you cannot revisit."
+  },
+  {
+    "id": "gas_burner_abs",
+    "tag": "GAS PAID",
+    "slots": [
+      "gasUsd",
+      "netWorth"
+    ],
+    "device": "kill shot",
+    "weight": 9,
+    "tier": "brutal",
+    "archetypes": [
+      "gas_burner",
+      "degen"
+    ],
+    "text": "{gasUsd} in gas to end up holding {netWorth}. You have been paying rent on a position you do not own."
+  },
+  {
+    "id": "gas_burner_abs",
+    "tag": "GAS PAID",
+    "slots": [
+      "gasUsd",
+      "netWorth"
+    ],
+    "device": "humiliation by accuracy",
+    "weight": 9,
+    "tier": "brutal",
+    "archetypes": [
+      "gas_burner"
+    ],
+    "text": "Lifetime fees: {gasUsd}. Final holdings: {netWorth}. You funded the network's business, not your own."
+  },
+  {
+    "id": "gas_burner_abs",
+    "tag": "GAS PAID",
+    "slots": [
+      "gasUsd",
+      "netWorth"
+    ],
+    "device": "false respect",
+    "weight": 9,
+    "tier": "brutal",
+    "archetypes": [],
+    "text": "You paid {gasUsd} in fees to hold {netWorth}. The validators remember you. Nobody else does."
+  },
+  {
+    "id": "gas_burner_abs",
+    "tag": "GAS PAID",
+    "slots": [
+      "gasUsd",
+      "netWorth"
+    ],
+    "device": "sharpest reframe",
+    "weight": 9,
+    "tier": "brutal",
+    "archetypes": [
+      "gas_burner",
+      "degen"
+    ],
+    "text": "{gasUsd} burned in gas for {netWorth} of result. You are the customer this industry was designed around."
+  },
+  {
+    "id": "gas_burner_pct",
+    "tag": "GAS RATIO",
+    "slots": [
+      "gasUsd",
+      "gasPct",
+      "netWorth"
+    ],
+    "device": "kill shot",
+    "weight": 8,
+    "tier": "brutal",
+    "archetypes": [
+      "gas_burner"
+    ],
+    "text": "Your gas is {gasPct}% of your net worth. {gasUsd} paid to keep {netWorth}. That is a hobby with fees attached."
+  },
+  {
+    "id": "gas_burner_pct",
+    "tag": "GAS RATIO",
+    "slots": [
+      "gasUsd",
+      "gasPct",
+      "netWorth"
+    ],
+    "device": "humiliation by accuracy",
+    "weight": 8,
+    "tier": "brutal",
+    "archetypes": [],
+    "text": "{gasPct}% of everything you have went to gas. {gasUsd} for {netWorth}. The chain thanks you personally."
+  },
+  {
+    "id": "gas_burner_pct",
+    "tag": "GAS RATIO",
+    "slots": [
+      "gasUsd",
+      "gasPct",
+      "netWorth"
+    ],
+    "device": "bureaucratic misregistration",
+    "weight": 8,
+    "tier": "brutal",
+    "archetypes": [
+      "gas_burner"
+    ],
+    "text": "Fee schedule: {gasPct}% of assets, {gasUsd} on {netWorth}. You have paid a broker who only ever takes."
+  },
+  {
+    "id": "gas_burner_pct",
+    "tag": "GAS RATIO",
+    "slots": [
+      "gasUsd",
+      "gasPct",
+      "netWorth"
+    ],
+    "device": "sharpest reframe",
+    "weight": 8,
+    "tier": "brutal",
+    "archetypes": [],
+    "text": "Gas at {gasPct}% of {netWorth}, {gasUsd} in total. You are not a trader, you are a toll booth that pays itself."
+  },
+  {
+    "id": "churn",
+    "tag": "ACTIVITY",
+    "slots": [
+      "txCount",
+      "netWorth",
+      "avgUsd"
+    ],
+    "device": "kill shot",
+    "weight": 6,
+    "tier": "brutal",
+    "archetypes": [
+      "churner",
+      "degen"
+    ],
+    "text": "{txCount} transactions averaging {avgUsd} to end at {netWorth}. You have the activity of a market maker and no market."
+  },
+  {
+    "id": "churn",
+    "tag": "ACTIVITY",
+    "slots": [
+      "txCount",
+      "netWorth",
+      "avgUsd"
+    ],
+    "device": "humiliation by accuracy",
+    "weight": 6,
+    "tier": "brutal",
+    "archetypes": [
+      "churner"
+    ],
+    "text": "{txCount} moves at {avgUsd} apiece, final total {netWorth}. You are not trading, you are keeping a pulse on chain."
+  },
+  {
+    "id": "churn",
+    "tag": "ACTIVITY",
+    "slots": [
+      "txCount",
+      "netWorth",
+      "avgUsd"
+    ],
+    "device": "escalation",
+    "weight": 6,
+    "tier": "brutal",
+    "archetypes": [
+      "churner",
+      "degen"
+    ],
+    "text": "{txCount} transactions. {avgUsd} average. {netWorth} final. The volume is real and the outcome is a rounding error."
+  },
+  {
+    "id": "churn",
+    "tag": "ACTIVITY",
+    "slots": [
+      "txCount",
+      "netWorth",
+      "avgUsd"
+    ],
+    "device": "sharpest reframe",
+    "weight": 6,
+    "tier": "brutal",
+    "archetypes": [],
+    "text": "{txCount} on chain actions to arrive at {netWorth}. You mistook movement for progress and the explorer kept score."
+  },
+  {
+    "id": "churn_lite",
+    "tag": "ACTIVITY",
+    "slots": [
+      "txCount",
+      "netWorth"
+    ],
+    "device": "kill shot",
+    "weight": 6,
+    "tier": "brutal",
+    "archetypes": [
+      "churner"
+    ],
+    "text": "{txCount} transactions and {netWorth} at the end. Busy is not the same as right, and you are proving it at volume."
+  },
+  {
+    "id": "churn_lite",
+    "tag": "ACTIVITY",
+    "slots": [
+      "txCount",
+      "netWorth"
+    ],
+    "device": "false respect",
+    "weight": 6,
+    "tier": "brutal",
+    "archetypes": [
+      "churner"
+    ],
+    "text": "Impressive throughput: {txCount} transactions, {netWorth} to show. Effort and outcome have stopped speaking."
+  },
+  {
+    "id": "churn_lite",
+    "tag": "ACTIVITY",
+    "slots": [
+      "txCount",
+      "netWorth"
+    ],
+    "device": "humiliation by accuracy",
+    "weight": 6,
+    "tier": "brutal",
+    "archetypes": [],
+    "text": "{txCount} moves on chain, closing balance {netWorth}. You have been busy for years and arrived nowhere."
+  },
+  {
+    "id": "churn_lite",
+    "tag": "ACTIVITY",
+    "slots": [
+      "txCount",
+      "netWorth"
+    ],
+    "device": "kill shot",
+    "weight": 6,
+    "tier": "brutal",
+    "archetypes": [
+      "churner",
+      "small_wallet"
+    ],
+    "text": "{netWorth} after {txCount} transactions. The record is complete and the record is all you have."
+  },
+  {
+    "id": "nft_dust",
+    "tag": "NFT HOLDINGS",
+    "slots": [
+      "nftCount",
+      "nftPriced",
+      "nftFloor"
+    ],
+    "device": "kill shot",
+    "weight": 6,
+    "tier": "brutal",
+    "archetypes": [
+      "nft_hoarder"
+    ],
+    "text": "{nftCount} NFTs, {nftPriced} with a quote, floor at {nftFloor}. You collected the part of the internet nobody buys back."
+  },
+  {
+    "id": "nft_dust",
+    "tag": "NFT HOLDINGS",
+    "slots": [
+      "nftCount",
+      "nftPriced",
+      "nftFloor"
+    ],
+    "device": "sharpest reframe",
+    "weight": 6,
+    "tier": "brutal",
+    "archetypes": [
+      "nft_hoarder",
+      "whale_no_taste"
+    ],
+    "text": "{nftCount} pieces of provenance, {nftPriced} priced, {nftFloor} at the floor. You are a custodian of unsold files."
+  },
+  {
+    "id": "nft_dust",
+    "tag": "NFT HOLDINGS",
+    "slots": [
+      "nftCount",
+      "nftPriced",
+      "nftFloor"
+    ],
+    "device": "understatement",
+    "weight": 6,
+    "tier": "brutal",
+    "archetypes": [],
+    "text": "{nftPriced} of your {nftCount} NFTs carry a price. The floor is {nftFloor}. The rest are simply yours forever."
+  },
+  {
+    "id": "nft_dust",
+    "tag": "NFT HOLDINGS",
+    "slots": [
+      "nftCount",
+      "nftPriced",
+      "nftFloor"
+    ],
+    "device": "humiliation by accuracy",
+    "weight": 6,
+    "tier": "brutal",
+    "archetypes": [
+      "nft_hoarder"
+    ],
+    "text": "You own {nftCount} NFTs and the market has quoted {nftPriced} at {nftFloor}. A gallery with one visitor and he is not buying."
+  },
+  {
+    "id": "tickers_over_dollars",
+    "tag": "TICKERS",
+    "slots": [
+      "tickerCount",
+      "netWorth"
+    ],
+    "device": "kill shot",
+    "weight": 6,
+    "tier": "brutal",
+    "archetypes": [
+      "ticker_hoarder",
+      "whale_no_taste"
+    ],
+    "text": "{tickerCount} tickers worth {netWorth} combined. You own the index of everything you were afraid to commit to."
+  },
+  {
+    "id": "tickers_over_dollars",
+    "tag": "TICKERS",
+    "slots": [
+      "tickerCount",
+      "netWorth"
+    ],
+    "device": "sharpest reframe",
+    "weight": 6,
+    "tier": "brutal",
+    "archetypes": [
+      "ticker_hoarder"
+    ],
+    "text": "{tickerCount} symbols and {netWorth} of substance. Breadth this wide is a way of never being responsible for one thing."
+  },
+  {
+    "id": "tickers_over_dollars",
+    "tag": "TICKERS",
+    "slots": [
+      "tickerCount",
+      "netWorth"
+    ],
+    "device": "humiliation by accuracy",
+    "weight": 6,
+    "tier": "brutal",
+    "archetypes": [],
+    "text": "Your wallet carries {tickerCount} tickers against {netWorth}. You collect names the way others collect unread receipts."
+  },
+  {
+    "id": "tickers_over_dollars",
+    "tag": "TICKERS",
+    "slots": [
+      "tickerCount",
+      "netWorth"
+    ],
+    "device": "false respect",
+    "weight": 6,
+    "tier": "brutal",
+    "archetypes": [
+      "ticker_hoarder"
+    ],
+    "text": "A portfolio of {tickerCount} names totalling {netWorth}. You are not diversified, you are unwilling to be judged."
+  },
+  {
+    "id": "snapshot_vs_price",
+    "tag": "SNAPSHOT",
+    "slots": [
+      "netWorth",
+      "ethChg"
+    ],
+    "device": "kill shot",
+    "weight": 6,
+    "tier": "brutal",
+    "archetypes": [
+      "degen"
+    ],
+    "text": "Snapshot at {netWorth} while the market moved {ethChg}%. You are holding a position in a market that does not see you."
+  },
+  {
+    "id": "snapshot_vs_price",
+    "tag": "SNAPSHOT",
+    "slots": [
+      "netWorth",
+      "ethChg"
+    ],
+    "device": "sharpest reframe",
+    "weight": 6,
+    "tier": "brutal",
+    "archetypes": [],
+    "text": "{netWorth} on chain and a {ethChg}% market move in the same hour. Only one of those involved a decision."
+  },
+  {
+    "id": "snapshot_vs_price",
+    "tag": "SNAPSHOT",
+    "slots": [
+      "netWorth",
+      "ethChg"
+    ],
+    "device": "humiliation by accuracy",
+    "weight": 6,
+    "tier": "brutal",
+    "archetypes": [],
+    "text": "The market moved {ethChg}% today. Your wallet held {netWorth} and did nothing. You are a spectator with a login."
+  },
+  {
+    "id": "snapshot_vs_price",
+    "tag": "SNAPSHOT",
+    "slots": [
+      "netWorth",
+      "ethChg"
+    ],
+    "device": "bureaucratic misregistration",
+    "weight": 6,
+    "tier": "brutal",
+    "archetypes": [],
+    "text": "Filed at {netWorth}. Market movement recorded at {ethChg}%. You were present for both and responsible for neither."
+  }
+]

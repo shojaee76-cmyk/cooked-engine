@@ -1,0 +1,1031 @@
+[
+  {
+    "id": "total_usd",
+    "tag": "TOTAL VALUE",
+    "slots": [
+      "netWorth",
+      "chainsActive"
+    ],
+    "device": "sharpest reframe",
+    "weight": 9,
+    "tier": "medium",
+    "archetypes": [
+      "degen"
+    ],
+    "text": "Your net worth is {netWorth} spread across {chainsActive} chains. Diversification, in the sense that none of them worked."
+  },
+  {
+    "id": "total_usd",
+    "tag": "TOTAL VALUE",
+    "slots": [
+      "netWorth",
+      "chainsActive"
+    ],
+    "device": "understatement",
+    "weight": 9,
+    "tier": "gentle",
+    "archetypes": [],
+    "text": "Measured net worth {netWorth}, across {chainsActive} chains. Each chain is a separate opportunity to be early and be wrong."
+  },
+  {
+    "id": "total_usd",
+    "tag": "TOTAL VALUE",
+    "slots": [
+      "netWorth",
+      "chainsActive"
+    ],
+    "device": "false respect",
+    "weight": 9,
+    "tier": "savage",
+    "archetypes": [
+      "whale_no_taste"
+    ],
+    "text": "{netWorth} and {chainsActive} chains. You have spread it thin enough that no single chain feels responsible."
+  },
+  {
+    "id": "total_usd",
+    "tag": "TOTAL VALUE",
+    "slots": [
+      "netWorth",
+      "chainsActive"
+    ],
+    "device": "bureaucratic misregistration",
+    "weight": 9,
+    "tier": "medium",
+    "archetypes": [],
+    "text": "Consolidated holdings: {netWorth}, filed across {chainsActive} chains. The filing is thorough. The holdings are the problem."
+  },
+  {
+    "id": "spam_usd",
+    "tag": "SPAM TOKENS",
+    "slots": [
+      "spamUsd",
+      "netWorth"
+    ],
+    "device": "sharpest reframe",
+    "weight": 6,
+    "tier": "medium",
+    "archetypes": [
+      "spam_magnet"
+    ],
+    "text": "The airdrops you never asked for are worth {spamUsd}. What you deliberately bought is worth {netWorth}."
+  },
+  {
+    "id": "spam_usd",
+    "tag": "SPAM TOKENS",
+    "slots": [
+      "spamUsd",
+      "netWorth"
+    ],
+    "device": "understatement",
+    "weight": 6,
+    "tier": "gentle",
+    "archetypes": [
+      "spam_magnet",
+      "small_wallet"
+    ],
+    "text": "Your unsolicited tokens total {spamUsd}. Your researched positions total {netWorth}. Somebody did the sending better."
+  },
+  {
+    "id": "spam_usd",
+    "tag": "SPAM TOKENS",
+    "slots": [
+      "spamUsd",
+      "netWorth"
+    ],
+    "device": "rule of three",
+    "weight": 6,
+    "tier": "medium",
+    "archetypes": [
+      "spam_magnet"
+    ],
+    "text": "Free tokens: {spamUsd}. Paid tokens: {netWorth}. Initiative: still pending."
+  },
+  {
+    "id": "spam_usd",
+    "tag": "SPAM TOKENS",
+    "slots": [
+      "spamUsd",
+      "netWorth"
+    ],
+    "device": "false respect",
+    "weight": 6,
+    "tier": "savage",
+    "archetypes": [
+      "degen"
+    ],
+    "text": "{spamUsd} of your wallet arrived without your consent and outperformed the {netWorth} you chose yourself."
+  },
+  {
+    "id": "dust",
+    "tag": "DUST",
+    "slots": [
+      "dustCount",
+      "tokenCount",
+      "dustUsd"
+    ],
+    "device": "sharpest reframe",
+    "weight": 7,
+    "tier": "medium",
+    "archetypes": [
+      "dust_collector"
+    ],
+    "text": "{dustCount} of your {tokenCount} tokens are worth less than a coffee. Combined they reach {dustUsd}. A coffee, at airport prices."
+  },
+  {
+    "id": "dust",
+    "tag": "DUST",
+    "slots": [
+      "dustCount",
+      "tokenCount",
+      "dustUsd"
+    ],
+    "device": "understatement",
+    "weight": 7,
+    "tier": "gentle",
+    "archetypes": [],
+    "text": "You hold {dustCount} tokens under a dollar out of {tokenCount}. Liquidated they come to {dustUsd}. The gas would ask for more."
+  },
+  {
+    "id": "dust",
+    "tag": "DUST",
+    "slots": [
+      "dustCount",
+      "tokenCount",
+      "dustUsd"
+    ],
+    "device": "bureaucratic misregistration",
+    "weight": 7,
+    "tier": "medium",
+    "archetypes": [
+      "dust_collector"
+    ],
+    "text": "{dustCount} of {tokenCount} positions are below one dollar, {dustUsd} in aggregate. Your portfolio has a rounding error with a subportfolio."
+  },
+  {
+    "id": "dust",
+    "tag": "DUST",
+    "slots": [
+      "dustCount",
+      "tokenCount",
+      "dustUsd"
+    ],
+    "device": "escalation",
+    "weight": 7,
+    "tier": "savage",
+    "archetypes": [
+      "dust_collector",
+      "whale_no_taste"
+    ],
+    "text": "{dustCount} tokens under a dollar. {tokenCount} positions total. {dustUsd} of combined value. Two of those numbers are doing all the work."
+  },
+  {
+    "id": "unpriced",
+    "tag": "UNPRICED",
+    "slots": [
+      "unpricedCount",
+      "tokenCount"
+    ],
+    "device": "sharpest reframe",
+    "weight": 6,
+    "tier": "medium",
+    "archetypes": [
+      "dust_collector"
+    ],
+    "text": "{unpricedCount} of your {tokenCount} tokens have no price. Cheap needs a buyer. Unpriced needs nobody at all."
+  },
+  {
+    "id": "unpriced",
+    "tag": "UNPRICED",
+    "slots": [
+      "unpricedCount",
+      "tokenCount"
+    ],
+    "device": "understatement",
+    "weight": 6,
+    "tier": "gentle",
+    "archetypes": [],
+    "text": "No quote exists for {unpricedCount} of your {tokenCount} tokens. A market that never opened cannot technically close."
+  },
+  {
+    "id": "unpriced",
+    "tag": "UNPRICED",
+    "slots": [
+      "unpricedCount",
+      "tokenCount"
+    ],
+    "device": "sharpest reframe",
+    "weight": 6,
+    "tier": "savage",
+    "archetypes": [
+      "dust_collector"
+    ],
+    "text": "{unpricedCount} of your {tokenCount} tokens are unquoted. That is not a long term hold, that is an absence of buyers with a ticker attached."
+  },
+  {
+    "id": "dead_holders",
+    "tag": "HOLDERS",
+    "slots": [
+      "sym",
+      "holders",
+      "usd"
+    ],
+    "device": "sharpest reframe",
+    "weight": 8,
+    "tier": "medium",
+    "archetypes": [
+      "degen"
+    ],
+    "text": "You hold {sym} with {holders} holders including you, {usd} deep. That is not a community, that is a group chat you cannot leave."
+  },
+  {
+    "id": "dead_holders",
+    "tag": "HOLDERS",
+    "slots": [
+      "sym",
+      "holders",
+      "usd"
+    ],
+    "device": "understatement",
+    "weight": 8,
+    "tier": "gentle",
+    "archetypes": [
+      "small_wallet"
+    ],
+    "text": "{sym} has {holders} holders and one of them is you, holding {usd} of it. Small rooms are intimate."
+  },
+  {
+    "id": "dead_holders",
+    "tag": "HOLDERS",
+    "slots": [
+      "sym",
+      "holders",
+      "usd"
+    ],
+    "device": "rule of three",
+    "weight": 8,
+    "tier": "savage",
+    "archetypes": [
+      "degen"
+    ],
+    "text": "{sym}: {holders} holders, {usd} of your money, no exit. Two of those are facts about the token. One is about your timing."
+  },
+  {
+    "id": "dead_holders",
+    "tag": "HOLDERS",
+    "slots": [
+      "sym",
+      "holders",
+      "usd"
+    ],
+    "device": "bureaucratic misregistration",
+    "weight": 8,
+    "tier": "medium",
+    "archetypes": [],
+    "text": "Holder register for {sym}: {holders} entries. Your {usd} makes you a founding member of something nobody founded."
+  },
+  {
+    "id": "fake_major",
+    "tag": "CONTRACT CHECK",
+    "slots": [
+      "sym"
+    ],
+    "device": "sharpest reframe",
+    "weight": 7,
+    "tier": "medium",
+    "archetypes": [
+      "degen"
+    ],
+    "text": "Your {sym} is a forgery. Same ticker, different contract address, and you bought the one with the wrong address."
+  },
+  {
+    "id": "fake_major",
+    "tag": "CONTRACT CHECK",
+    "slots": [
+      "sym"
+    ],
+    "device": "understatement",
+    "weight": 7,
+    "tier": "gentle",
+    "archetypes": [],
+    "text": "That position in {sym} is a copy. The name matched the original. Very little else did."
+  },
+  {
+    "id": "fake_major",
+    "tag": "CONTRACT CHECK",
+    "slots": [
+      "sym"
+    ],
+    "device": "bureaucratic misregistration",
+    "weight": 7,
+    "tier": "savage",
+    "archetypes": [
+      "degen"
+    ],
+    "text": "Contract review on {sym}: counterfeit. You acquired the impersonation and paid for it."
+  },
+  {
+    "id": "concentration",
+    "tag": "CONCENTRATION",
+    "slots": [
+      "topPct",
+      "topSym",
+      "netWorth"
+    ],
+    "device": "sharpest reframe",
+    "weight": 8,
+    "tier": "savage",
+    "archetypes": [
+      "whale_no_taste",
+      "degen"
+    ],
+    "text": "{topSym} is {topPct}% of your {netWorth}. That is not a portfolio, that is one position and some scenery."
+  },
+  {
+    "id": "concentration",
+    "tag": "CONCENTRATION",
+    "slots": [
+      "topPct",
+      "topSym",
+      "netWorth"
+    ],
+    "device": "false respect",
+    "weight": 8,
+    "tier": "medium",
+    "archetypes": [],
+    "text": "{topPct}% of your {netWorth} sits in {topSym}. You call it conviction. The engine files it as a single point of failure."
+  },
+  {
+    "id": "concentration",
+    "tag": "CONCENTRATION",
+    "slots": [
+      "topPct",
+      "topSym",
+      "netWorth"
+    ],
+    "device": "understatement",
+    "weight": 8,
+    "tier": "gentle",
+    "archetypes": [
+      "small_wallet"
+    ],
+    "text": "You are {topPct}% {topSym}, against a total of {netWorth}. The rest of the wallet is decoration on a single bet."
+  },
+  {
+    "id": "micro_top",
+    "tag": "LARGEST POSITION",
+    "slots": [
+      "topUsd",
+      "topMcap",
+      "topSym"
+    ],
+    "device": "sharpest reframe",
+    "weight": 7,
+    "tier": "savage",
+    "archetypes": [
+      "degen",
+      "whale_no_taste"
+    ],
+    "text": "Your largest position is {topUsd} of {topSym}, a token with a {topMcap} market cap. You are not early, you are the float."
+  },
+  {
+    "id": "micro_top",
+    "tag": "LARGEST POSITION",
+    "slots": [
+      "topUsd",
+      "topMcap",
+      "topSym"
+    ],
+    "device": "understatement",
+    "weight": 7,
+    "tier": "medium",
+    "archetypes": [],
+    "text": "{topUsd} of {topSym} is your flagship position. Its entire market cap is {topMcap}. You are a measurable share of a rounding error."
+  },
+  {
+    "id": "micro_top",
+    "tag": "LARGEST POSITION",
+    "slots": [
+      "topUsd",
+      "topMcap",
+      "topSym"
+    ],
+    "device": "false respect",
+    "weight": 7,
+    "tier": "savage",
+    "archetypes": [
+      "degen"
+    ],
+    "text": "You put {topUsd} into {topSym}. All of {topSym} is worth {topMcap}. You are a named shareholder in a rounding error."
+  },
+  {
+    "id": "top_loser",
+    "tag": "SEVEN DAYS",
+    "slots": [
+      "sym",
+      "chg7",
+      "lossUsd",
+      "netWorth"
+    ],
+    "device": "sharpest reframe",
+    "weight": 7,
+    "tier": "medium",
+    "archetypes": [
+      "degen"
+    ],
+    "text": "{sym} is down {chg7}% in seven days. That is {lossUsd} out of your {netWorth}. A week is a long time to lose {lossUsd}."
+  },
+  {
+    "id": "top_loser",
+    "tag": "SEVEN DAYS",
+    "slots": [
+      "sym",
+      "chg7",
+      "lossUsd",
+      "netWorth"
+    ],
+    "device": "understatement",
+    "weight": 7,
+    "tier": "gentle",
+    "archetypes": [
+      "small_wallet"
+    ],
+    "text": "{chg7}% off in seven days on {sym}, costing {lossUsd}. Your total is {netWorth}. The losing is running faster than the holding."
+  },
+  {
+    "id": "top_loser",
+    "tag": "SEVEN DAYS",
+    "slots": [
+      "sym",
+      "chg7",
+      "lossUsd",
+      "netWorth"
+    ],
+    "device": "bureaucratic misregistration",
+    "weight": 7,
+    "tier": "savage",
+    "archetypes": [
+      "degen"
+    ],
+    "text": "Weekly report for {sym}: down {chg7}%. Loss recorded at {lossUsd} against {netWorth}. Cause of entry: the purchase."
+  },
+  {
+    "id": "stable_dust",
+    "tag": "STABLE DUST",
+    "slots": [
+      "stableUsd",
+      "netWorth"
+    ],
+    "device": "sharpest reframe",
+    "weight": 5,
+    "tier": "medium",
+    "archetypes": [
+      "no_stables"
+    ],
+    "text": "Your stablecoin position is {stableUsd} against a portfolio of {netWorth}. That is not a cash buffer, that is a tip."
+  },
+  {
+    "id": "stable_dust",
+    "tag": "STABLE DUST",
+    "slots": [
+      "stableUsd",
+      "netWorth"
+    ],
+    "device": "understatement",
+    "weight": 5,
+    "tier": "gentle",
+    "archetypes": [],
+    "text": "{stableUsd} in stables out of {netWorth}. You have hedged like somebody expecting a very small emergency."
+  },
+  {
+    "id": "stable_dust",
+    "tag": "STABLE DUST",
+    "slots": [
+      "stableUsd",
+      "netWorth"
+    ],
+    "device": "false respect",
+    "weight": 5,
+    "tier": "savage",
+    "archetypes": [
+      "whale_no_taste"
+    ],
+    "text": "You hold {stableUsd} stable and {netWorth} volatile. Dry powder, described generously."
+  },
+  {
+    "id": "no_stables",
+    "tag": "STABLECOINS",
+    "slots": [
+      "netWorth"
+    ],
+    "device": "sharpest reframe",
+    "weight": 6,
+    "tier": "savage",
+    "archetypes": [
+      "no_stables",
+      "degen"
+    ],
+    "text": "Zero stablecoins. {netWorth} on chain and no cash. You are fully exposed and apparently rehearsed."
+  },
+  {
+    "id": "no_stables",
+    "tag": "STABLECOINS",
+    "slots": [
+      "netWorth"
+    ],
+    "device": "understatement",
+    "weight": 6,
+    "tier": "gentle",
+    "archetypes": [
+      "small_wallet"
+    ],
+    "text": "No stablecoins at all, against {netWorth}. You have built a position with no brakes and no stated plan for them."
+  },
+  {
+    "id": "no_stables",
+    "tag": "STABLECOINS",
+    "slots": [
+      "netWorth"
+    ],
+    "device": "rule of three",
+    "weight": 6,
+    "tier": "medium",
+    "archetypes": [
+      "no_stables"
+    ],
+    "text": "{netWorth} on chain, zero stables, one direction. That is a thesis with no second act."
+  },
+  {
+    "id": "gas_burner_abs",
+    "tag": "GAS PAID",
+    "slots": [
+      "gasUsd",
+      "netWorth"
+    ],
+    "device": "sharpest reframe",
+    "weight": 9,
+    "tier": "savage",
+    "archetypes": [
+      "gas_burner",
+      "degen"
+    ],
+    "text": "You have paid {gasUsd} in gas to end up holding {netWorth}. The journey was the entire product."
+  },
+  {
+    "id": "gas_burner_abs",
+    "tag": "GAS PAID",
+    "slots": [
+      "gasUsd",
+      "netWorth"
+    ],
+    "device": "false respect",
+    "weight": 9,
+    "tier": "medium",
+    "archetypes": [],
+    "text": "You have paid {gasUsd} in gas to hold {netWorth}. You did not buy assets, you rented blockspace at retail."
+  },
+  {
+    "id": "gas_burner_abs",
+    "tag": "GAS PAID",
+    "slots": [
+      "gasUsd",
+      "netWorth"
+    ],
+    "device": "understatement",
+    "weight": 9,
+    "tier": "gentle",
+    "archetypes": [],
+    "text": "{gasUsd} paid in network fees to arrive at {netWorth}. You funded the chain, not the portfolio."
+  },
+  {
+    "id": "gas_burner_abs",
+    "tag": "GAS PAID",
+    "slots": [
+      "gasUsd",
+      "netWorth"
+    ],
+    "device": "sharpest reframe",
+    "weight": 9,
+    "tier": "medium",
+    "archetypes": [
+      "gas_burner"
+    ],
+    "text": "Lifetime gas paid: {gasUsd}. Resulting holdings: {netWorth}. The validators speak of you warmly."
+  },
+  {
+    "id": "gas_burner_pct",
+    "tag": "GAS RATIO",
+    "slots": [
+      "gasUsd",
+      "gasPct",
+      "netWorth"
+    ],
+    "device": "sharpest reframe",
+    "weight": 8,
+    "tier": "savage",
+    "archetypes": [
+      "gas_burner"
+    ],
+    "text": "Your gas is {gasPct}% of your net worth. {gasUsd} paid to keep {netWorth}. That ratio is a hobby, not a strategy."
+  },
+  {
+    "id": "gas_burner_pct",
+    "tag": "GAS RATIO",
+    "slots": [
+      "gasUsd",
+      "gasPct",
+      "netWorth"
+    ],
+    "device": "understatement",
+    "weight": 8,
+    "tier": "medium",
+    "archetypes": [],
+    "text": "{gasUsd} in fees equals {gasPct}% of the {netWorth} you still have. You tipped a protocol that never asked."
+  },
+  {
+    "id": "gas_burner_pct",
+    "tag": "GAS RATIO",
+    "slots": [
+      "gasUsd",
+      "gasPct",
+      "netWorth"
+    ],
+    "device": "bureaucratic misregistration",
+    "weight": 8,
+    "tier": "savage",
+    "archetypes": [
+      "gas_burner"
+    ],
+    "text": "Fee disclosure: {gasPct}% of assets, {gasUsd} on {netWorth}. You have paid a broker who provides no advice and takes no calls."
+  },
+  {
+    "id": "churn",
+    "tag": "ACTIVITY",
+    "slots": [
+      "txCount",
+      "netWorth",
+      "avgUsd"
+    ],
+    "device": "sharpest reframe",
+    "weight": 6,
+    "tier": "medium",
+    "archetypes": [
+      "churner"
+    ],
+    "text": "{txCount} transactions at an average of {avgUsd} to arrive at {netWorth}. Considerable effort in service of very little."
+  },
+  {
+    "id": "churn",
+    "tag": "ACTIVITY",
+    "slots": [
+      "txCount",
+      "netWorth",
+      "avgUsd"
+    ],
+    "device": "understatement",
+    "weight": 6,
+    "tier": "gentle",
+    "archetypes": [],
+    "text": "{txCount} on chain moves averaging {avgUsd}, ending at {netWorth}. You are not trading, you are pacing."
+  },
+  {
+    "id": "churn",
+    "tag": "ACTIVITY",
+    "slots": [
+      "txCount",
+      "netWorth",
+      "avgUsd"
+    ],
+    "device": "escalation",
+    "weight": 6,
+    "tier": "savage",
+    "archetypes": [
+      "churner",
+      "degen"
+    ],
+    "text": "{txCount} transactions. Average size {avgUsd}. Final total {netWorth}. You have the activity of a market maker and the balance of a tourist."
+  },
+  {
+    "id": "churn_lite",
+    "tag": "ACTIVITY",
+    "slots": [
+      "txCount",
+      "netWorth"
+    ],
+    "device": "sharpest reframe",
+    "weight": 5,
+    "tier": "medium",
+    "archetypes": [
+      "churner"
+    ],
+    "text": "{txCount} transactions and {netWorth} to show for it. Activity is not progress, but it does fill a wallet history."
+  },
+  {
+    "id": "churn_lite",
+    "tag": "ACTIVITY",
+    "slots": [
+      "txCount",
+      "netWorth"
+    ],
+    "device": "understatement",
+    "weight": 5,
+    "tier": "gentle",
+    "archetypes": [],
+    "text": "Your wallet holds {netWorth} after {txCount} transactions. A busy file with a small result."
+  },
+  {
+    "id": "churn_lite",
+    "tag": "ACTIVITY",
+    "slots": [
+      "txCount",
+      "netWorth"
+    ],
+    "device": "bureaucratic misregistration",
+    "weight": 5,
+    "tier": "medium",
+    "archetypes": [
+      "churner"
+    ],
+    "text": "{txCount} logged transactions, closing balance {netWorth}. The record is complete. The record is the only complete thing here."
+  },
+  {
+    "id": "broke",
+    "tag": "TOTAL ON-CHAIN",
+    "slots": [
+      "netWorth",
+      "chainsActive"
+    ],
+    "device": "sharpest reframe",
+    "weight": 7,
+    "tier": "gentle",
+    "archetypes": [
+      "small_wallet"
+    ],
+    "text": "{netWorth} across {chainsActive} chains. The gas to gather it would cost more than the gathering."
+  },
+  {
+    "id": "broke",
+    "tag": "TOTAL ON-CHAIN",
+    "slots": [
+      "netWorth",
+      "chainsActive"
+    ],
+    "device": "bureaucratic misregistration",
+    "weight": 7,
+    "tier": "gentle",
+    "archetypes": [],
+    "text": "You have wallets on {chainsActive} chains and {netWorth} between them. Spread wide, thin everywhere."
+  },
+  {
+    "id": "broke",
+    "tag": "TOTAL ON-CHAIN",
+    "slots": [
+      "netWorth",
+      "chainsActive"
+    ],
+    "device": "understatement",
+    "weight": 7,
+    "tier": "gentle",
+    "archetypes": [
+      "small_wallet"
+    ],
+    "text": "Total on chain: {netWorth}, spread over {chainsActive} chains. You have the distribution of a whale and the balance of a receipt."
+  },
+  {
+    "id": "broke",
+    "tag": "TOTAL ON-CHAIN",
+    "slots": [
+      "netWorth",
+      "chainsActive"
+    ],
+    "device": "false respect",
+    "weight": 7,
+    "tier": "gentle",
+    "archetypes": [],
+    "text": "{netWorth} on {chainsActive} chains. Multi chain presence, achieved without the inconvenience of value."
+  },
+  {
+    "id": "thin",
+    "tag": "TIME ON-CHAIN",
+    "slots": [
+      "netWorth",
+      "years"
+    ],
+    "device": "sharpest reframe",
+    "weight": 6,
+    "tier": "gentle",
+    "archetypes": [
+      "small_wallet",
+      "veteran"
+    ],
+    "text": "{years} years on chain and {netWorth} to show for it. Time is the only thing you have actually held."
+  },
+  {
+    "id": "thin",
+    "tag": "TIME ON-CHAIN",
+    "slots": [
+      "netWorth",
+      "years"
+    ],
+    "device": "understatement",
+    "weight": 6,
+    "tier": "gentle",
+    "archetypes": [
+      "veteran"
+    ],
+    "text": "After {years} years the balance is {netWorth}. You have been early to everything except a result."
+  },
+  {
+    "id": "thin",
+    "tag": "TIME ON-CHAIN",
+    "slots": [
+      "netWorth",
+      "years"
+    ],
+    "device": "false respect",
+    "weight": 6,
+    "tier": "gentle",
+    "archetypes": [
+      "veteran",
+      "small_wallet"
+    ],
+    "text": "{years} years in the market, {netWorth} on chain. You are not an investor, you are a witness with a wallet."
+  },
+  {
+    "id": "nft_dust",
+    "tag": "NFT HOLDINGS",
+    "slots": [
+      "nftCount",
+      "nftPriced",
+      "nftFloor"
+    ],
+    "device": "sharpest reframe",
+    "weight": 6,
+    "tier": "medium",
+    "archetypes": [
+      "nft_hoarder"
+    ],
+    "text": "{nftCount} NFTs, and only {nftPriced} of them have a price. The floor is {nftFloor}. The rest is a folder."
+  },
+  {
+    "id": "nft_dust",
+    "tag": "NFT HOLDINGS",
+    "slots": [
+      "nftCount",
+      "nftPriced",
+      "nftFloor"
+    ],
+    "device": "understatement",
+    "weight": 6,
+    "tier": "gentle",
+    "archetypes": [],
+    "text": "You own {nftCount} NFTs and {nftPriced} carry a quote. Floor: {nftFloor}. The market has answered partially."
+  },
+  {
+    "id": "nft_dust",
+    "tag": "NFT HOLDINGS",
+    "slots": [
+      "nftCount",
+      "nftPriced",
+      "nftFloor"
+    ],
+    "device": "escalation",
+    "weight": 6,
+    "tier": "savage",
+    "archetypes": [
+      "nft_hoarder",
+      "whale_no_taste"
+    ],
+    "text": "{nftCount} pieces of provenance. {nftPriced} priced. {nftFloor} at the floor. You collected the part of the internet that cannot be sold."
+  },
+  {
+    "id": "sol_spam",
+    "tag": "SPL TOKENS",
+    "slots": [
+      "solSpam",
+      "solUsd"
+    ],
+    "device": "sharpest reframe",
+    "weight": 6,
+    "tier": "medium",
+    "archetypes": [
+      "sol_only",
+      "spam_magnet"
+    ],
+    "text": "{solSpam} SPL tokens in the wallet. Real value: {solUsd}. Solana hands out tokens the way conferences hand out lanyards."
+  },
+  {
+    "id": "sol_spam",
+    "tag": "SPL TOKENS",
+    "slots": [
+      "solSpam",
+      "solUsd"
+    ],
+    "device": "understatement",
+    "weight": 6,
+    "tier": "gentle",
+    "archetypes": [],
+    "text": "{solSpam} tokens on Solana, {solUsd} of actual value. The balance arrived unsolicited and stayed."
+  },
+  {
+    "id": "sol_spam",
+    "tag": "SPL TOKENS",
+    "slots": [
+      "solSpam",
+      "solUsd"
+    ],
+    "device": "rule of three",
+    "weight": 6,
+    "tier": "savage",
+    "archetypes": [
+      "sol_only",
+      "spam_magnet"
+    ],
+    "text": "{solSpam} tokens. {solUsd} of value. One wallet. The maths has already made its decision."
+  },
+  {
+    "id": "tickers_over_dollars",
+    "tag": "TICKERS",
+    "slots": [
+      "tickerCount",
+      "netWorth"
+    ],
+    "device": "sharpest reframe",
+    "weight": 5,
+    "tier": "medium",
+    "archetypes": [
+      "ticker_hoarder"
+    ],
+    "text": "{tickerCount} ticker symbols and {netWorth} behind them. You have collected symbols the way other people collect stamps."
+  },
+  {
+    "id": "tickers_over_dollars",
+    "tag": "TICKERS",
+    "slots": [
+      "tickerCount",
+      "netWorth"
+    ],
+    "device": "understatement",
+    "weight": 5,
+    "tier": "gentle",
+    "archetypes": [],
+    "text": "Your portfolio lists {tickerCount} tickers worth {netWorth} combined. Breadth without weight."
+  },
+  {
+    "id": "tickers_over_dollars",
+    "tag": "TICKERS",
+    "slots": [
+      "tickerCount",
+      "netWorth"
+    ],
+    "device": "false respect",
+    "weight": 5,
+    "tier": "savage",
+    "archetypes": [
+      "ticker_hoarder",
+      "whale_no_taste"
+    ],
+    "text": "{tickerCount} symbols, {netWorth} of substance. You own the index of everything you declined to commit to."
+  },
+  {
+    "id": "snapshot_vs_price",
+    "tag": "SNAPSHOT",
+    "slots": [
+      "netWorth",
+      "ethChg"
+    ],
+    "device": "understatement",
+    "weight": 4,
+    "tier": "gentle",
+    "archetypes": [],
+    "text": "Your wallet reads {netWorth} at this snapshot. The market moved {ethChg}% today without asking you first."
+  },
+  {
+    "id": "snapshot_vs_price",
+    "tag": "SNAPSHOT",
+    "slots": [
+      "netWorth",
+      "ethChg"
+    ],
+    "device": "bureaucratic misregistration",
+    "weight": 4,
+    "tier": "gentle",
+    "archetypes": [],
+    "text": "Snapshot at {netWorth}. Market move recorded at {ethChg}%. Both figures are accurate. Only one of them involved you."
+  },
+  {
+    "id": "snapshot_vs_price",
+    "tag": "SNAPSHOT",
+    "slots": [
+      "netWorth",
+      "ethChg"
+    ],
+    "device": "sharpest reframe",
+    "weight": 4,
+    "tier": "medium",
+    "archetypes": [
+      "degen"
+    ],
+    "text": "{netWorth} on chain while the market moved {ethChg}%. You are holding a position and a receipt for the same hour."
+  }
+]

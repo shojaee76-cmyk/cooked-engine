@@ -1,0 +1,1286 @@
+[
+  {
+    "id": "per_follower",
+    "tag": "PER FOLLOWER",
+    "slots": [
+      "followers",
+      "tweets",
+      "valuePerFollower"
+    ],
+    "device": "sharpest reframe",
+    "weight": 7,
+    "tier": "medium",
+    "archetypes": [
+      "engagement_farmer"
+    ],
+    "text": "Your {followers} followers put you at {valuePerFollower} a head against the benchmark. Your audience is an asset with a bad price."
+  },
+  {
+    "id": "per_follower",
+    "tag": "PER FOLLOWER",
+    "slots": [
+      "followers",
+      "tweets",
+      "valuePerFollower"
+    ],
+    "device": "understatement",
+    "weight": 6,
+    "tier": "medium",
+    "archetypes": [
+      "engagement_farmer"
+    ],
+    "text": "{tweets} posts bought you {followers} followers at {valuePerFollower} each. The benchmark spends less and collects more. Note the margin."
+  },
+  {
+    "id": "per_follower",
+    "tag": "PER FOLLOWER",
+    "slots": [
+      "followers",
+      "tweets",
+      "valuePerFollower"
+    ],
+    "device": "specific numbers over adjectives",
+    "weight": 7,
+    "tier": "medium",
+    "archetypes": [
+      "engagement_farmer"
+    ],
+    "text": "Benchmark accounts with {followers} followers clear more than {valuePerFollower}. You have a crowd and no yield."
+  },
+  {
+    "id": "per_follower",
+    "tag": "PER FOLLOWER",
+    "slots": [
+      "followers",
+      "tweets",
+      "valuePerFollower"
+    ],
+    "device": "false respect",
+    "weight": 6,
+    "tier": "medium",
+    "archetypes": [
+      "engagement_farmer"
+    ],
+    "text": "{valuePerFollower} per follower, measured against accounts that do this properly. Your {followers} people are the cheap seats."
+  },
+  {
+    "id": "ratio",
+    "tag": "FOLLOW RATIO",
+    "slots": [
+      "followers",
+      "following",
+      "ratio"
+    ],
+    "device": "sharpest reframe",
+    "weight": 9,
+    "tier": "savage",
+    "archetypes": [
+      "engagement_farmer",
+      "lurker"
+    ],
+    "text": "You follow {following} accounts and {followers} follow back. A ratio of {ratio}. You are the audience, not the show."
+  },
+  {
+    "id": "ratio",
+    "tag": "FOLLOW RATIO",
+    "slots": [
+      "followers",
+      "following",
+      "ratio"
+    ],
+    "device": "bureaucratic misregistration",
+    "weight": 8,
+    "tier": "savage",
+    "archetypes": [
+      "engagement_farmer",
+      "lurker"
+    ],
+    "text": "{following} follows, {followers} followers, {ratio}. You have subscribed to the timeline and supplied your own attendance."
+  },
+  {
+    "id": "ratio",
+    "tag": "FOLLOW RATIO",
+    "slots": [
+      "followers",
+      "following",
+      "ratio"
+    ],
+    "device": "specific numbers over adjectives",
+    "weight": 9,
+    "tier": "medium",
+    "archetypes": [
+      "engagement_farmer",
+      "lurker"
+    ],
+    "text": "Your follow ratio is {ratio}. {following} people get your attention. {followers} return it."
+  },
+  {
+    "id": "ratio",
+    "tag": "FOLLOW RATIO",
+    "slots": [
+      "followers",
+      "following",
+      "ratio"
+    ],
+    "device": "understatement",
+    "weight": 8,
+    "tier": "medium",
+    "archetypes": [
+      "engagement_farmer",
+      "lurker"
+    ],
+    "text": "{following} accounts against {ratio}. You built a reading list and called it a brand."
+  },
+  {
+    "id": "engagement",
+    "tag": "ENGAGEMENT",
+    "slots": [
+      "likes",
+      "tweets",
+      "likesPerPost"
+    ],
+    "device": "sharpest reframe",
+    "weight": 8,
+    "tier": "medium",
+    "archetypes": [
+      "broadcaster"
+    ],
+    "text": "{likes} likes across {tweets} posts. {likesPerPost} per post. You are broadcasting into a room with the lights off."
+  },
+  {
+    "id": "engagement",
+    "tag": "ENGAGEMENT",
+    "slots": [
+      "likes",
+      "tweets",
+      "likesPerPost"
+    ],
+    "device": "understatement",
+    "weight": 7,
+    "tier": "medium",
+    "archetypes": [
+      "broadcaster"
+    ],
+    "text": "{likesPerPost} likes per post over {tweets} posts. The audience is present. The audience is not moved."
+  },
+  {
+    "id": "engagement",
+    "tag": "ENGAGEMENT",
+    "slots": [
+      "likes",
+      "tweets",
+      "likesPerPost"
+    ],
+    "device": "specific numbers over adjectives",
+    "weight": 8,
+    "tier": "medium",
+    "archetypes": [
+      "broadcaster"
+    ],
+    "text": "{tweets} posts produced {likes} likes, {likesPerPost} each. That is not engagement, that is a receipt for silence."
+  },
+  {
+    "id": "engagement",
+    "tag": "ENGAGEMENT",
+    "slots": [
+      "likes",
+      "tweets",
+      "likesPerPost"
+    ],
+    "device": "escalation",
+    "weight": 7,
+    "tier": "medium",
+    "archetypes": [
+      "broadcaster"
+    ],
+    "text": "You have earned {likes} likes from {tweets} posts. {likesPerPost} per post. The crowd has seen you and chosen to continue."
+  },
+  {
+    "id": "engagement_low",
+    "tag": "ONE WAY",
+    "slots": [
+      "tweets",
+      "likes"
+    ],
+    "device": "sharpest reframe",
+    "weight": 8,
+    "tier": "savage",
+    "archetypes": [
+      "broadcaster",
+      "ghost"
+    ],
+    "text": "{tweets} posts and {likes} likes. You send. You never receive. This is a one-way correspondence."
+  },
+  {
+    "id": "engagement_low",
+    "tag": "ONE WAY",
+    "slots": [
+      "tweets",
+      "likes"
+    ],
+    "device": "understatement",
+    "weight": 7,
+    "tier": "savage",
+    "archetypes": [
+      "broadcaster",
+      "ghost"
+    ],
+    "text": "You have posted {tweets} times and collected {likes} likes. Nobody answers, and you keep the line open."
+  },
+  {
+    "id": "engagement_low",
+    "tag": "ONE WAY",
+    "slots": [
+      "tweets",
+      "likes"
+    ],
+    "device": "understatement",
+    "weight": 8,
+    "tier": "medium",
+    "archetypes": [
+      "broadcaster",
+      "ghost"
+    ],
+    "text": "{tweets} posts against {likes} likes. You are holding a monologue in a room that has already left."
+  },
+  {
+    "id": "engagement_low",
+    "tag": "ONE WAY",
+    "slots": [
+      "tweets",
+      "likes"
+    ],
+    "device": "escalation",
+    "weight": 7,
+    "tier": "medium",
+    "archetypes": [
+      "broadcaster",
+      "ghost"
+    ],
+    "text": "{likes} likes across {tweets} posts. You broadcast. You do not belong to anything."
+  },
+  {
+    "id": "firehose",
+    "tag": "POST VOLUME",
+    "slots": [
+      "tweets",
+      "years",
+      "postsPerDay"
+    ],
+    "device": "sharpest reframe",
+    "weight": 8,
+    "tier": "savage",
+    "archetypes": [
+      "broadcaster",
+      "degen"
+    ],
+    "text": "{tweets} posts over {years} years. {postsPerDay} a day. You have produced a body of work nobody has read once."
+  },
+  {
+    "id": "firehose",
+    "tag": "POST VOLUME",
+    "slots": [
+      "tweets",
+      "years",
+      "postsPerDay"
+    ],
+    "device": "escalation",
+    "weight": 7,
+    "tier": "savage",
+    "archetypes": [
+      "broadcaster",
+      "degen"
+    ],
+    "text": "{postsPerDay} posts a day for {years} years, {tweets} in total. The firehose has never been off. Nothing has arrived."
+  },
+  {
+    "id": "firehose",
+    "tag": "POST VOLUME",
+    "slots": [
+      "tweets",
+      "years",
+      "postsPerDay"
+    ],
+    "device": "rule of three",
+    "weight": 8,
+    "tier": "medium",
+    "archetypes": [
+      "broadcaster",
+      "degen"
+    ],
+    "text": "In {years} years you posted {tweets} times, {postsPerDay} a day. Most people stop. You cannot be stopped."
+  },
+  {
+    "id": "firehose",
+    "tag": "POST VOLUME",
+    "slots": [
+      "tweets",
+      "years",
+      "postsPerDay"
+    ],
+    "device": "specific numbers over adjectives",
+    "weight": 7,
+    "tier": "medium",
+    "archetypes": [
+      "broadcaster",
+      "degen"
+    ],
+    "text": "{postsPerDay} a day for {years} years and {tweets} items filed. The archive has a volume problem and an audience problem."
+  },
+  {
+    "id": "posts_per_day",
+    "tag": "DAILY OUTPUT",
+    "slots": [
+      "postsPerDay",
+      "years",
+      "tweets"
+    ],
+    "device": "sharpest reframe",
+    "weight": 7,
+    "tier": "medium",
+    "archetypes": [
+      "broadcaster"
+    ],
+    "text": "{postsPerDay} posts a day for {years} years. {tweets} in total. You turned attention into a quota and met it."
+  },
+  {
+    "id": "posts_per_day",
+    "tag": "DAILY OUTPUT",
+    "slots": [
+      "postsPerDay",
+      "years",
+      "tweets"
+    ],
+    "device": "understatement",
+    "weight": 6,
+    "tier": "medium",
+    "archetypes": [
+      "broadcaster"
+    ],
+    "text": "{postsPerDay} a day for {years} years. {tweets} posts. Nobody requested this and you kept the schedule anyway."
+  },
+  {
+    "id": "posts_per_day",
+    "tag": "DAILY OUTPUT",
+    "slots": [
+      "postsPerDay",
+      "years",
+      "tweets"
+    ],
+    "device": "false respect",
+    "weight": 7,
+    "tier": "medium",
+    "archetypes": [
+      "broadcaster"
+    ],
+    "text": "Your output is {postsPerDay} posts per day, {tweets} so far, {years} years running. Volume is not a position."
+  },
+  {
+    "id": "posts_per_day",
+    "tag": "DAILY OUTPUT",
+    "slots": [
+      "postsPerDay",
+      "years",
+      "tweets"
+    ],
+    "device": "bureaucratic misregistration",
+    "weight": 6,
+    "tier": "medium",
+    "archetypes": [
+      "broadcaster"
+    ],
+    "text": "{postsPerDay} posts daily for {years} years, {tweets} total. The only growing number is the ledger of them."
+  },
+  {
+    "id": "ghost",
+    "tag": "DORMANT",
+    "slots": [
+      "followers",
+      "tweets",
+      "years"
+    ],
+    "device": "sharpest reframe",
+    "weight": 7,
+    "tier": "medium",
+    "archetypes": [
+      "ghost",
+      "lurker"
+    ],
+    "text": "{followers} followers and {tweets} posts across {years} years. You have an account, not a presence."
+  },
+  {
+    "id": "ghost",
+    "tag": "DORMANT",
+    "slots": [
+      "followers",
+      "tweets",
+      "years"
+    ],
+    "device": "understatement",
+    "weight": 6,
+    "tier": "medium",
+    "archetypes": [
+      "ghost",
+      "lurker"
+    ],
+    "text": "{years} years old, {tweets} posts, {followers} followers. You registered and then left the room standing."
+  },
+  {
+    "id": "ghost",
+    "tag": "DORMANT",
+    "slots": [
+      "followers",
+      "tweets",
+      "years"
+    ],
+    "device": "bureaucratic misregistration",
+    "weight": 7,
+    "tier": "medium",
+    "archetypes": [
+      "ghost",
+      "lurker"
+    ],
+    "text": "{tweets} posts in {years} years, watched by {followers} people. The account exists. The person is on sabbatical."
+  },
+  {
+    "id": "ghost",
+    "tag": "DORMANT",
+    "slots": [
+      "followers",
+      "tweets",
+      "years"
+    ],
+    "device": "callback",
+    "weight": 6,
+    "tier": "medium",
+    "archetypes": [
+      "ghost",
+      "lurker"
+    ],
+    "text": "{followers} followers waiting on {tweets} posts. You built a stage in {years} years and never came on."
+  },
+  {
+    "id": "text_wall",
+    "tag": "TEXT ONLY",
+    "slots": [
+      "tweets",
+      "media"
+    ],
+    "device": "sharpest reframe",
+    "weight": 5,
+    "tier": "medium",
+    "archetypes": [
+      "broadcaster",
+      "anon"
+    ],
+    "text": "{tweets} posts and {media} images. You have chosen the written word, at length, unedited."
+  },
+  {
+    "id": "text_wall",
+    "tag": "TEXT ONLY",
+    "slots": [
+      "tweets",
+      "media"
+    ],
+    "device": "understatement",
+    "weight": 4,
+    "tier": "medium",
+    "archetypes": [
+      "broadcaster",
+      "anon"
+    ],
+    "text": "{tweets} posts against {media} images. You have never once let a picture do the work."
+  },
+  {
+    "id": "text_wall",
+    "tag": "TEXT ONLY",
+    "slots": [
+      "tweets",
+      "media"
+    ],
+    "device": "rule of three",
+    "weight": 5,
+    "tier": "medium",
+    "archetypes": [
+      "broadcaster",
+      "anon"
+    ],
+    "text": "{media} images across {tweets} posts. Your timeline reads like a terms of service update nobody agreed to."
+  },
+  {
+    "id": "text_wall",
+    "tag": "TEXT ONLY",
+    "slots": [
+      "tweets",
+      "media"
+    ],
+    "device": "callback",
+    "weight": 4,
+    "tier": "medium",
+    "archetypes": [
+      "broadcaster",
+      "anon"
+    ],
+    "text": "{tweets} posts, {media} of them illustrated. The remaining text is doing a lot of unpaid labour."
+  },
+  {
+    "id": "not_verified",
+    "tag": "UNVERIFIED",
+    "slots": [
+      "years",
+      "followers"
+    ],
+    "device": "bureaucratic misregistration",
+    "weight": 5,
+    "tier": "medium",
+    "archetypes": [],
+    "text": "{years} years, {followers} followers, no verification. Nothing here is confirmed except your attendance."
+  },
+  {
+    "id": "not_verified",
+    "tag": "UNVERIFIED",
+    "slots": [
+      "years",
+      "followers"
+    ],
+    "device": "specific numbers over adjectives",
+    "weight": 4,
+    "tier": "medium",
+    "archetypes": [],
+    "text": "{followers} followers after {years} years and still not verified. You paid for nothing and got the lifetime rate."
+  },
+  {
+    "id": "not_verified",
+    "tag": "UNVERIFIED",
+    "slots": [
+      "years",
+      "followers"
+    ],
+    "device": "understatement",
+    "weight": 5,
+    "tier": "medium",
+    "archetypes": [],
+    "text": "{years} years on the timeline with {followers} followers and no badge. The badge was never the problem."
+  },
+  {
+    "id": "not_verified",
+    "tag": "UNVERIFIED",
+    "slots": [
+      "years",
+      "followers"
+    ],
+    "device": "sharpest reframe",
+    "weight": 4,
+    "tier": "medium",
+    "archetypes": [],
+    "text": "{followers} followers in {years} years, unverified. Some accounts are born famous. Yours is doing community service."
+  },
+  {
+    "id": "bio_dyor",
+    "tag": "BIO",
+    "slots": [
+      "bio"
+    ],
+    "device": "sharpest reframe",
+    "weight": 6,
+    "tier": "savage",
+    "archetypes": [
+      "shiller"
+    ],
+    "text": "Your bio says {bio}. You wrote a disclaimer before you wrote a thesis."
+  },
+  {
+    "id": "bio_dyor",
+    "tag": "BIO",
+    "slots": [
+      "bio"
+    ],
+    "device": "understatement",
+    "weight": 5,
+    "tier": "savage",
+    "archetypes": [
+      "shiller"
+    ],
+    "text": "{bio}. Not financial advice is the one item in your bio you have verified."
+  },
+  {
+    "id": "bio_dyor",
+    "tag": "BIO",
+    "slots": [
+      "bio"
+    ],
+    "device": "bureaucratic misregistration",
+    "weight": 6,
+    "tier": "medium",
+    "archetypes": [
+      "shiller"
+    ],
+    "text": "Your bio reads {bio}. You accepted zero responsibility for the thing you came here to sell."
+  },
+  {
+    "id": "bio_dyor",
+    "tag": "BIO",
+    "slots": [
+      "bio"
+    ],
+    "device": "false respect",
+    "weight": 5,
+    "tier": "medium",
+    "archetypes": [
+      "shiller"
+    ],
+    "text": "{bio}. The warning is in the bio and the receipts are in the timeline. Only one of them is real."
+  },
+  {
+    "id": "bio_builder",
+    "tag": "BIO",
+    "slots": [
+      "bio",
+      "followers"
+    ],
+    "device": "understatement",
+    "weight": 7,
+    "tier": "savage",
+    "archetypes": [
+      "builder_cosplayer"
+    ],
+    "text": "Your bio says {bio}. {followers} followers have seen the paperwork."
+  },
+  {
+    "id": "bio_builder",
+    "tag": "BIO",
+    "slots": [
+      "bio",
+      "followers"
+    ],
+    "device": "rule of three",
+    "weight": 6,
+    "tier": "savage",
+    "archetypes": [
+      "builder_cosplayer"
+    ],
+    "text": "{bio}, with {followers} followers to show for it. Founders usually ship before they announce."
+  },
+  {
+    "id": "bio_builder",
+    "tag": "BIO",
+    "slots": [
+      "bio",
+      "followers"
+    ],
+    "device": "sharpest reframe",
+    "weight": 7,
+    "tier": "medium",
+    "archetypes": [
+      "builder_cosplayer"
+    ],
+    "text": "Your bio says {bio} and your audience is {followers}. The title arrived before the product. It always does."
+  },
+  {
+    "id": "bio_builder",
+    "tag": "BIO",
+    "slots": [
+      "bio",
+      "followers"
+    ],
+    "device": "false respect",
+    "weight": 6,
+    "tier": "medium",
+    "archetypes": [
+      "builder_cosplayer"
+    ],
+    "text": "{bio}. {followers} followers. The pitch is the bio and the runway is the timeline."
+  },
+  {
+    "id": "bio_degen",
+    "tag": "BIO",
+    "slots": [
+      "bio"
+    ],
+    "device": "sharpest reframe",
+    "weight": 6,
+    "tier": "medium",
+    "archetypes": [
+      "degen"
+    ],
+    "text": "Your bio says {bio}. You described the exact way you lose money and then expected a floor."
+  },
+  {
+    "id": "bio_degen",
+    "tag": "BIO",
+    "slots": [
+      "bio"
+    ],
+    "device": "understatement",
+    "weight": 5,
+    "tier": "medium",
+    "archetypes": [
+      "degen"
+    ],
+    "text": "{bio}. You put the failure mode in the bio because it read like a personality."
+  },
+  {
+    "id": "bio_degen",
+    "tag": "BIO",
+    "slots": [
+      "bio"
+    ],
+    "device": "false respect",
+    "weight": 6,
+    "tier": "medium",
+    "archetypes": [
+      "degen"
+    ],
+    "text": "Your bio reads {bio}. At least the warning was voluntary and the losses were not."
+  },
+  {
+    "id": "bio_degen",
+    "tag": "BIO",
+    "slots": [
+      "bio"
+    ],
+    "device": "bureaucratic misregistration",
+    "weight": 5,
+    "tier": "medium",
+    "archetypes": [
+      "degen"
+    ],
+    "text": "{bio}. You announced the gambling before anyone was watching. Frank, at least."
+  },
+  {
+    "id": "bio_noob",
+    "tag": "BIO",
+    "slots": [
+      "tweets"
+    ],
+    "device": "sharpest reframe",
+    "weight": 5,
+    "tier": "gentle",
+    "archetypes": [
+      "anon",
+      "noob"
+    ],
+    "text": "No bio, no name, {tweets} posts. You walked into a public square and introduced yourself to the floor."
+  },
+  {
+    "id": "bio_noob",
+    "tag": "BIO",
+    "slots": [
+      "tweets"
+    ],
+    "device": "understatement",
+    "weight": 4,
+    "tier": "gentle",
+    "archetypes": [
+      "anon",
+      "noob"
+    ],
+    "text": "{tweets} posts and no bio. The account has a voice and no face, which is a strategy."
+  },
+  {
+    "id": "bio_noob",
+    "tag": "BIO",
+    "slots": [
+      "tweets"
+    ],
+    "device": "false respect",
+    "weight": 5,
+    "tier": "gentle",
+    "archetypes": [
+      "anon",
+      "noob"
+    ],
+    "text": "Your profile is empty except for {tweets} posts. Anonymous, which is normally a decision."
+  },
+  {
+    "id": "bio_noob",
+    "tag": "BIO",
+    "slots": [
+      "tweets"
+    ],
+    "device": "callback",
+    "weight": 4,
+    "tier": "gentle",
+    "archetypes": [
+      "anon",
+      "noob"
+    ],
+    "text": "{tweets} posts against an empty bio. You are the loudest blank page on the internet."
+  },
+  {
+    "id": "bio_copypaste",
+    "tag": "BIO",
+    "slots": [
+      "bio"
+    ],
+    "device": "sharpest reframe",
+    "weight": 6,
+    "tier": "medium",
+    "archetypes": [
+      "builder_cosplayer",
+      "anon"
+    ],
+    "text": "Your bio is {bio}. A list of nouns. You describe yourself the way a landing page describes a product nobody needs."
+  },
+  {
+    "id": "bio_copypaste",
+    "tag": "BIO",
+    "slots": [
+      "bio"
+    ],
+    "device": "rule of three",
+    "weight": 5,
+    "tier": "medium",
+    "archetypes": [
+      "builder_cosplayer",
+      "anon"
+    ],
+    "text": "{bio}. Every noun separated by a slash, and none of them a job."
+  },
+  {
+    "id": "bio_copypaste",
+    "tag": "BIO",
+    "slots": [
+      "bio"
+    ],
+    "device": "understatement",
+    "weight": 6,
+    "tier": "medium",
+    "archetypes": [
+      "builder_cosplayer",
+      "anon"
+    ],
+    "text": "Your bio reads {bio}. Slashes are not credentials and the list is not a career."
+  },
+  {
+    "id": "bio_copypaste",
+    "tag": "BIO",
+    "slots": [
+      "bio"
+    ],
+    "device": "false respect",
+    "weight": 5,
+    "tier": "medium",
+    "archetypes": [
+      "builder_cosplayer",
+      "anon"
+    ],
+    "text": "{bio}. You have bundled yourself like a pricing page with one tier."
+  },
+  {
+    "id": "handle_numbered",
+    "tag": "HANDLE",
+    "slots": [
+      "handle",
+      "handleNumber"
+    ],
+    "device": "sharpest reframe",
+    "weight": 6,
+    "tier": "medium",
+    "archetypes": [
+      "anon"
+    ],
+    "text": "Your handle is {handle}, with {handleNumber} attached. That is a birth year and an apology for arriving late."
+  },
+  {
+    "id": "handle_numbered",
+    "tag": "HANDLE",
+    "slots": [
+      "handle",
+      "handleNumber"
+    ],
+    "device": "understatement",
+    "weight": 5,
+    "tier": "medium",
+    "archetypes": [
+      "anon"
+    ],
+    "text": "{handle}. {handleNumber}. Every good name was gone and you took the number."
+  },
+  {
+    "id": "handle_numbered",
+    "tag": "HANDLE",
+    "slots": [
+      "handle",
+      "handleNumber"
+    ],
+    "device": "specific numbers over adjectives",
+    "weight": 6,
+    "tier": "medium",
+    "archetypes": [
+      "anon"
+    ],
+    "text": "{handleNumber} on the end of {handle}. You registered the way people pick a PIN."
+  },
+  {
+    "id": "handle_numbered",
+    "tag": "HANDLE",
+    "slots": [
+      "handle",
+      "handleNumber"
+    ],
+    "device": "false respect",
+    "weight": 5,
+    "tier": "medium",
+    "archetypes": [
+      "anon"
+    ],
+    "text": "Your handle is {handle}. The {handleNumber} is standing in for a name and not hiding it."
+  },
+  {
+    "id": "handle_long",
+    "tag": "HANDLE",
+    "slots": [
+      "handle",
+      "handleLength"
+    ],
+    "device": "specific numbers over adjectives",
+    "weight": 5,
+    "tier": "medium",
+    "archetypes": [
+      "anon",
+      "noob"
+    ],
+    "text": "Your handle is {handle}. {handleLength} characters. Nobody has ever spelled it correctly and nobody will."
+  },
+  {
+    "id": "handle_long",
+    "tag": "HANDLE",
+    "slots": [
+      "handle",
+      "handleLength"
+    ],
+    "device": "rule of three",
+    "weight": 4,
+    "tier": "medium",
+    "archetypes": [
+      "anon",
+      "noob"
+    ],
+    "text": "{handle}, {handleLength} characters long. Your name is a full sentence with no punctuation."
+  },
+  {
+    "id": "handle_long",
+    "tag": "HANDLE",
+    "slots": [
+      "handle",
+      "handleLength"
+    ],
+    "device": "sharpest reframe",
+    "weight": 5,
+    "tier": "medium",
+    "archetypes": [
+      "anon",
+      "noob"
+    ],
+    "text": "{handleLength} characters in {handle}. You have made yourself a captcha."
+  },
+  {
+    "id": "handle_long",
+    "tag": "HANDLE",
+    "slots": [
+      "handle",
+      "handleLength"
+    ],
+    "device": "understatement",
+    "weight": 4,
+    "tier": "medium",
+    "archetypes": [
+      "anon",
+      "noob"
+    ],
+    "text": "Your handle is {handle}, {handleLength} characters. It reads like a randomiser and it was not one."
+  },
+  {
+    "id": "joined_old",
+    "tag": "ACCOUNT AGE",
+    "slots": [
+      "years",
+      "followers",
+      "tweets"
+    ],
+    "device": "sharpest reframe",
+    "weight": 7,
+    "tier": "savage",
+    "archetypes": [
+      "shiller",
+      "degen"
+    ],
+    "text": "{years} years on this app for {followers} followers and {tweets} posts. Older than the product you are shilling."
+  },
+  {
+    "id": "joined_old",
+    "tag": "ACCOUNT AGE",
+    "slots": [
+      "years",
+      "followers",
+      "tweets"
+    ],
+    "device": "callback",
+    "weight": 6,
+    "tier": "savage",
+    "archetypes": [
+      "shiller",
+      "degen"
+    ],
+    "text": "You joined {years} years ago and have {followers} followers. You are older than the token, the chain and most of its holders."
+  },
+  {
+    "id": "joined_old",
+    "tag": "ACCOUNT AGE",
+    "slots": [
+      "years",
+      "followers",
+      "tweets"
+    ],
+    "device": "understatement",
+    "weight": 7,
+    "tier": "medium",
+    "archetypes": [
+      "shiller",
+      "degen"
+    ],
+    "text": "{years} years of history and {tweets} posts. The coin you are shilling is younger than your login."
+  },
+  {
+    "id": "joined_old",
+    "tag": "ACCOUNT AGE",
+    "slots": [
+      "years",
+      "followers",
+      "tweets"
+    ],
+    "device": "escalation",
+    "weight": 6,
+    "tier": "medium",
+    "archetypes": [
+      "shiller",
+      "degen"
+    ],
+    "text": "{years} years and {followers} followers. You were here before the tokens and you will be here after them."
+  },
+  {
+    "id": "name_mismatch",
+    "tag": "DISPLAY NAME",
+    "slots": [
+      "name",
+      "handle"
+    ],
+    "device": "rule of three",
+    "weight": 6,
+    "tier": "medium",
+    "archetypes": [
+      "anon",
+      "builder_cosplayer"
+    ],
+    "text": "Your name is {name}. Your handle is {handle}. Neither of them is a person."
+  },
+  {
+    "id": "name_mismatch",
+    "tag": "DISPLAY NAME",
+    "slots": [
+      "name",
+      "handle"
+    ],
+    "device": "sharpest reframe",
+    "weight": 5,
+    "tier": "medium",
+    "archetypes": [
+      "anon",
+      "builder_cosplayer"
+    ],
+    "text": "{name} at {handle}. A brand name and a serial number pretending to be an introduction."
+  },
+  {
+    "id": "name_mismatch",
+    "tag": "DISPLAY NAME",
+    "slots": [
+      "name",
+      "handle"
+    ],
+    "device": "bureaucratic misregistration",
+    "weight": 6,
+    "tier": "medium",
+    "archetypes": [
+      "anon",
+      "builder_cosplayer"
+    ],
+    "text": "You go by {name}, which is a noun phrase, on {handle}, which is a string. The introduction is the product."
+  },
+  {
+    "id": "name_mismatch",
+    "tag": "DISPLAY NAME",
+    "slots": [
+      "name",
+      "handle"
+    ],
+    "device": "understatement",
+    "weight": 5,
+    "tier": "medium",
+    "archetypes": [
+      "anon",
+      "builder_cosplayer"
+    ],
+    "text": "{name}. {handle}. You have introduced yourself twice and not once as yourself."
+  },
+  {
+    "id": "no_x",
+    "tag": "NO X",
+    "slots": [],
+    "device": "false respect",
+    "weight": 9,
+    "tier": "gentle",
+    "archetypes": [],
+    "text": "No X account. The one place where being nobody is a growth strategy."
+  },
+  {
+    "id": "no_x",
+    "tag": "NO X",
+    "slots": [],
+    "device": "escalation",
+    "weight": 8,
+    "tier": "gentle",
+    "archetypes": [],
+    "text": "No usable X account. No bio, no handle, no posts, no audience. Clean."
+  },
+  {
+    "id": "no_x",
+    "tag": "NO X",
+    "slots": [],
+    "device": "rule of three",
+    "weight": 9,
+    "tier": "gentle",
+    "archetypes": [],
+    "text": "No X account to measure. Nothing to farm, nothing to broadcast, nothing to check."
+  },
+  {
+    "id": "no_x",
+    "tag": "NO X",
+    "slots": [],
+    "device": "sharpest reframe",
+    "weight": 8,
+    "tier": "gentle",
+    "archetypes": [],
+    "text": "No X account. Your opsec is airtight and your reach is zero."
+  },
+  {
+    "id": "per_tweet_value",
+    "tag": "VALUE PER TWEET",
+    "slots": [
+      "valuePerFollower",
+      "tweets",
+      "followers"
+    ],
+    "device": "sharpest reframe",
+    "weight": 7,
+    "tier": "savage",
+    "archetypes": [
+      "engagement_farmer"
+    ],
+    "text": "{tweets} posts for {followers} followers at {valuePerFollower} each. Every new post makes the average worse."
+  },
+  {
+    "id": "per_tweet_value",
+    "tag": "VALUE PER TWEET",
+    "slots": [
+      "valuePerFollower",
+      "tweets",
+      "followers"
+    ],
+    "device": "understatement",
+    "weight": 6,
+    "tier": "savage",
+    "archetypes": [
+      "engagement_farmer"
+    ],
+    "text": "{valuePerFollower} per follower, {tweets} posts in and {followers} out. Volume and value have never met."
+  },
+  {
+    "id": "per_tweet_value",
+    "tag": "VALUE PER TWEET",
+    "slots": [
+      "valuePerFollower",
+      "tweets",
+      "followers"
+    ],
+    "device": "bureaucratic misregistration",
+    "weight": 7,
+    "tier": "medium",
+    "archetypes": [
+      "engagement_farmer"
+    ],
+    "text": "Your followers are worth {valuePerFollower} each. You wrote {tweets} posts to get them. That is the entire business."
+  },
+  {
+    "id": "per_tweet_value",
+    "tag": "VALUE PER TWEET",
+    "slots": [
+      "valuePerFollower",
+      "tweets",
+      "followers"
+    ],
+    "device": "specific numbers over adjectives",
+    "weight": 6,
+    "tier": "medium",
+    "archetypes": [
+      "engagement_farmer"
+    ],
+    "text": "{tweets} posts produced {followers} followers at {valuePerFollower} a head. The marginal post changed nothing."
+  },
+  {
+    "id": "x_summary",
+    "tag": "PROFILE",
+    "slots": [
+      "followers",
+      "tweets",
+      "years"
+    ],
+    "device": "sharpest reframe",
+    "weight": 10,
+    "tier": "savage",
+    "archetypes": [],
+    "text": "{followers} followers, {tweets} posts, {years} years. A long career in being overlooked."
+  },
+  {
+    "id": "x_summary",
+    "tag": "PROFILE",
+    "slots": [
+      "followers",
+      "tweets",
+      "years"
+    ],
+    "device": "escalation",
+    "weight": 9,
+    "tier": "savage",
+    "archetypes": [],
+    "text": "{years} years, {tweets} posts, {followers} followers. The gap between the first and the last tells the whole story."
+  },
+  {
+    "id": "x_summary",
+    "tag": "PROFILE",
+    "slots": [
+      "followers",
+      "tweets",
+      "years"
+    ],
+    "device": "specific numbers over adjectives",
+    "weight": 10,
+    "tier": "medium",
+    "archetypes": [],
+    "text": "{followers} followers after {years} years and {tweets} posts. A full-time broadcaster with a part-time audience."
+  },
+  {
+    "id": "x_summary",
+    "tag": "PROFILE",
+    "slots": [
+      "followers",
+      "tweets",
+      "years"
+    ],
+    "device": "rule of three",
+    "weight": 9,
+    "tier": "medium",
+    "archetypes": [],
+    "text": "{tweets} posts in {years} years for {followers} followers. Volume up, reach flat, story over."
+  }
+]

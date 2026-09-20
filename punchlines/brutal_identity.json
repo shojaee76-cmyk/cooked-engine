@@ -1,0 +1,971 @@
+[
+  {
+    "id": "no_ens",
+    "tag": "IDENTITY",
+    "slots": [
+      "addr"
+    ],
+    "device": "sharpest reframe",
+    "weight": 6,
+    "tier": "brutal",
+    "archetypes": [],
+    "text": "No .eth name. {addr} is how you enter rooms, unannounced and unmissed."
+  },
+  {
+    "id": "no_ens",
+    "tag": "IDENTITY",
+    "slots": [
+      "addr"
+    ],
+    "device": "humiliation by accuracy",
+    "weight": 6,
+    "tier": "brutal",
+    "archetypes": [],
+    "text": "No .eth name on {addr}. Not private. Just never worth being findable."
+  },
+  {
+    "id": "no_ens",
+    "tag": "IDENTITY",
+    "slots": [
+      "addr"
+    ],
+    "device": "understatement",
+    "weight": 6,
+    "tier": "brutal",
+    "archetypes": [],
+    "text": "The wallet answers to {addr}. A name is something you build over years. You were busy buying."
+  },
+  {
+    "id": "no_ens",
+    "tag": "IDENTITY",
+    "slots": [
+      "addr"
+    ],
+    "device": "the kill shot",
+    "weight": 7,
+    "tier": "brutal",
+    "archetypes": [],
+    "text": "No .eth name. {addr} is what the machines call you, and machines do not call back."
+  },
+  {
+    "id": "ens_short",
+    "tag": "ENS",
+    "slots": [
+      "ens",
+      "ensLen"
+    ],
+    "device": "false respect",
+    "weight": 7,
+    "tier": "brutal",
+    "archetypes": [],
+    "text": "{ens} is {ensLen} characters. You bought brevity the way other people buy confidence."
+  },
+  {
+    "id": "ens_short",
+    "tag": "ENS",
+    "slots": [
+      "ens",
+      "ensLen"
+    ],
+    "device": "humiliation by accuracy",
+    "weight": 7,
+    "tier": "brutal",
+    "archetypes": [],
+    "text": "{ens} is {ensLen} characters and nothing is written under it. The shortest signature in the room and still no statement."
+  },
+  {
+    "id": "ens_short",
+    "tag": "ENS",
+    "slots": [
+      "ens",
+      "ensLen"
+    ],
+    "device": "sharpest reframe",
+    "weight": 7,
+    "tier": "brutal",
+    "archetypes": [],
+    "text": "{ens} fits in {ensLen} characters. A license plate, and you never owned the car."
+  },
+  {
+    "id": "ens_short",
+    "tag": "ENS",
+    "slots": [
+      "ens",
+      "ensLen"
+    ],
+    "device": "escalation",
+    "weight": 8,
+    "tier": "brutal",
+    "archetypes": [],
+    "text": "The {ensLen} characters of {ens} are the whole asset. Short name, shorter record, nothing attached worth opening."
+  },
+  {
+    "id": "ens_long",
+    "tag": "ENS",
+    "slots": [
+      "ens",
+      "ensLen"
+    ],
+    "device": "sharpest reframe",
+    "weight": 6,
+    "tier": "brutal",
+    "archetypes": [],
+    "text": "{ens} runs {ensLen} characters. You typed a whole sentence and filed it as an identity."
+  },
+  {
+    "id": "ens_long",
+    "tag": "ENS",
+    "slots": [
+      "ens",
+      "ensLen"
+    ],
+    "device": "understatement",
+    "weight": 6,
+    "tier": "brutal",
+    "archetypes": [],
+    "text": "Your .eth name is {ens}, {ensLen} characters. Long enough to explain yourself and it still does not."
+  },
+  {
+    "id": "ens_long",
+    "tag": "ENS",
+    "slots": [
+      "ens",
+      "ensLen"
+    ],
+    "device": "bureaucratic misregistration",
+    "weight": 6,
+    "tier": "brutal",
+    "archetypes": [],
+    "text": "{ensLen} characters of .eth to say {ens}. You filed a paragraph and called it a brand."
+  },
+  {
+    "id": "ens_numbered",
+    "tag": "ENS",
+    "slots": [
+      "ens",
+      "ensNumber"
+    ],
+    "device": "the kill shot",
+    "weight": 7,
+    "tier": "brutal",
+    "archetypes": [],
+    "text": "{ens} ends in {ensNumber}. The name you wanted belonged to somebody with better timing."
+  },
+  {
+    "id": "ens_numbered",
+    "tag": "ENS",
+    "slots": [
+      "ens",
+      "ensNumber"
+    ],
+    "device": "sharpest reframe",
+    "weight": 6,
+    "tier": "brutal",
+    "archetypes": [],
+    "text": "{ensNumber} on the end of {ens} is the whole receipt. You bought the leftover and put it on your card."
+  },
+  {
+    "id": "ens_numbered",
+    "tag": "ENS",
+    "slots": [
+      "ens",
+      "ensNumber"
+    ],
+    "device": "humiliation by accuracy",
+    "weight": 7,
+    "tier": "brutal",
+    "archetypes": [],
+    "text": "{ens} carries the number {ensNumber}. Names run out first and so does patience."
+  },
+  {
+    "id": "ens_avatar_default",
+    "tag": "ENS",
+    "slots": [
+      "ens"
+    ],
+    "device": "sharpest reframe",
+    "weight": 6,
+    "tier": "brutal",
+    "archetypes": [],
+    "text": "The avatar on {ens} is the default gradient. You bought a name and declined to be a person."
+  },
+  {
+    "id": "ens_avatar_default",
+    "tag": "ENS",
+    "slots": [
+      "ens"
+    ],
+    "device": "the kill shot",
+    "weight": 6,
+    "tier": "brutal",
+    "archetypes": [],
+    "text": "{ens} resolves to a default gradient. Even your avatar did not bother showing up."
+  },
+  {
+    "id": "ens_avatar_default",
+    "tag": "ENS",
+    "slots": [
+      "ens"
+    ],
+    "device": "understatement",
+    "weight": 6,
+    "tier": "brutal",
+    "archetypes": [],
+    "text": "Default gradient on {ens}. You own the name and nothing that belongs on it."
+  },
+  {
+    "id": "ens_links_nothing",
+    "tag": "ENS RECORD",
+    "slots": [
+      "ens",
+      "linkCount"
+    ],
+    "device": "sharpest reframe",
+    "weight": 6,
+    "tier": "brutal",
+    "archetypes": [],
+    "text": "{linkCount} links on {ens} and not one worth opening. A handshake held out to an empty room."
+  },
+  {
+    "id": "ens_links_nothing",
+    "tag": "ENS RECORD",
+    "slots": [
+      "ens",
+      "linkCount"
+    ],
+    "device": "humiliation by accuracy",
+    "weight": 6,
+    "tier": "brutal",
+    "archetypes": [],
+    "text": "The {ens} record exposes {linkCount} social links. A business card for a business you never started."
+  },
+  {
+    "id": "ens_links_nothing",
+    "tag": "ENS RECORD",
+    "slots": [
+      "ens",
+      "linkCount"
+    ],
+    "device": "escalation",
+    "weight": 6,
+    "tier": "brutal",
+    "archetypes": [],
+    "text": "{linkCount} links on {ens}, zero destinations. A door built for every room you were never in."
+  },
+  {
+    "id": "linked_github",
+    "tag": "GITHUB",
+    "slots": [
+      "ghUser",
+      "ghRepos",
+      "ghFollowers"
+    ],
+    "device": "humiliation by accuracy",
+    "weight": 6,
+    "tier": "brutal",
+    "archetypes": [],
+    "text": "{ghRepos} repos on {ghUser}, {ghFollowers} followers. You published a body of work and nobody came to the viewing."
+  },
+  {
+    "id": "linked_github",
+    "tag": "GITHUB",
+    "slots": [
+      "ghUser",
+      "ghRepos",
+      "ghFollowers"
+    ],
+    "device": "the kill shot",
+    "weight": 6,
+    "tier": "brutal",
+    "archetypes": [],
+    "text": "GitHub {ghUser}: {ghRepos} repositories, {ghFollowers} followers. The forge does not clap."
+  },
+  {
+    "id": "linked_github",
+    "tag": "GITHUB",
+    "slots": [
+      "ghUser",
+      "ghRepos",
+      "ghFollowers"
+    ],
+    "device": "rule of three",
+    "weight": 6,
+    "tier": "brutal",
+    "archetypes": [],
+    "text": "{ghRepos} repos, {ghFollowers} followers, one {ghUser}. Committing is not contributing."
+  },
+  {
+    "id": "linked_telegram",
+    "tag": "TELEGRAM",
+    "slots": [
+      "tg"
+    ],
+    "device": "sharpest reframe",
+    "weight": 6,
+    "tier": "brutal",
+    "archetypes": [],
+    "text": "Telegram {tg}, attached to this wallet. A back channel for decisions nobody asked you about."
+  },
+  {
+    "id": "linked_telegram",
+    "tag": "TELEGRAM",
+    "slots": [
+      "tg"
+    ],
+    "device": "humiliation by accuracy",
+    "weight": 6,
+    "tier": "brutal",
+    "archetypes": [],
+    "text": "{tg} is one message away from nobody, and the group chat moved on without you."
+  },
+  {
+    "id": "linked_telegram",
+    "tag": "TELEGRAM",
+    "slots": [
+      "tg"
+    ],
+    "device": "bureaucratic misregistration",
+    "weight": 6,
+    "tier": "brutal",
+    "archetypes": [],
+    "text": "The handle {tg} sits on the record. Every position needs a hotline and yours rings out."
+  },
+  {
+    "id": "linked_x",
+    "tag": "X ACCOUNT",
+    "slots": [
+      "handle",
+      "followers"
+    ],
+    "device": "the kill shot",
+    "weight": 8,
+    "tier": "brutal",
+    "archetypes": [],
+    "text": "{handle} has {followers} followers and no position anybody would copy. Not a track record, a distribution list."
+  },
+  {
+    "id": "linked_x",
+    "tag": "X ACCOUNT",
+    "slots": [
+      "handle",
+      "followers"
+    ],
+    "device": "false respect",
+    "weight": 7,
+    "tier": "brutal",
+    "archetypes": [],
+    "text": "{followers} followers on {handle}. You are influential the way a bus stop is influential."
+  },
+  {
+    "id": "linked_x",
+    "tag": "X ACCOUNT",
+    "slots": [
+      "handle",
+      "followers"
+    ],
+    "device": "sharpest reframe",
+    "weight": 8,
+    "tier": "brutal",
+    "archetypes": [],
+    "text": "{handle}: {followers} followers, zero assets worth the audience. You are a media company with no inventory."
+  },
+  {
+    "id": "linked_x",
+    "tag": "X ACCOUNT",
+    "slots": [
+      "handle",
+      "followers"
+    ],
+    "device": "escalation",
+    "weight": 7,
+    "tier": "brutal",
+    "archetypes": [],
+    "text": "{followers} followers, {handle}. Lots of reach, no conviction, and a timeline that outlived the thesis."
+  },
+  {
+    "id": "handle_squatted",
+    "tag": "HANDLE",
+    "slots": [
+      "handle",
+      "platformCount"
+    ],
+    "device": "sharpest reframe",
+    "weight": 7,
+    "tier": "brutal",
+    "archetypes": [],
+    "text": "{handle} on {platformCount} platforms. A brand is a promise. This is a reservation."
+  },
+  {
+    "id": "handle_squatted",
+    "tag": "HANDLE",
+    "slots": [
+      "handle",
+      "platformCount"
+    ],
+    "device": "humiliation by accuracy",
+    "weight": 7,
+    "tier": "brutal",
+    "archetypes": [],
+    "text": "{platformCount} platforms, one handle, {handle}. You built the name and never built the thing it fits."
+  },
+  {
+    "id": "handle_squatted",
+    "tag": "HANDLE",
+    "slots": [
+      "handle",
+      "platformCount"
+    ],
+    "device": "escalation",
+    "weight": 6,
+    "tier": "brutal",
+    "archetypes": [],
+    "text": "The same {handle} on {platformCount} sites. Consistency until it is the only virtue left standing."
+  },
+  {
+    "id": "handle_squatted",
+    "tag": "HANDLE",
+    "slots": [
+      "handle",
+      "platformCount"
+    ],
+    "device": "understatement",
+    "weight": 6,
+    "tier": "brutal",
+    "archetypes": [],
+    "text": "{handle} exists in {platformCount} places. You are a watermark on other people's work."
+  },
+  {
+    "id": "domain_old",
+    "tag": "DOMAIN",
+    "slots": [
+      "domain",
+      "domainAgeDays"
+    ],
+    "device": "humiliation by accuracy",
+    "weight": 7,
+    "tier": "brutal",
+    "archetypes": [],
+    "text": "{domain} is {domainAgeDays} days old and still has nothing on it. You bought the shop before the inventory."
+  },
+  {
+    "id": "domain_old",
+    "tag": "DOMAIN",
+    "slots": [
+      "domain",
+      "domainAgeDays"
+    ],
+    "device": "escalation",
+    "weight": 7,
+    "tier": "brutal",
+    "archetypes": [],
+    "text": "{domainAgeDays} days of {domain}. Preparation is a timeline and yours is a countdown to a token."
+  },
+  {
+    "id": "domain_old",
+    "tag": "DOMAIN",
+    "slots": [
+      "domain",
+      "domainAgeDays"
+    ],
+    "device": "callback",
+    "weight": 6,
+    "tier": "brutal",
+    "archetypes": [],
+    "text": "The bio links {domain}, bought {domainAgeDays} days ago. The website was the warm up act for the bag."
+  },
+  {
+    "id": "domain_dead",
+    "tag": "DOMAIN",
+    "slots": [
+      "domain"
+    ],
+    "device": "the kill shot",
+    "weight": 7,
+    "tier": "brutal",
+    "archetypes": [],
+    "text": "{domain} does not resolve. You built a homepage and let the front page outlive the company."
+  },
+  {
+    "id": "domain_dead",
+    "tag": "DOMAIN",
+    "slots": [
+      "domain"
+    ],
+    "device": "sharpest reframe",
+    "weight": 7,
+    "tier": "brutal",
+    "archetypes": [],
+    "text": "{domain} is gone. The only thing you ever kept running was the pitch."
+  },
+  {
+    "id": "domain_dead",
+    "tag": "DOMAIN",
+    "slots": [
+      "domain"
+    ],
+    "device": "understatement",
+    "weight": 6,
+    "tier": "brutal",
+    "archetypes": [],
+    "text": "{domain} no longer loads. Somewhere a roadmap sits in a folder nobody can open."
+  },
+  {
+    "id": "contract_wallet",
+    "tag": "ADDRESS TYPE",
+    "slots": [
+      "addr"
+    ],
+    "device": "sharpest reframe",
+    "weight": 7,
+    "tier": "brutal",
+    "archetypes": [],
+    "text": "{addr} is a contract. Nobody lives there. It collects and it does not have to explain itself."
+  },
+  {
+    "id": "contract_wallet",
+    "tag": "ADDRESS TYPE",
+    "slots": [
+      "addr"
+    ],
+    "device": "humiliation by accuracy",
+    "weight": 7,
+    "tier": "brutal",
+    "archetypes": [],
+    "text": "{addr} is a deployment. Automated, faceless, and still better company than its owner."
+  },
+  {
+    "id": "contract_wallet",
+    "tag": "ADDRESS TYPE",
+    "slots": [
+      "addr"
+    ],
+    "device": "bureaucratic misregistration",
+    "weight": 7,
+    "tier": "brutal",
+    "archetypes": [],
+    "text": "The submitted address {addr} is a contract. You asked the engine to roast a program, which is honest of you."
+  },
+  {
+    "id": "contract_wallet",
+    "tag": "ADDRESS TYPE",
+    "slots": [
+      "addr"
+    ],
+    "device": "understatement",
+    "weight": 6,
+    "tier": "brutal",
+    "archetypes": [],
+    "text": "{addr} is code. It files receipts and cannot be offended. You might be a different case."
+  },
+  {
+    "id": "smart_account",
+    "tag": "DELEGATION",
+    "slots": [
+      "delegate"
+    ],
+    "device": "the kill shot",
+    "weight": 8,
+    "tier": "brutal",
+    "archetypes": [],
+    "text": "{delegate} can move this wallet. You outsourced the judgement and kept the consequences."
+  },
+  {
+    "id": "smart_account",
+    "tag": "DELEGATION",
+    "slots": [
+      "delegate"
+    ],
+    "device": "sharpest reframe",
+    "weight": 7,
+    "tier": "brutal",
+    "archetypes": [],
+    "text": "Delegated to {delegate}. You built a machine to have opinions for you and it outperforms you on brevity."
+  },
+  {
+    "id": "smart_account",
+    "tag": "DELEGATION",
+    "slots": [
+      "delegate"
+    ],
+    "device": "escalation",
+    "weight": 8,
+    "tier": "brutal",
+    "archetypes": [],
+    "text": "{delegate} holds the permission. You kept the keys, gave away the decisions, and kept the losses."
+  },
+  {
+    "id": "empty_address",
+    "tag": "ACTIVITY",
+    "slots": [
+      "addr",
+      "chainsActive"
+    ],
+    "device": "humiliation by accuracy",
+    "weight": 6,
+    "tier": "brutal",
+    "archetypes": [],
+    "text": "{addr} has sent nothing on {chainsActive} chains. A seat at every table and no appetite at any of them."
+  },
+  {
+    "id": "empty_address",
+    "tag": "ACTIVITY",
+    "slots": [
+      "addr",
+      "chainsActive"
+    ],
+    "device": "sharpest reframe",
+    "weight": 6,
+    "tier": "brutal",
+    "archetypes": [],
+    "text": "Nothing has ever left {addr} across {chainsActive} chains. Not caution. Absence with better branding."
+  },
+  {
+    "id": "empty_address",
+    "tag": "ACTIVITY",
+    "slots": [
+      "addr",
+      "chainsActive"
+    ],
+    "device": "understatement",
+    "weight": 6,
+    "tier": "brutal",
+    "archetypes": [],
+    "text": "{chainsActive} chains observe {addr} and see nothing. The wallet is not hidden, it is unfurnished."
+  },
+  {
+    "id": "public_exposure",
+    "tag": "PUBLIC TRAIL",
+    "slots": [
+      "exposureCount",
+      "handle"
+    ],
+    "device": "the kill shot",
+    "weight": 9,
+    "tier": "brutal",
+    "archetypes": [],
+    "text": "{exposureCount} public traces tie this wallet to {handle}. You are not anonymous, you are simply unvisited."
+  },
+  {
+    "id": "public_exposure",
+    "tag": "PUBLIC TRAIL",
+    "slots": [
+      "exposureCount",
+      "handle"
+    ],
+    "device": "sharpest reframe",
+    "weight": 9,
+    "tier": "brutal",
+    "archetypes": [],
+    "text": "{exposureCount} public trails, one handle, {handle}. Nobody breached anything. You posted it yourself."
+  },
+  {
+    "id": "public_exposure",
+    "tag": "PUBLIC TRAIL",
+    "slots": [
+      "exposureCount",
+      "handle"
+    ],
+    "device": "humiliation by accuracy",
+    "weight": 8,
+    "tier": "brutal",
+    "archetypes": [],
+    "text": "The engine found {exposureCount} public routes from this wallet to {handle}. Privacy is a preference and you never stated one."
+  },
+  {
+    "id": "public_exposure",
+    "tag": "PUBLIC TRAIL",
+    "slots": [
+      "exposureCount",
+      "handle"
+    ],
+    "device": "bureaucratic misregistration",
+    "weight": 8,
+    "tier": "brutal",
+    "archetypes": [],
+    "text": "{exposureCount} public traces and one name, {handle}. Sloppy filing, done voluntarily, at your own pace."
+  },
+  {
+    "id": "no_x",
+    "tag": "COVERAGE",
+    "slots": [],
+    "device": "sharpest reframe",
+    "weight": 6,
+    "tier": "brutal",
+    "archetypes": [],
+    "text": "No X handle on file. The chain does the talking and it has less to say than you think."
+  },
+  {
+    "id": "no_x",
+    "tag": "COVERAGE",
+    "slots": [],
+    "device": "the kill shot",
+    "weight": 6,
+    "tier": "brutal",
+    "archetypes": [],
+    "text": "No handle provided. You left out the part of the receipt where you explain yourself."
+  },
+  {
+    "id": "no_x",
+    "tag": "COVERAGE",
+    "slots": [],
+    "device": "understatement",
+    "weight": 6,
+    "tier": "brutal",
+    "archetypes": [],
+    "text": "No X account attached. Even the version of you that posts stayed home."
+  },
+  {
+    "id": "no_x",
+    "tag": "COVERAGE",
+    "slots": [],
+    "device": "humiliation by accuracy",
+    "weight": 6,
+    "tier": "brutal",
+    "archetypes": [],
+    "text": "No profile submitted. The wallet builds your character unopposed and it is not being generous."
+  },
+  {
+    "id": "empty_wallet",
+    "tag": "ARCHETYPE",
+    "slots": [],
+    "device": "deadpan definition",
+    "weight": 0,
+    "tier": "brutal",
+    "archetypes": [
+      "empty_wallet"
+    ],
+    "text": "A wallet with no history and a habit of turning up anyway."
+  },
+  {
+    "id": "dust_collector",
+    "tag": "ARCHETYPE",
+    "slots": [],
+    "device": "deadpan definition",
+    "weight": 0,
+    "tier": "brutal",
+    "archetypes": [
+      "dust_collector"
+    ],
+    "text": "An archaeologist of your own bad calls. Digs, catalogues, never sells."
+  },
+  {
+    "id": "silent_holder",
+    "tag": "ARCHETYPE",
+    "slots": [],
+    "device": "deadpan definition",
+    "weight": 0,
+    "tier": "brutal",
+    "archetypes": [
+      "silent_holder"
+    ],
+    "text": "Buys once, says nothing, and calls the silence a thesis."
+  },
+  {
+    "id": "whale_no_taste",
+    "tag": "ARCHETYPE",
+    "slots": [],
+    "device": "deadpan definition",
+    "weight": 0,
+    "tier": "brutal",
+    "archetypes": [
+      "whale_no_taste"
+    ],
+    "text": "Big numbers, borrowed opinions, buying whatever trended while you slept."
+  },
+  {
+    "id": "stable_maxi",
+    "tag": "ARCHETYPE",
+    "slots": [],
+    "device": "deadpan definition",
+    "weight": 0,
+    "tier": "brutal",
+    "archetypes": [
+      "stable_maxi"
+    ],
+    "text": "Left at the top of your own confidence and never risked a cent again."
+  },
+  {
+    "id": "exit_liquidity",
+    "tag": "ARCHETYPE",
+    "slots": [],
+    "device": "deadpan definition",
+    "weight": 0,
+    "tier": "brutal",
+    "archetypes": [
+      "exit_liquidity"
+    ],
+    "text": "The last buyer on every chart, still writing threads about the entry."
+  },
+  {
+    "id": "degen_churner",
+    "tag": "ARCHETYPE",
+    "slots": [],
+    "device": "deadpan definition",
+    "weight": 0,
+    "tier": "brutal",
+    "archetypes": [
+      "degen_churner"
+    ],
+    "text": "Trades all day, finishes flat, and files the activity as research."
+  },
+  {
+    "id": "airship_hopeful",
+    "tag": "ARCHETYPE",
+    "slots": [],
+    "device": "deadpan definition",
+    "weight": 0,
+    "tier": "brutal",
+    "archetypes": [
+      "airship_hopeful"
+    ],
+    "text": "One narrative coin, one theory, and a countdown to the explanation."
+  },
+  {
+    "id": "ghost_account",
+    "tag": "ARCHETYPE",
+    "slots": [],
+    "device": "deadpan definition",
+    "weight": 0,
+    "tier": "brutal",
+    "archetypes": [
+      "ghost_account"
+    ],
+    "text": "A public presence with no posts and nothing worth being public about."
+  },
+  {
+    "id": "farming_bot",
+    "tag": "ARCHETYPE",
+    "slots": [],
+    "device": "deadpan definition",
+    "weight": 0,
+    "tier": "brutal",
+    "archetypes": [
+      "farming_bot"
+    ],
+    "text": "Farms points for protocols that will not remember the address."
+  },
+  {
+    "id": "vesting_survivor",
+    "tag": "ARCHETYPE",
+    "slots": [],
+    "device": "deadpan definition",
+    "weight": 0,
+    "tier": "brutal",
+    "archetypes": [
+      "vesting_survivor"
+    ],
+    "text": "Waited out the cliff, watched the unlock, and stayed to watch the rest."
+  },
+  {
+    "id": "contract_entity",
+    "tag": "ARCHETYPE",
+    "slots": [],
+    "device": "deadpan definition",
+    "weight": 0,
+    "tier": "brutal",
+    "archetypes": [
+      "contract_entity"
+    ],
+    "text": "Not a person. A deployment that files receipts and cannot feel this."
+  },
+  {
+    "id": "verdict",
+    "tag": "VERDICT",
+    "slots": [],
+    "device": "closing judgement",
+    "weight": 0,
+    "tier": "brutal",
+    "archetypes": [],
+    "text": "You are not a mystery. You are a paper trail with a wallet attached and no readers."
+  },
+  {
+    "id": "verdict",
+    "tag": "VERDICT",
+    "slots": [],
+    "device": "closing judgement",
+    "weight": 0,
+    "tier": "brutal",
+    "archetypes": [],
+    "text": "The receipts are not the punishment. Being this easy to read is."
+  },
+  {
+    "id": "verdict",
+    "tag": "VERDICT",
+    "slots": [],
+    "device": "closing judgement",
+    "weight": 0,
+    "tier": "brutal",
+    "archetypes": [],
+    "text": "Nothing here was breached. You handed it over slowly and called it a following."
+  },
+  {
+    "id": "verdict",
+    "tag": "VERDICT",
+    "slots": [],
+    "device": "closing judgement",
+    "weight": 0,
+    "tier": "brutal",
+    "archetypes": [],
+    "text": "You built a footprint for years and never once checked where it pointed."
+  },
+  {
+    "id": "verdict",
+    "tag": "VERDICT",
+    "slots": [],
+    "device": "closing judgement",
+    "weight": 0,
+    "tier": "brutal",
+    "archetypes": [],
+    "text": "You are not anonymous. You are uninteresting enough that nobody looked twice."
+  },
+  {
+    "id": "verdict",
+    "tag": "VERDICT",
+    "slots": [],
+    "device": "closing judgement",
+    "weight": 0,
+    "tier": "brutal",
+    "archetypes": [],
+    "text": "This is not a leak. This is a house with the door open and nobody who wanted in."
+  },
+  {
+    "id": "verdict",
+    "tag": "VERDICT",
+    "slots": [],
+    "device": "closing judgement",
+    "weight": 0,
+    "tier": "brutal",
+    "archetypes": [],
+    "text": "You are not the main character. You are scenery in somebody else's receipt."
+  },
+  {
+    "id": "verdict",
+    "tag": "VERDICT",
+    "slots": [],
+    "device": "closing judgement",
+    "weight": 0,
+    "tier": "brutal",
+    "archetypes": [],
+    "text": "The chain will not forget you. It will just stop mentioning you, and it already has."
+  },
+  {
+    "id": "verdict",
+    "tag": "VERDICT",
+    "slots": [],
+    "device": "closing judgement",
+    "weight": 0,
+    "tier": "brutal",
+    "archetypes": [],
+    "text": "You are not early. You are a timestamp nobody will ever bother to look up."
+  },
+  {
+    "id": "verdict",
+    "tag": "VERDICT",
+    "slots": [],
+    "device": "closing judgement",
+    "weight": 0,
+    "tier": "brutal",
+    "archetypes": [],
+    "text": "The verdict is not that you lost. It is that the whole thing was legible the entire time."
+  }
+]

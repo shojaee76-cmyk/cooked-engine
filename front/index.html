@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>COOKED: the receipt your wallet was dreading</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23191c21'/%3E%3Crect x='7' y='5' width='18' height='22' fill='%23f4efe3'/%3E%3Crect x='10' y='10' width='12' height='2' fill='%2317150f'/%3E%3Crect x='10' y='14' width='12' height='2' fill='%2317150f'/%3E%3Crect x='10' y='18' width='7' height='2' fill='%2317150f'/%3E%3Ctext x='23' y='27' font-size='11' fill='%23e0401d'%3EX%3C/text%3E%3C/svg%3E">
+<meta name="description" content="Paste a wallet and a handle. We read the chains and the public profile, then print a receipt with the real numbers. Read-only. No keys, no signing, no connecting.">
+<meta property="og:title" content="COOKED: the receipt your wallet was dreading">
+<meta property="og:description" content="Real numbers, printed on paper, about your money and your posting. Read-only.">
+<style>
+/* fonts are injected by the build as base64 so the phone never waits on a CDN */
+@font-face{font-family:"COOK-D";src:url(data:font/woff2;base64,/*__F_D__*/) format("woff2");font-weight:800;font-display:swap}
+@font-face{font-family:"COOK-M";src:url(data:font/woff2;base64,/*__F_M__*/) format("woff2");font-weight:400;font-display:swap}
+@font-face{font-family:"COOK-MB";src:url(data:font/woff2;base64,/*__F_MB__*/) format("woff2");font-weight:700;font-display:swap}
+
+:root{
+  --device:#1a1917; --device-2:#25231f; --device-3:#332f28;
+  --paper:#f4efe3; --paper-2:#e6dfcd; --ink:#17150f; --ink-2:#5b5647;
+  --signal:#e0401d; --signal-2:#b32c10;
+  --measured:#2c7a5f; --measured-lt:#67c79f;
+  --warn:#c98a00;
+  --d:"COOK-D",Impact,"Haettenschweiler","Arial Narrow Bold",sans-serif;
+  --m:"COOK-M",ui-monospace,"Cascadia Mono",Consolas,monospace;
+  --mb:"COOK-MB","COOK-M",ui-monospace,Consolas,monospace;
+}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0}
+body{
+  background:var(--device);
+  background-image:
+    radial-gradient(1100px 520px at 50% -8%, #302d27 0%, transparent 62%),
+    repeating-linear-gradient(90deg,#181614 0 2px,#1a1917 2px 4px);
+  color:#e7e3d9;font:15px/1.5 var(--m);-webkit-font-smoothing:antialiased;
+}
+a{color:inherit}
+.wrap{max-width:1180px;margin:0 auto;padding:30px 18px 90px}
+
+/* ---------------------------------------------------------------- masthead */
+.mast{display:flex;align-items:flex-end;justify-content:space-between;gap:20px;flex-wrap:wrap}
+.logo{font-family:var(--d);font-weight:800;font-size:clamp(38px,7vw,76px);line-height:.86;letter-spacing:-.02em;color:#f6f2e8;margin:0}
+.logo b{color:var(--signal);font-weight:800}
+.tag{font-family:var(--m);font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:#b0aa9b;margin:10px 0 0}
+.mast .right{text-align:right;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:#aaa495;line-height:1.9}
+.snd{background:none;border:1px solid #4a5058;color:#cfc9b8;font:inherit;font-size:12px;letter-spacing:.14em;padding:12px 14px;min-height:44px;cursor:pointer;text-transform:uppercase}
+.snd:hover{border-color:#5b6169;color:#f0ebdd}
+
+/* ------------------------------------------------------------------- console */
+.console{margin:28px 0 0;padding:22px;border:1px solid #37332c;background:
+  linear-gradient(#232019,#161513);box-shadow:inset 0 1px 0 #3b362d, 0 18px 40px rgba(0,0,0,.45);position:relative}
+.console::before,.console::after{content:"";position:absolute;width:7px;height:7px;border-radius:50%;background:#0d0f12;box-shadow:inset 0 1px 0 #3b4149}
+.console::before{top:8px;left:8px}.console::after{top:8px;right:8px}
+.form{display:flex;gap:14px;flex-wrap:wrap;align-items:flex-end}
+.f{position:relative;flex:1 1 240px;min-width:0}
+.f label{display:block;font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:#b0aa9b;margin:0 0 6px}
+.f input{width:100%;background:#121110;border:1px solid #3d3830;color:#f6f2e9;padding:16px 16px;font:15px/1 var(--m);outline:none}
+.f input:focus{border-color:var(--measured-lt);box-shadow:0 0 0 3px rgba(103,199,159,.12)}
+.f input::placeholder{color:#4d535b}
+.heatf{flex:0 0 auto}
+.seg{display:flex;border:1px solid #3d3830;background:#121110}
+.segbtn{background:none;border:0;border-right:1px solid #2b2822;color:#b6b0a1;font:inherit;font-size:12px;
+  letter-spacing:.12em;text-transform:uppercase;padding:17px 14px;min-height:54px;cursor:pointer}
+.segbtn:last-child{border-right:0}
+.segbtn:hover{color:#fff}
+.segbtn.on{background:var(--signal);color:#fff;font-weight:600}
+.go{flex:0 0 auto;background:var(--signal);color:#fff;border:0;padding:19px 30px;min-height:56px;font-family:var(--d);font-weight:800;
+  font-size:20px;line-height:1.1;letter-spacing:.02em;cursor:pointer;box-shadow:4px 4px 0 #0d0f12;transition:transform .06s,box-shadow .06s}
+.go:hover{transform:translate(-1px,-1px);box-shadow:5px 5px 0 #0d0f12}
+.go:active{transform:translate(3px,3px);box-shadow:1px 1px 0 #0d0f12}
+.go[disabled]{opacity:.6;cursor:progress;box-shadow:none;transform:none}
+.console .fine{color:#b6b0a1;font-size:14px;margin:14px 0 0;line-height:1.75;max-width:74ch}
+.console .fine b{color:#c9c3b2;font-weight:400}
+.flag{color:var(--signal);font-family:var(--d);font-weight:800;letter-spacing:.14em;font-size:12px}
+
+/* ------------------------------------------------------------------- stage */
+.stage{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);gap:24px;margin:24px 0 0;align-items:start}
+@media(max-width:920px){.stage{grid-template-columns:1fr;gap:14px}}
+
+/* machine */
+.printer{border:1px solid #3a3630;background:linear-gradient(#29261f,#171614 70%);position:relative;
+  box-shadow:0 26px 60px rgba(0,0,0,.5)}
+.printer .brandrow{display:flex;justify-content:space-between;align-items:center;padding:12px 14px;border-bottom:1px solid #2c323a;
+  font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:#aea898}
+.led{width:9px;height:9px;border-radius:50%;background:#3b4048;display:inline-block;margin-right:7px;vertical-align:middle;transition:.2s}
+.led.on{background:var(--measured-lt);box-shadow:0 0 9px var(--measured-lt)}
+.led.busy{background:var(--warn);box-shadow:0 0 9px var(--warn);animation:blip .42s infinite alternate}
+@keyframes blip{to{opacity:.25}}
+.slot{height:15px;margin:0 16px;background:#05060800;border-radius:0 0 4px 4px;
+  box-shadow:inset 0 7px 12px rgba(0,0,0,.95),inset 0 -1px 0 #3a4048}
+.bay{padding:0 10px 10px;position:relative}
+.slotbar{height:12px;background:#0a0c0e;box-shadow:inset 0 4px 7px rgba(0,0,0,.9)}
+
+/* paper */
+.paper-wrap{padding:0 12px 0;background:linear-gradient(#121110,#0d0c0b)}
+.paper{
+  background:var(--paper);color:var(--ink);
+  padding:20px 18px 14px;font:14px/1.64 var(--m);
+  position:relative;overflow:hidden;
+  box-shadow:0 16px 34px rgba(0,0,0,.5);
+  clip-path:inset(0 0 100% 0);
+  background-image:
+    radial-gradient(rgba(0,0,0,.035) .7px, transparent .8px),
+    linear-gradient(#f6f2e7,#efe9db);
+  background-size:4px 4px, 100% 100%;
+}
+.paper.out{clip-path:inset(0 0 0 0);transition:clip-path 1.15s cubic-bezier(.33,0,.85,.28)}
+.paper.jag{clip-path:polygon(0 0,100% 0,100% calc(100% - 9px),97% 100%,94% calc(100% - 9px),91% 100%,88% calc(100% - 9px),85% 100%,82% calc(100% - 9px),79% 100%,76% calc(100% - 9px),73% 100%,70% calc(100% - 9px),67% 100%,64% calc(100% - 9px),61% 100%,58% calc(100% - 9px),55% 100%,52% calc(100% - 9px),49% 100%,46% calc(100% - 9px),43% 100%,40% calc(100% - 9px),37% 100%,34% calc(100% - 9px),31% 100%,28% calc(100% - 9px),25% 100%,22% calc(100% - 9px),19% 100%,16% calc(100% - 9px),13% 100%,10% calc(100% - 9px),7% 100%,4% calc(100% - 9px),1% 100%,0 calc(100% - 9px))}
+body.nofx .paper{clip-path:inset(0 0 0 0)!important;transition:none!important}
+.p-h{font-family:var(--d);font-weight:800;font-size:27px;line-height:1;letter-spacing:-.01em;text-align:center;margin:0 0 2px}
+.p-h span{background:var(--signal);color:#fff;padding:0 6px}
+.p-st{text-align:center;font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:#3f3b2e;margin:0 0 12px}
+.p-sub{text-align:center;font-size:12px;letter-spacing:.05em;color:#3f3b2e;margin:0 0 12px}
+.rule{border-top:1px dashed rgba(23,21,15,.45);margin:11px 0}
+.rule.solid{border-top:1px solid rgba(23,21,15,.7)}
+.row{display:flex;justify-content:space-between;gap:10px;font-size:13px;align-items:baseline}
+.row .k{color:#3f3b2e;letter-spacing:.08em;text-transform:uppercase;font-size:12px}
+.row .v{text-align:right;word-break:break-word;unicode-bidi:plaintext;font-variant-numeric:tabular-nums}
+.row.big{font-family:var(--d);font-weight:800;font-size:24px;line-height:1.05;align-items:baseline}
+.row.big .k{font-size:12px;letter-spacing:.14em}
+.items{margin:2px 0 0}
+.item{display:flex;gap:9px;align-items:flex-start;margin:0 0 11px;opacity:0;transform:translateY(2px)}
+.item.show{opacity:1;transform:none;transition:opacity .18s}
+.item .tag{flex:0 0 auto;font-family:var(--mb);font-size:12px;letter-spacing:.06em;border:1px solid rgba(23,21,15,.55);
+  padding:1px 5px;margin-top:1px;color:#3f3b2e;text-transform:uppercase;white-space:nowrap}
+.item .txt{flex:1 1 auto;word-break:break-word}
+.item.hard .tag{border-color:var(--signal);color:var(--signal-2)}
+.est{color:var(--ink-2);font-size:12px;margin:7px 0 0;text-align:left}
+.bars{margin:8px 0 0}
+.bar{display:flex;align-items:center;gap:8px;font-size:12px;letter-spacing:.06em;color:#3f3b2e}
+.bar .lbl{flex:0 0 92px;text-transform:uppercase;font-size:12px}
+.bar .track{flex:1 1 auto;height:9px;background:rgba(23,21,15,.13);position:relative;overflow:hidden}
+.bar .fill{position:absolute;inset:0 auto 0 0;background:var(--ink)}
+.bar .fill.hot{background:var(--signal)}
+.bar .num{flex:0 0 34px;text-align:right;color:var(--ink)}
+.stamprow{display:flex;justify-content:flex-end;align-items:center;min-height:52px;margin:2px 0 0}
+.stamp{font-family:var(--d);font-weight:800;font-size:26px;letter-spacing:.06em;
+  color:#b3300f;border:3px solid #b3300f;padding:1px 9px;
+  transform:rotate(-7deg) scale(1.05);pointer-events:none;mix-blend-mode:multiply}
+.stamp.show{animation:thunk .18s}
+@keyframes thunk{0%{transform:rotate(-7deg) scale(1.85)}100%{transform:rotate(-7deg) scale(1.05)}}
+.sig{display:flex;justify-content:space-between;align-items:flex-end;gap:12px;margin:12px 0 0;flex-wrap:wrap}
+.barcode{flex:1 1 140px;min-width:0;height:42px;background-repeat:repeat-x;background-position:0 0}
+.qr{flex:0 0 auto;width:76px;height:76px;image-rendering:pixelated;background:#fff;padding:3px;border:1px solid rgba(23,21,15,.2)}
+.p-f{font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:#3f3b2e;text-align:center;line-height:1.7}
+.verdict{font-family:var(--d);font-weight:800;font-size:18px;line-height:1.18;text-align:center;margin:4px 0 12px}
+.p-jam{font-family:var(--d);font-weight:800;font-size:26px;text-align:center;color:#a8270c;margin:0 0 4px;letter-spacing:.01em}
+.p-jam-note{font-size:13px;line-height:1.6;color:#2a271d;text-align:left;margin:0}
+.jam-retry{display:block;width:100%;margin:12px 0 4px;background:#17150f;color:#f4efe3;border:0;
+  font-family:var(--d);font-weight:800;font-size:15px;letter-spacing:.08em;text-transform:uppercase;
+  padding:15px 12px;min-height:48px;cursor:pointer}
+.jam-retry:hover{background:#332e22}
+
+/* readings */
+.readings{border:1px solid #363229;background:#151413}
+.readings .hd{display:flex;justify-content:space-between;align-items:center;padding:12px 14px;border-bottom:1px solid #2b3139;
+  font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:#aea898}
+.readings .bd{padding:18px;overflow:auto}
+@media(min-width:921px){.readings .bd{max-height:min(88vh,1100px)}}
+.grp{margin:0 0 24px}
+.grp h4{font-family:var(--d);font-weight:800;font-size:15px;letter-spacing:.1em;text-transform:uppercase;color:#d8d2c1;margin:0 0 10px}
+.kv{display:flex;justify-content:space-between;gap:14px;padding:7px 0;border-bottom:1px dotted #2c2925;font-size:14px;align-items:baseline}
+.kv .k{color:#b5afa0}
+.kv .v{text-align:right;color:#e9e5da;word-break:break-word;unicode-bidi:plaintext;font-variant-numeric:tabular-nums}
+.kv .v.ok{color:var(--measured-lt)}
+.kv .v.no{color:#e0705a}
+.mono-s{font-size:13px;color:#b5afa0;line-height:1.7;margin:10px 0 0;max-width:70ch}
+.note{border-left:2px solid var(--warn);padding:10px 12px;background:#1e1c17;color:#d2cab2;font-size:13px;margin:10px 0 0;line-height:1.6}
+.note.good{border-color:var(--measured);background:#161d1a;color:#b6d8cc}
+.pill{display:inline-block;border:1px solid #3a4149;color:#bdb7a6;font-size:12px;letter-spacing:.1em;
+  padding:5px 8px;margin:0 6px 6px 0;text-transform:uppercase}
+.pill.ok{border-color:var(--measured);color:var(--measured-lt)}
+.pill.no{border-color:#6b3327;color:#e0705a}
+.actions{display:flex;gap:12px;flex-wrap:wrap;margin:18px 0 0}
+.btn{background:none;border:1px solid #454b54;color:#ded8c8;font:inherit;font-size:12px;letter-spacing:.1em;
+  text-transform:uppercase;padding:13px 15px;min-height:44px;cursor:pointer}
+.btn:hover{border-color:#5e6673;color:#fff}
+.btn.pri{border-color:var(--signal);color:#ffd9cd}
+.foot{margin:30px 0 0;color:#aaa495;font-size:13px;line-height:1.8;letter-spacing:.01em;max-width:78ch}
+.foot b{color:#a8a293;font-weight:400}
+.stage-note{margin:12px 0 0;font-size:13px;color:#b5afa0;min-height:18px}
+.err{color:#e0705a}
+@media(max-width:520px){
+  .go{width:100%;text-align:center}
+  .sig{gap:10px}
+  .barcode{flex:1 1 100%;order:2}
+  .qr{order:1;margin:0 auto}
+  .f{padding:0}
+  .paper{font-size:13px;padding:16px 13px 10px}
+  .row.big{font-size:20px}.item .tag{font-size:9px}
+  .bar .lbl{flex-basis:70px;font-size:9.5px}
+  .logo{font-size:44px}
+}
+@media print{
+  body{background:#fff}.mast,.console,.readings,.foot,.actions,.printer .brandrow,.slot,.slotbar,.stage-note{display:none!important}
+  .stage{display:block}.printer{border:0;box-shadow:none;background:none}.paper-wrap{padding:0;background:none}
+  .paper{box-shadow:none;clip-path:none!important;background:#fff}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="mast">
+    <div>
+      <h1 class="logo">COOK<b>ED</b></h1>
+      <p class="tag">read-only &middot; no keys &middot; no signing &middot; no connecting</p>
+    </div>
+    <div class="right">
+      model C-1 &middot; dot matrix<br>
+      engines: 6 chains + public x + osint<br>
+      <button class="snd" id="snd">sound: on</button>
+    </div>
+  </div>
+
+  <div class="console">
+    <div class="form">
+      <div class="f">
+        <label for="x">x handle (optional)</label>
+        <input id="x" autocomplete="off" spellcheck="false" placeholder="@capital_fa">
+      </div>
+      <div class="f">
+        <label for="w">wallet &middot; evm (0x…) or solana</label>
+        <input id="w" autocomplete="off" spellcheck="false" placeholder="0x… (evm) or a solana address">
+      </div>
+      <div class="f heatf">
+        <label for="heat">heat</label>
+        <div class="seg" id="heat" role="group" aria-label="roast heat">
+          <button type="button" class="segbtn" data-h="1">mild</button>
+          <button type="button" class="segbtn" data-h="2">spicy</button>
+          <button type="button" class="segbtn on" data-h="3">cooked</button>
+        </div>
+      </div>
+      <button class="go" id="go">PRINT MY RECEIPT</button>
+    </div>
+    <p class="fine">
+      <span class="flag">NOT A CHECKOUT</span> &nbsp;We never ask for a key, a signature or a connection.
+      We read public chain data and the public profile, print what your money has been doing, and forget you.
+      Every line maps to a number below it. <b>Estimates are marked as estimates. Sources that fail are named.</b>
+    </p>
+    <p class="stage-note" id="stage"></p>
+  </div>
+
+  <div class="stage">
+    <div class="printer">
+      <div class="brandrow"><span><span class="led" id="led"></span><span id="ledtxt">IDLE</span></span><span>cooked &middot; receipt printer</span></div>
+      <div class="slot"></div>
+      <div class="paper-wrap" id="paperwrap">
+        <div class="paper out" id="paper">
+          <div class="p-h"><span>COOKED</span></div>
+          <p class="p-st">specimen receipt</p>
+          <div class="rule"></div>
+          <div class="row"><span class="k">customer</span><span class="v">@yourhandle</span></div>
+          <div class="row"><span class="k">net worth on-chain</span><span class="v">$412.09</span></div>
+          <div class="row"><span class="k">archetype</span><span class="v">DUST COLLECTOR</span></div>
+          <div class="stamprow"><div class="stamp show">SAMPLE</div></div>
+          <div class="rule solid"></div>
+          <div class="item show hard"><span class="tag">GAS PAID</span><span class="txt">You have paid $23,455 in network fees to protect a $412 position. The fee was the position.</span></div>
+          <div class="item show"><span class="tag">DUST</span><span class="txt">378 of your 402 tokens are worth less than a coffee. Together, a smaller coffee.</span></div>
+          <div class="item show hard"><span class="tag">UNPRICED</span><span class="txt">378 tokens have no price. Cheap needs a buyer. Unpriced needs nobody at all.</span></div>
+          <div class="rule"></div>
+          <div class="row big"><span class="k">rekt score</span><span class="v">40 / 100</span></div>
+          <p class="p-f">example numbers, printed at the factory<br>paste a wallet above to print yours</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="readings">
+      <div class="hd"><span>instrument readings</span><span id="rev"></span></div>
+      <div class="bd" id="facts">
+        <div class="grp">
+          <h4>what this machine does</h4>
+          <div class="kv"><span class="k">chains read</span><span class="v">ethereum, base, arbitrum, polygon, bnb, optimism</span></div>
+          <div class="kv"><span class="k">solana</span><span class="v">native + spl, by base58 address</span></div>
+          <div class="kv"><span class="k">x profile</span><span class="v">public counters + join date</span></div>
+          <div class="kv"><span class="k">osint</span><span class="v">ens, github, telegram, farcaster, domains</span></div>
+          <div class="kv"><span class="k">writes</span><span class="v">nothing. read-only.</span></div>
+        </div>
+        <div class="grp">
+          <h4>what we refuse to do</h4>
+          <p class="mono-s">
+            No breached data, no leaked databases, no email or phone lookups, no login walls,
+            no scraping behind an account, nothing about your family, nothing about your body.
+            Public pages and public chains only. A roast you can screenshot, not a dossier for someone else.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="actions" id="actions" hidden>
+    <button class="btn pri" id="again">reprint (new lines, same numbers)</button>
+    <button class="btn" id="copy">copy share link</button>
+    <button class="btn" id="dl">save receipt as text</button>
+    <button class="btn" id="pr">print on real paper</button>
+  </div>
+
+  <p class="foot">
+    <b>COOKED</b> reads public data only: chain state through public RPCs and keyless explorers,
+    a public X profile endpoint, public ENS records and public profile pages.
+    Wallets and handles you enter are cached for 15 minutes so the printer does not re-read the same chain twice,
+    then dropped. No accounts, no cookies, no tracking pixels, no analytics.
+    Gas in dollars is converted at today's gas price and marked as an estimate; the gas quantity itself is measured.
+    The score is arithmetic you can audit in the readings panel.
+  </p>
+</div>
+
+<script>
+const $ = (s) => document.querySelector(s);
+const el = { x: $("#x"), w: $("#w"), go: $("#go"), paper: $("#paper"), paperwrap: $("#paperwrap"),
+  led: $("#led"), ledtxt: $("#ledtxt"), stage: $("#stage"), facts: $("#facts"), actions: $("#actions"),
+  heat: $("#heat") };
+
+/* Heat travels with the request and with the share link, so a link to a COOKED receipt
+   reprints a COOKED receipt. */
+let heat = 3;
+function setHeat(v) {
+  heat = Math.min(3, Math.max(1, Number(v) || 3));
+  [...el.heat.querySelectorAll(".segbtn")].forEach((b) => b.classList.toggle("on", Number(b.dataset.h) === heat));
+  if (heat !== 3) el.stage.textContent = "heat set to " + (heat === 2 ? "SPICY" : "MILD") + ". COOKED is the full roast.";
+}
+el.heat.onclick = (e) => { const b = e.target.closest(".segbtn"); if (b) setHeat(b.dataset.h); };
+
+const TAUNTS = [
+  "Reading the chain. It remembers everything. So will the paper.",
+  "Six chains and one public profile. This takes a few seconds. Your losses took longer.",
+  "We are not giving advice. We are giving a receipt.",
+  "No wallet is private. Some are just more embarrassing.",
+  "Your gas fees are the only thing you have ever held long term.",
+  "You are not early. You are alone in the token.",
+  "Pulling the numbers. None of them are opinions.",
+];
+const FOOT = [
+  "cooked &middot; no refunds &middot; keep this receipt",
+  "thank you for your service &middot; there is no service",
+  "authorised by nobody &middot; approved by everyone",
+  "exchange or credit not accepted &middot; sanity neither",
+  "this receipt is not financial advice &middot; it is evidence",
+];
+const STAGE_STEPS = [
+  "opening a line to ethereum",
+  "reading balances, nonces and bytecode",
+  "counting your tokens, priced and otherwise",
+  "asking an explorer how much gas you have burned",
+  "pricing the bag",
+  "reading the public profile",
+  "checking public records for a name",
+  "printing",
+];
+
+let sndOn = true, ac = null, last = null, lastParams = null;
+function ctx() { if (!ac) ac = new (window.AudioContext || window.webkitAudioContext)(); return ac; }
+function noise(dur, freq, q, gain) {
+  if (!sndOn) return;
+  try {
+    const c = ctx(), n = Math.max(1, Math.floor(c.sampleRate * dur)), buf = c.createBuffer(1, n, c.sampleRate), d = buf.getChannelData(0);
+    for (let i = 0; i < n; i++) d[i] = (Math.random() * 2 - 1) * (1 - i / n);
+    const src = c.createBufferSource(); src.buffer = buf;
+    const bp = c.createBiquadFilter(); bp.type = "bandpass"; bp.frequency.value = freq; bp.Q.value = q;
+    const g = c.createGain(); g.gain.value = gain;
+    src.connect(bp).connect(g).connect(c.destination); src.start();
+  } catch (e) {}
+}
+function hum(ms) {
+  if (!sndOn) return;
+  try {
+    const c = ctx(), o = c.createOscillator(), g = c.createGain();
+    o.type = "square"; o.frequency.value = 62; g.gain.value = 0.01;
+    o.connect(g).connect(c.destination); o.start(); setTimeout(() => o.stop(), ms);
+  } catch (e) {}
+}
+function ding() {
+  if (!sndOn) return;
+  try {
+    const c = ctx(), o = c.createOscillator(), g = c.createGain();
+    o.type = "triangle"; o.frequency.value = 1240; g.gain.value = 0.06;
+    o.connect(g).connect(c.destination); o.start();
+    o.frequency.exponentialRampToValueAtTime(880, c.currentTime + .17);
+    g.gain.exponentialRampToValueAtTime(.0001, c.currentTime + .45);
+    setTimeout(() => o.stop(), 480);
+  } catch (e) {}
+}
+$("#snd").onclick = () => { sndOn = !sndOn; $("#snd").textContent = "sound: " + (sndOn ? "on" : "off"); if (sndOn) noise(.12, 880, 1, .05); };
+
+const NOFX = new URLSearchParams(location.search).has("nofx") || matchMedia("(prefers-reduced-motion: reduce)").matches;
+if (NOFX) document.body.classList.add("nofx");
+const money = (v) => {
+  if (v == null || !isFinite(v)) return "$0";
+  const a = Math.abs(v);
+  if (a >= 1e9) return "$" + (v / 1e9).toFixed(2) + "B";
+  if (a >= 1e6) return "$" + (v / 1e6).toFixed(2) + "M";
+  if (a >= 1000) return "$" + Math.round(v).toLocaleString("en-US");
+  if (a >= 1) return "$" + v.toFixed(2);
+  if (v === 0) return "$0";
+  return "$" + v.toFixed(4);
+};
+const nf = (v) => (v == null ? "-" : Number(v).toLocaleString("en-US"));
+const esc = (s) => String(s == null ? "" : s).replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+
+/* ---- QR: vendored MIT encoder (qrcode-generator) is injected at build time ---- */
+function qrDataURL(text, size) {
+  try {
+    if (typeof qrcode !== "function") return null;
+    const q = qrcode(0, "M");
+    q.addData(text);
+    q.make();
+    const n = q.getModuleCount(), cv = document.createElement("canvas");
+    cv.width = cv.height = n * size;
+    const g = cv.getContext("2d");
+    g.fillStyle = "#fff"; g.fillRect(0, 0, cv.width, cv.height);
+    g.fillStyle = "#17150f";
+    for (let r = 0; r < n; r++) for (let c = 0; c < n; c++) if (q.isDark(r, c)) g.fillRect(c * size, r * size, size, size);
+    return cv.toDataURL("image/png");
+  } catch (e) { return null; }
+}
+
+function bars(score) {
+  const solid = Math.round(clamp(score / 5, 0, 20));
+  return "repeating-linear-gradient(90deg,#17150f 0 " + (1 + (score % 3)) + "px,transparent " + (1 + (score % 3)) + "px " + (3 + (score % 4)) + "px)";
+}
+function clamp(v, a, b) { return Math.max(a, Math.min(b, v)); }
+
+function render(d) {
+  const ch = d.chain || {}, sc = d.score || {}, comps = sc.components || [];
+  const x = d.x, id = d.identity || {};
+  const ens = id.ens && id.ens.found ? id.ens.name : null;
+  const kindLabel = ch.kind === "solana" ? "solana" : ch.kind === "evm" ? "evm" : "not read";
+  const scoreNote = ch.kind === "none" ? "x-only score &middot; no chain was read" : "score built from " + comps.filter((c) => c.value != null).length + " measured components";
+  const stamp = sc.level || "";
+  const lines = (d.receipt || []).map((f) => {
+    const hard = (f.tier === "savage" || (f.weight || 0) >= 8) ? " hard" : "";
+    return `<div class="item${hard}"><span class="tag">${esc(f.tag || "measured")}</span><span class="txt">${esc(f.text)}</span></div>`;
+  }).join("");
+  const compBars = comps.map((c) => {
+    const v = c.value == null ? null : c.value;
+    return `<div class="bar"><span class="lbl">${esc(c.label)}</span><span class="track">${v == null ? "" : `<span class="fill${v >= 65 ? " hot" : ""}" style="width:${v}%"></span>`}</span><span class="num">${v == null ? "n/a" : v}</span></div>`;
+  }).join("");
+  const missing = (d.data_truth && d.data_truth.missing) || [];
+  const sources = (d.coverage || []);
+  const sol = ch.sol;
+  const qr = qrDataURL(shareURL(d.input.wallet, d.input.handle, (d.input || {}).heat), 4);
+
+  el.paper.innerHTML = `
+    <div class="stamp" id="stamp">${esc(stamp)}</div>
+    <div class="p-h"><span>COOKED</span></div>
+    <p class="p-st">receipt &middot; ${esc(d.receipt_id || "")}</p>
+    <p class="p-sub">${esc(d.generated_at ? d.generated_at.slice(0, 16).replace("T", " ") : "")} utc<br>terminal c-1 &middot; dot matrix</p>
+    <div class="rule"></div>
+    <div class="row"><span class="k">customer</span><span class="v">${esc(d.subject.label || "anonymous coward")}</span></div>
+    <div class="row"><span class="k">wallet</span><span class="v">${esc(d.input.wallet ? d.input.wallet.slice(0, 8) + "\u2026" + d.input.wallet.slice(-6) : "none on file")}</span></div>
+    <div class="row"><span class="k">network</span><span class="v">${esc(kindLabel)}</span></div>
+    ${ens ? `<div class="row"><span class="k">ens</span><span class="v">${esc(ens)}</span></div>` : ""}
+    <div class="row"><span class="k">archetype</span><span class="v">${esc(d.archetype.name)}</span></div>
+    <div class="row"><span class="k">heat</span><span class="v">${esc((d.heat || {}).label || "COOKED")}</span></div>
+    <div class="rule solid"></div>
+    <div class="items">${lines || `<div class="item show"><span class="tag">notice</span><span class="txt">Not enough was readable to print a roast. The paper stays blank rather than insulting nobody.</span></div>`}</div>
+    <div class="rule"></div>
+    <div class="stamprow"><div class="stamp" id="stamp">${esc(stamp)}</div></div>
+    <div class="row"><span class="k">${ch.kind === "solana" ? "sol balance" : "net worth on-chain"}</span><span class="v">${money(ch.net_worth_usd)}</span></div>
+    ${ch.kind !== "none" ? `<div class="row"><span class="k">tokens held</span><span class="v">${nf(ch.token_count)}</span></div>` : ""}
+    ${ch.kind !== "none" ? `<div class="row"><span class="k">unpriced tokens</span><span class="v">${nf(ch.unpriced_count)}</span></div>` : ""}
+    ${ch.tx_count ? `<div class="row"><span class="k">transactions seen</span><span class="v">${nf(ch.tx_count)}</span></div>` : ""}
+    ${ch.gas_used ? `<div class="row"><span class="k">gas burned</span><span class="v">${nf(ch.gas_used)}<br><span style="font-size:12px">est. ${money(ch.gas_usd)} at today's price</span></span></div>` : ""}
+    ${x ? `<div class="row"><span class="k">followers</span><span class="v">${nf(x.followers)}</span></div><div class="row"><span class="k">posts</span><span class="v">${nf(x.tweets)}</span></div>` : ""}
+    ${x && x.joined ? `<div class="row"><span class="k">on x since</span><span class="v">${esc(x.joined)}</span></div>` : ""}
+    <div class="rule"></div>
+    <div class="row big"><span class="k">rekt score</span><span class="v">${nf(sc.rekt)} / 100</span></div>
+    <p class="p-f" style="text-align:center;margin:2px 0 8px">${esc(sc.level)} &middot; ${scoreNote}</p>
+    <div class="bars">${compBars}</div>
+    <div class="rule solid"></div>
+    <div class="verdict">${esc(d.verdict || "")}</div>
+    <div class="sig">
+      <div class="barcode" style="background-image:${bars((sc.rekt || 30) + 7)}"></div>
+      ${qr ? `<img class="qr" alt="scan to open this receipt" src="${qr}">` : ""}
+    </div>
+    <div class="rule"></div>
+    <p class="p-f">${FOOT[Math.floor(Math.random() * FOOT.length)]}</p>
+    <p class="p-f" style="font-variant-numeric:tabular-nums">${sources.filter((s) => s.ok).length} sources answered${missing.length ? " &middot; " + missing.length + " did not" : ""}<br>
+    generated in ${nf(d.ms)} ms${d.cached ? " &middot; from cache" : ""}</p>`;
+
+  /* readings panel: the audit trail */
+  const okN = sources.filter((s) => s.ok).length;
+  el.facts.innerHTML = `
+    <div class="grp">
+      <h4>the numbers</h4>
+      <div class="kv"><span class="k">net worth on-chain</span><span class="v ok">${money(ch.net_worth_usd)}</span></div>
+      ${ch.spam_usd ? `<div class="kv"><span class="k">of which spam tokens</span><span class="v">${money(ch.spam_usd)}</span></div>` : ""}
+      <div class="kv"><span class="k">tokens found</span><span class="v">${nf(ch.token_count)}</span></div>
+      <div class="kv"><span class="k">dust under $1</span><span class="v">${nf(ch.dust_count)}</span></div>
+      <div class="kv"><span class="k">unpriced</span><span class="v">${nf(ch.unpriced_count)}</span></div>
+      <div class="kv"><span class="k">lifetime gas (measured)</span><span class="v">${nf(ch.gas_used)} gas</span></div>
+      <div class="kv"><span class="k">that gas, in today's dollars</span><span class="v">${money(ch.gas_usd)} <span style="color:#8b8778">est.</span></span></div>
+      <div class="kv"><span class="k">transactions seen</span><span class="v">${nf(ch.tx_count)}</span></div>
+      <div class="kv"><span class="k">token transfers</span><span class="v">${nf(ch.token_transfers)}</span></div>
+      ${sol ? `<div class="kv"><span class="k">solana balance</span><span class="v">${sol.balance.toFixed(4)} SOL (${money(sol.usd)})</span></div>` : ""}
+      ${sol ? `<div class="kv"><span class="k">spl token accounts</span><span class="v">${nf(sol.splCount)}</span></div>` : ""}
+    </div>
+    ${(ch.chains || []).length ? `<div class="grp"><h4>per chain</h4>${ch.chains.map((c) => `
+      <div class="kv"><span class="k">${esc(c.label)}</span><span class="v">${money(c.usd)} &middot; ${nf(c.tx_count || c.nonce)} tx${c.is_contract ? " &middot; contract" : ""}</span></div>`).join("")}</div>` : ""}
+    ${x ? `<div class="grp"><h4>the public profile</h4>
+      <div class="kv"><span class="k">handle</span><span class="v" dir="auto">@${esc(x.handle)}</span></div>
+      <div class="kv"><span class="k">name</span><span class="v" dir="auto">${esc(x.name || "-")}</span></div>
+      <div class="kv"><span class="k">followers / following</span><span class="v">${nf(x.followers)} / ${nf(x.following)}</span></div>
+      <div class="kv"><span class="k">posts / media</span><span class="v">${nf(x.tweets)} / ${nf(x.media)}</span></div>
+      <div class="kv"><span class="k">likes given</span><span class="v">${nf(x.likes)}</span></div>
+      <div class="kv"><span class="k">on x since</span><span class="v">${esc(x.joined || "-")} (${nf(x.years)}y)</span></div>
+      <div class="kv"><span class="k">verified / protected</span><span class="v">${x.verified ? "yes" : "no"} / ${x.protected ? "yes" : "no"}</span></div>
+    </div>` : ""}
+    ${(id.platforms || []).length ? `<div class="grp"><h4>public footprint</h4>${(id.platforms || []).map((p) =>
+      `<span class="pill ${p.found ? "ok" : "no"}">${esc(p.name)} ${p.found ? "found" : "none"}</span>`).join("")}
+      ${ens ? `<span class="pill ok">ens ${esc(ens)}</span>` : `<span class="pill no">no ens</span>`}
+      ${id.github ? `<div class="kv" style="border:0"><span class="k">github</span><span class="v">${esc(id.github.login)} &middot; ${nf(id.github.repos)} repos &middot; since ${esc(id.github.created || "-")}</span></div>` : ""}
+      ${id.domain ? `<div class="kv" style="border:0"><span class="k">site in bio</span><span class="v">${esc(id.domain.host)} &middot; ${id.domain.created ? "registered " + esc(id.domain.created) : "no rdap record"}${id.domain.resolves ? "" : " &middot; does not resolve"}</span></div>` : ""}
+    </div>` : ""}
+    <div class="grp">
+      <h4>how the score is built</h4>
+      ${comps.map((c) => `<div class="kv"><span class="k">${esc(c.label)}</span><span class="v" style="font-variant-numeric:tabular-nums">${c.value == null ? "not read" : c.value} &middot; weight ${(c.weight * 100).toFixed(0)}%</span></div>`).join("")}
+      <p class="mono-s">Each component is computed from the numbers above, then weighted. Same inputs, same score, every time. ${scoreNote}.</p>
+    </div>
+    <div class="grp">
+      <h4>sources</h4>
+      ${sources.map((s) => `<div class="kv"><span class="k">${esc(s.source)}</span><span class="v ${s.ok ? "ok" : "no"}" style="font-variant-numeric:tabular-nums">${s.ok ? "answered" : "no answer"} &middot; ${nf(s.ms)} ms</span></div>`).join("")}
+      <div class="note ${missing.length ? "" : "good"}">${esc(d.data_truth.note)}</div>
+    </div>
+    <div class="grp">
+      <h4>judgement layer</h4>
+      <div class="kv"><span class="k">model</span><span class="v">${d.jev && d.jev.used ? esc(d.jev.model || "jev") : "deterministic only"}</span></div>
+      <div class="kv"><span class="k">typed call</span><span class="v">${d.jev && d.jev.used ? nf(d.jev.ms) + "ms &middot; $" + (d.jev.cost == null ? "0.0000" : Number(d.jev.cost).toFixed(6)) : (d.jev && d.jev.reason ? esc(d.jev.reason) : "not called")}</span></div>
+      <div class="kv"><span class="k">archetype confidence</span><span class="v">${esc(String(d.archetype.conf))}</span></div>
+      <div class="kv"><span class="k">heat</span><span class="v">${esc((d.heat || {}).label || "COOKED")} &middot; lines pulled from the ${esc(String((d.heat || {}).level || 3))} tier</span></div>
+      <p class="mono-s">The typed model only chooses between lines the engine already wrote from your numbers. It cannot invent a fact, and if it does not answer in time the deterministic picks stand.</p>
+    </div>`;
+
+  last = d; lastParams = d.input;
+  el.actions.hidden = false;
+}
+
+function shareURL(w, h, heatLevel) {
+  const q = new URLSearchParams();
+  if (h) q.set("x", h);
+  if (w) q.set("w", w);
+  const hv = heatLevel || heat;
+  if (hv && Number(hv) !== 3) q.set("heat", String(hv));
+  return location.origin + "/" + (q.toString() ? "?" + q.toString() : "");
+}
+
+function receiptText(d) {
+  const L = [];
+  const ch = d.chain || {};
+  L.push("COOKED - the receipt your wallet was dreading");
+  L.push("receipt " + (d.receipt_id || "") + "  " + (d.generated_at || "").slice(0, 16).replace("T", " ") + " UTC");
+  L.push("customer : " + (d.subject.label || "-"));
+  L.push("wallet   : " + (d.input.wallet || "none"));
+  L.push("archetype: " + d.archetype.name + "   heat: " + ((d.heat || {}).label || "COOKED"));
+  L.push("-".repeat(58));
+  for (const f of d.receipt || []) L.push("[" + (f.tag || "") + "] " + f.text);
+  L.push("-".repeat(58));
+  L.push("net worth on-chain : " + money(ch.net_worth_usd));
+  L.push("tokens / unpriced  : " + nf(ch.token_count) + " / " + nf(ch.unpriced_count));
+  L.push("transactions seen  : " + nf(ch.tx_count));
+  L.push("gas burned         : " + nf(ch.gas_used) + " (est. " + money(ch.gas_usd) + ")");
+  L.push("rekt score         : " + nf(d.score.rekt) + "/100  " + d.score.level);
+  L.push("-".repeat(58));
+  L.push(d.verdict || "");
+  L.push(shareURL(d.input.wallet, d.input.handle, (d.input || {}).heat));
+  return L.join("\n");
+}
+
+async function printReceipt(salt) {
+  const h = el.x.value.trim().replace(/^@/, ""), w = el.w.value.trim();
+  if (!h && !w) { el.stage.innerHTML = '<span class="err">Give me a wallet, or at least a handle.</span>'; return; }
+  el.go.disabled = true; el.led.className = "led busy"; el.ledtxt.textContent = "READING";
+  el.stage.textContent = TAUNTS[Math.floor(Math.random() * TAUNTS.length)];
+  el.paper.className = "paper out";
+  el.paper.innerHTML = `<div class="p-h"><span>COOKED</span></div><p class="p-st">printing</p>
+    <div class="rule"></div>${STAGE_STEPS.map((s, i) => `<div class="row"><span class="k">${i + 1}</span><span class="v">${s}</span></div>`).join("")}
+    <div class="rule"></div><p class="p-f">the paper cannot leave until the chain answers</p>`;
+  noise(.55, 320, .8, .08); hum(1500);
+
+  let d;
+  try {
+    const r = await fetch("/api/roast", { method: "POST", headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ x: h, wallet: w, salt: salt || "", heat }) });
+    d = await r.json();
+    if (!r.ok || d.error) throw new Error(d.error || ("HTTP " + r.status));
+  } catch (e) {
+    el.led.className = "led"; el.ledtxt.textContent = "JAM";
+    const why = String(e.message || e).slice(0, 220);
+    el.paper.innerHTML = `
+      <div class="p-jam">PRINTER ERROR</div>
+      <p class="p-st">the receipt did not print</p>
+      <div class="rule solid"></div>
+      <div class="row"><span class="k">status</span><span class="v">nothing was read, nothing was stored</span></div>
+      <div class="rule"></div>
+      <p class="p-jam-note">${esc(why)}</p>
+      <div class="rule"></div>
+      <button class="jam-retry" id="retry">press here to print again</button>
+      <p class="p-f">no key was asked for, nothing was signed, nothing was charged</p>`;
+    el.paper.classList.add("jag");
+    const again = el.paper.querySelector("#retry");
+    if (again) again.onclick = () => printReceipt();
+    el.go.disabled = false; el.stage.innerHTML = "";
+    setTimeout(() => { el.led.className = "led"; el.ledtxt.textContent = "READY"; }, 1200);
+    return;
+  }
+  render(d);
+  el.paper.classList.add("jag");
+  const items = [...el.paper.querySelectorAll(".item")];
+  if (NOFX) {
+    items.forEach((n) => n.classList.add("show"));
+    el.led.className = "led on"; el.ledtxt.textContent = "DONE"; el.go.disabled = false;
+    el.go.textContent = "PRINT MY RECEIPT"; el.stage.innerHTML = "";
+    return;
+  }
+  let i = 0;
+  const tick = setInterval(() => {
+    if (i >= items.length) {
+      clearInterval(tick);
+      el.paper.querySelector(".stamp")?.classList.add("show"); ding();
+      el.led.className = "led on"; el.ledtxt.textContent = "DONE";
+      el.go.disabled = false; el.stage.innerHTML = ""; noise(.18, 1400, 1.4, .05);
+      return;
+    }
+    items[i].classList.add("show");
+    noise(.045, 620 + (i % 3) * 90, 1.2, .035);
+    i++;
+  }, 150);
+  try { history.replaceState(null, "", shareURL(w, h, heat)); } catch (e) {}
+}
+
+el.go.onclick = () => printReceipt();
+document.addEventListener("keydown", (e) => { if (e.key === "Enter") printReceipt(); });
+$("#again").onclick = () => printReceipt(String(Date.now()).slice(-6));
+$("#copy").onclick = async () => {
+  const u = shareURL(el.w.value.trim(), el.x.value.trim().replace(/^@/, ""), heat);
+  try { await navigator.clipboard.writeText(u); $("#copy").textContent = "link copied"; }
+  catch (e) { el.stage.textContent = u; }
+  setTimeout(() => $("#copy").textContent = "copy share link", 1800);
+};
+$("#dl").onclick = () => {
+  if (!last) return;
+  const blob = new Blob([receiptText(last)], { type: "text/plain" });
+  const a = document.createElement("a");
+  a.href = URL.createObjectURL(blob); a.download = "cooked-receipt.txt"; a.click();
+};
+$("#pr").onclick = () => window.print();
+
+/* shareable: /?x=handle&w=0x… prints straight away */
+const q = new URLSearchParams(location.search);
+if (q.get("x")) el.x.value = q.get("x");
+if (q.get("w")) el.w.value = q.get("w");
+if (q.get("heat")) setHeat(q.get("heat"));
+el.stage.textContent = TAUNTS[Math.floor(Math.random() * TAUNTS.length)];
+fetch("/health").then((r) => r.json()).then((h) => { $("#rev").textContent = "rev " + (h.rev || "?"); }).catch(() => {});
+if (q.get("x") || q.get("w")) setTimeout(() => printReceipt(), 140);
+</script>
+</body>
+</html>
