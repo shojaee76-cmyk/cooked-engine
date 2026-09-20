@@ -692,8 +692,9 @@ build time. It is live and the source is open to you as the working reference fo
 this document:
 
 - Live: https://cooked.shojaee76.workers.dev
-- Source: `C:/Users/capit/cooked` (src/ for the engine and worker, tools/verify_engine.py for the
-  harness, references/ for the source list and deploy notes)
+- Source: https://github.com/shojaee76-cmyk/cooked-engine (src/ for the engine and worker,
+  tools/verify_engine.py for the harness, references/ for the source list and deploy notes,
+  punchlines/ for the joke bank in all four registers)
 
 Same journey, same bugs: my build shipped all ten of these first. If you ship one fix, make it
 the handle-only path; that is the one your users will notice.
