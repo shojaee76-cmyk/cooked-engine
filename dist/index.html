@@ -26,51 +26,60 @@
 }
 *{box-sizing:border-box}
 html,body{margin:0;padding:0}
+::selection{background:var(--signal);color:#fff}
 body{
   background:var(--device);
   background-image:
     radial-gradient(1100px 520px at 50% -8%, #302d27 0%, transparent 62%),
-    repeating-linear-gradient(90deg,#181614 0 2px,#1a1917 2px 4px);
+    radial-gradient(rgba(233,227,213,.028) 1px, transparent 1.4px);
+  background-size:auto, 5px 5px;
   color:#e7e3d9;font:15px/1.5 var(--m);-webkit-font-smoothing:antialiased;
 }
 a{color:inherit}
-.wrap{max-width:1180px;margin:0 auto;padding:30px 18px 90px}
+.wrap{max-width:1180px;margin:0 auto;padding:32px 20px 96px}
 
 /* ---------------------------------------------------------------- masthead */
 .mast{display:flex;align-items:flex-end;justify-content:space-between;gap:20px;flex-wrap:wrap}
 .logo{font-family:var(--d);font-weight:800;font-size:clamp(38px,7vw,76px);line-height:.86;letter-spacing:-.02em;color:#f6f2e8;margin:0}
 .logo b{color:var(--signal);font-weight:800}
 .tag{font-family:var(--m);font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:#b0aa9b;margin:10px 0 0}
-.mast .right{text-align:right;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:#aaa495;line-height:1.9}
-.snd{background:none;border:1px solid #4a5058;color:#cfc9b8;font:inherit;font-size:12px;letter-spacing:.14em;padding:12px 14px;min-height:44px;cursor:pointer;text-transform:uppercase}
-.snd:hover{border-color:#5b6169;color:#f0ebdd}
+.mast .right{display:flex;flex-direction:column;align-items:flex-end;gap:10px;text-align:right;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:#aaa495;line-height:1.9}
+.snd{background:linear-gradient(#221f1a,#161513);border:1px solid #4a5058;color:#cfc9b8;font:inherit;font-size:12px;letter-spacing:.14em;padding:12px 14px;min-height:44px;cursor:pointer;text-transform:uppercase;display:inline-flex;align-items:center;gap:8px;box-shadow:2px 2px 0 #0d0c0a;transition:transform .06s,box-shadow .06s,border-color .12s}
+.snd::before{content:"";width:7px;height:7px;border-radius:50%;background:var(--measured-lt);box-shadow:0 0 7px var(--measured-lt);flex:0 0 auto}
+.snd[data-on="0"]::before{background:#3b4048;box-shadow:none}
+.snd:hover{border-color:#5b6169;color:#f0ebdd;transform:translate(-1px,-1px);box-shadow:3px 3px 0 #0d0c0a}
+.snd:active{transform:translate(1px,1px);box-shadow:0 0 0 #0d0c0a}
 
 /* ------------------------------------------------------------------- console */
-.console{margin:28px 0 0;padding:22px;border:1px solid #37332c;background:
+.console{margin:32px 0 0;padding:24px;border:1px solid #37332c;background:
   linear-gradient(#232019,#161513);box-shadow:inset 0 1px 0 #3b362d, 0 18px 40px rgba(0,0,0,.45);position:relative}
-.console::before,.console::after{content:"";position:absolute;width:7px;height:7px;border-radius:50%;background:#0d0f12;box-shadow:inset 0 1px 0 #3b4149}
+.console::before,.console::after{content:"";position:absolute;width:7px;height:7px;border-radius:50%;background:linear-gradient(135deg,#3b4149 25%,#0d0f12 60%);box-shadow:inset 0 1px 0 #20242a}
 .console::before{top:8px;left:8px}.console::after{top:8px;right:8px}
-.form{display:flex;gap:14px;flex-wrap:wrap;align-items:flex-end}
+.screw{position:absolute;width:7px;height:7px;border-radius:50%;background:linear-gradient(135deg,#3b4149 25%,#0d0f12 60%);box-shadow:inset 0 1px 0 #20242a}
+.screw.bl{bottom:8px;left:8px}.screw.br{bottom:8px;right:8px}
+.form{display:flex;gap:16px;flex-wrap:wrap;align-items:flex-end}
 .f{position:relative;flex:1 1 240px;min-width:0}
-.f label{display:block;font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:#b0aa9b;margin:0 0 6px}
+.f label{display:block;font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:#b0aa9b;margin:0 0 8px}
 .f input{width:100%;background:#121110;border:1px solid #3d3830;color:#f6f2e9;padding:16px 16px;font:15px/1 var(--m);outline:none}
 .f input:focus{border-color:var(--measured-lt);box-shadow:0 0 0 3px rgba(103,199,159,.12)}
 .f input::placeholder{color:#4d535b}
 .heatf{flex:0 0 auto}
-.seg{display:flex;border:1px solid #3d3830;background:#121110}
-.segbtn{background:none;border:0;border-right:1px solid #2b2822;color:#b6b0a1;font:inherit;font-size:12px;
-  letter-spacing:.12em;text-transform:uppercase;padding:17px 14px;min-height:54px;cursor:pointer}
+.seg{display:flex;border:1px solid #3d3830;background:#0f0e0d;box-shadow:inset 0 2px 4px rgba(0,0,0,.4)}
+.segbtn{background:linear-gradient(#1e1c18,#151412);border:0;border-right:1px solid #2b2822;color:#b6b0a1;font:inherit;font-size:12px;
+  letter-spacing:.12em;text-transform:uppercase;padding:17px 14px;min-height:54px;cursor:pointer;
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.05);transition:background .12s,color .12s}
 .segbtn:last-child{border-right:0}
-.segbtn:hover{color:#fff}
-.segbtn.on{background:var(--signal);color:#fff;font-weight:600}
+.segbtn:hover{color:#f0ebdd}
+.segbtn.on{background:var(--signal);color:#fff;font-weight:600;text-shadow:0 1px 0 rgba(0,0,0,.35);box-shadow:inset 0 2px 5px rgba(0,0,0,.35),inset 0 -1px 0 rgba(255,255,255,.22)}
 .go{flex:0 0 auto;background:var(--signal);color:#fff;border:0;padding:19px 30px;min-height:56px;font-family:var(--d);font-weight:800;
   font-size:20px;line-height:1.1;letter-spacing:.02em;cursor:pointer;box-shadow:4px 4px 0 #0d0f12;transition:transform .06s,box-shadow .06s}
 .go:hover{transform:translate(-1px,-1px);box-shadow:5px 5px 0 #0d0f12}
 .go:active{transform:translate(3px,3px);box-shadow:1px 1px 0 #0d0f12}
 .go[disabled]{opacity:.6;cursor:progress;box-shadow:none;transform:none}
-.console .fine{color:#b6b0a1;font-size:14px;margin:14px 0 0;line-height:1.75;max-width:74ch}
+.go:focus-visible,.segbtn:focus-visible,.snd:focus-visible,.btn:focus-visible,.jam-retry:focus-visible{outline:2px solid var(--measured-lt);outline-offset:2px}
+.console .fine{color:#b6b0a1;font-size:14px;margin:16px 0 0;line-height:1.75;max-width:66ch}
 .console .fine b{color:#c9c3b2;font-weight:400}
-.flag{color:var(--signal);font-family:var(--d);font-weight:800;letter-spacing:.14em;font-size:12px}
+.flag{color:var(--signal);font-family:var(--d);font-weight:800;letter-spacing:.14em;font-size:12px;display:inline-block;margin-right:8px}
 
 /* ------------------------------------------------------------------- stage */
 .stage{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);gap:24px;margin:24px 0 0;align-items:start}
@@ -89,6 +98,9 @@ a{color:inherit}
   box-shadow:inset 0 7px 12px rgba(0,0,0,.95),inset 0 -1px 0 #3a4048}
 .bay{padding:0 10px 10px;position:relative}
 .slotbar{height:12px;background:#0a0c0e;box-shadow:inset 0 4px 7px rgba(0,0,0,.9)}
+.tearbar{height:11px;margin:0 10px;border-top:1px solid #060505;background:repeating-linear-gradient(90deg,#2a2721 0 3px,#14120f 3px 6px);
+  box-shadow:inset 0 2px 3px rgba(0,0,0,.8),0 1px 0 #3a362e;position:relative}
+.tearbar::after{content:"";position:absolute;left:6px;right:6px;top:4px;height:3px;background:#050404;box-shadow:0 1px 0 rgba(255,255,255,.05)}
 
 /* paper */
 .paper-wrap{padding:0 12px 0;background:linear-gradient(#121110,#0d0c0b)}
@@ -120,7 +132,7 @@ body.nofx .paper{clip-path:inset(0 0 0 0)!important;transition:none!important}
 .items{margin:2px 0 0}
 .item{display:flex;gap:9px;align-items:flex-start;margin:0 0 11px;opacity:0;transform:translateY(2px)}
 .item.show{opacity:1;transform:none;transition:opacity .18s}
-.item .tag{flex:0 0 auto;font-family:var(--mb);font-size:12px;letter-spacing:.06em;border:1px solid rgba(23,21,15,.55);
+.item .tag{flex:0 0 auto;font-family:var(--mb);font-size:12px;letter-spacing:.06em;border:1px solid rgba(23,21,15,.55);background:rgba(23,21,15,.05);
   padding:1px 5px;margin-top:1px;color:#3f3b2e;text-transform:uppercase;white-space:nowrap}
 .item .txt{flex:1 1 auto;word-break:break-word}
 .item.hard .tag{border-color:var(--signal);color:var(--signal-2)}
@@ -132,12 +144,12 @@ body.nofx .paper{clip-path:inset(0 0 0 0)!important;transition:none!important}
 .bar .fill{position:absolute;inset:0 auto 0 0;background:var(--ink)}
 .bar .fill.hot{background:var(--signal)}
 .bar .num{flex:0 0 34px;text-align:right;color:var(--ink)}
-.stamprow{display:flex;justify-content:flex-end;align-items:center;min-height:52px;margin:2px 0 0}
+.stamprow{display:flex;justify-content:flex-end;align-items:center;min-height:58px;margin:6px 0 0}
 .stamp{font-family:var(--d);font-weight:800;font-size:26px;letter-spacing:.06em;
-  color:#b3300f;border:3px solid #b3300f;padding:1px 9px;
-  transform:rotate(-7deg) scale(1.05);pointer-events:none;mix-blend-mode:multiply}
+  color:#b3300f;border:2.5px solid #b3300f;outline:1px solid rgba(179,48,15,.7);outline-offset:3px;padding:1px 9px;
+  transform:rotate(-7deg);pointer-events:none;mix-blend-mode:multiply}
 .stamp.show{animation:thunk .18s}
-@keyframes thunk{0%{transform:rotate(-7deg) scale(1.85)}100%{transform:rotate(-7deg) scale(1.05)}}
+@keyframes thunk{0%{transform:rotate(-7deg) scale(1.85)}100%{transform:rotate(-7deg) scale(1)}}
 .sig{display:flex;justify-content:space-between;align-items:flex-end;gap:12px;margin:12px 0 0;flex-wrap:wrap}
 .barcode{flex:1 1 140px;min-width:0;height:42px;background-repeat:repeat-x;background-position:0 0}
 .qr{flex:0 0 auto;width:76px;height:76px;image-rendering:pixelated;background:#fff;padding:3px;border:1px solid rgba(23,21,15,.2)}
@@ -151,14 +163,18 @@ body.nofx .paper{clip-path:inset(0 0 0 0)!important;transition:none!important}
 .jam-retry:hover{background:#332e22}
 
 /* readings */
-.readings{border:1px solid #363229;background:#151413}
+.readings{border:1px solid #363229;background:#151413;position:relative}
+.readings::before,.readings::after{content:"";position:absolute;width:10px;height:10px;border:1px solid #4d4738;pointer-events:none}
+.readings::before{top:-1px;left:-1px;border-right:0;border-bottom:0}
+.readings::after{bottom:-1px;right:-1px;border-left:0;border-top:0}
 .readings .hd{display:flex;justify-content:space-between;align-items:center;padding:12px 14px;border-bottom:1px solid #2b3139;
   font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:#aea898}
 .readings .bd{padding:18px;overflow:auto}
 @media(min-width:921px){.readings .bd{max-height:min(88vh,1100px)}}
 .grp{margin:0 0 24px}
-.grp h4{font-family:var(--d);font-weight:800;font-size:15px;letter-spacing:.1em;text-transform:uppercase;color:#d8d2c1;margin:0 0 10px}
-.kv{display:flex;justify-content:space-between;gap:14px;padding:7px 0;border-bottom:1px dotted #2c2925;font-size:14px;align-items:baseline}
+.grp h4{font-family:var(--d);font-weight:800;font-size:15px;letter-spacing:.1em;text-transform:uppercase;color:#d8d2c1;margin:0 0 10px;display:flex;align-items:center;gap:8px}
+.grp h4::before{content:"";width:7px;height:7px;background:var(--signal);flex:0 0 auto}
+.kv{display:flex;justify-content:space-between;gap:14px;padding:8px 0;border-bottom:1px dotted #2c2925;font-size:14px;align-items:baseline}
 .kv .k{color:#b5afa0}
 .kv .v{text-align:right;color:#e9e5da;word-break:break-word;unicode-bidi:plaintext;font-variant-numeric:tabular-nums}
 .kv .v.ok{color:var(--measured-lt)}
@@ -170,13 +186,14 @@ body.nofx .paper{clip-path:inset(0 0 0 0)!important;transition:none!important}
   padding:5px 8px;margin:0 6px 6px 0;text-transform:uppercase}
 .pill.ok{border-color:var(--measured);color:var(--measured-lt)}
 .pill.no{border-color:#6b3327;color:#e0705a}
-.actions{display:flex;gap:12px;flex-wrap:wrap;margin:18px 0 0}
-.btn{background:none;border:1px solid #454b54;color:#ded8c8;font:inherit;font-size:12px;letter-spacing:.1em;
-  text-transform:uppercase;padding:13px 15px;min-height:44px;cursor:pointer}
-.btn:hover{border-color:#5e6673;color:#fff}
+.actions{display:flex;gap:12px;flex-wrap:wrap;margin:24px 0 0}
+.btn{background:linear-gradient(#201d18,#151412);border:1px solid #454b54;color:#ded8c8;font:inherit;font-size:12px;letter-spacing:.1em;
+  text-transform:uppercase;padding:13px 15px;min-height:44px;cursor:pointer;box-shadow:2px 2px 0 #0d0c0a;transition:transform .06s,box-shadow .06s,border-color .12s}
+.btn:hover{border-color:#5e6673;color:#fff;transform:translate(-1px,-1px);box-shadow:3px 3px 0 #0d0c0a}
+.btn:active{transform:translate(1px,1px);box-shadow:0 0 0 #0d0c0a}
 .btn.pri{border-color:var(--signal);color:#ffd9cd}
-.foot{margin:30px 0 0;color:#aaa495;font-size:13px;line-height:1.8;letter-spacing:.01em;max-width:78ch}
-.foot b{color:#a8a293;font-weight:400}
+.foot{margin:48px 0 0;color:#b1ab9c;font-size:13px;line-height:1.8;letter-spacing:.01em;max-width:68ch}
+.foot b{color:#bdb7a6;font-weight:400}
 .stage-note{margin:12px 0 0;font-size:13px;color:#b5afa0;min-height:18px}
 .err{color:#e0705a}
 @media(max-width:520px){
@@ -186,12 +203,13 @@ body.nofx .paper{clip-path:inset(0 0 0 0)!important;transition:none!important}
   .qr{order:1;margin:0 auto}
   .f{padding:0}
   .paper{font-size:13px;padding:16px 13px 10px}
-  .row.big{font-size:20px}.item .tag{font-size:9px}
-  .bar .lbl{flex-basis:70px;font-size:9.5px}
+  .row.big{font-size:20px}.item .tag{font-size:12px;padding:0 4px}
+  .bar .lbl{flex-basis:88px;font-size:12px}
   .logo{font-size:44px}
 }
+@media (prefers-reduced-motion:reduce){.led.busy{animation:none}.item.show{transition:none}.stamp.show{animation:none}}
 @media print{
-  body{background:#fff}.mast,.console,.readings,.foot,.actions,.printer .brandrow,.slot,.slotbar,.stage-note{display:none!important}
+  body{background:#fff}.mast,.console,.readings,.foot,.actions,.printer .brandrow,.slot,.slotbar,.tearbar,.stage-note{display:none!important}
   .stage{display:block}.printer{border:0;box-shadow:none;background:none}.paper-wrap{padding:0;background:none}
   .paper{box-shadow:none;clip-path:none!important;background:#fff}
 }
@@ -205,13 +223,13 @@ body.nofx .paper{clip-path:inset(0 0 0 0)!important;transition:none!important}
       <p class="tag">read-only &middot; no keys &middot; no signing &middot; no connecting</p>
     </div>
     <div class="right">
-      model C-1 &middot; dot matrix<br>
-      engines: 6 chains + public x + osint<br>
-      <button class="snd" id="snd">sound: on</button>
+      <div class="modelinfo">model C-1 &middot; dot matrix<br>engines: 6 chains + public x + osint</div>
+      <button class="snd" id="snd" data-on="1">sound: on</button>
     </div>
   </div>
 
   <div class="console">
+    <i class="screw bl" aria-hidden="true"></i><i class="screw br" aria-hidden="true"></i>
     <div class="form">
       <div class="f">
         <label for="x">x handle (optional)</label>
@@ -219,7 +237,7 @@ body.nofx .paper{clip-path:inset(0 0 0 0)!important;transition:none!important}
       </div>
       <div class="f">
         <label for="w">wallet &middot; evm (0x…) or solana</label>
-        <input id="w" autocomplete="off" spellcheck="false" placeholder="0x… (evm) or a solana address">
+        <input id="w" autocomplete="off" spellcheck="false" placeholder="0x… or a solana address">
       </div>
       <div class="f heatf">
         <label for="heat">heat</label>
@@ -232,7 +250,7 @@ body.nofx .paper{clip-path:inset(0 0 0 0)!important;transition:none!important}
       <button class="go" id="go">PRINT MY RECEIPT</button>
     </div>
     <p class="fine">
-      <span class="flag">NOT A CHECKOUT</span> &nbsp;We never ask for a key, a signature or a connection.
+      <span class="flag">NOT A CHECKOUT</span> We never ask for a key, a signature or a connection.
       We read public chain data and the public profile, print what your money has been doing, and forget you.
       Every line maps to a number below it. <b>Estimates are marked as estimates. Sources that fail are named.</b>
     </p>
@@ -261,6 +279,7 @@ body.nofx .paper{clip-path:inset(0 0 0 0)!important;transition:none!important}
           <p class="p-f">example numbers, printed at the factory<br>paste a wallet above to print yours</p>
         </div>
       </div>
+      <div class="tearbar" aria-hidden="true"></div>
     </div>
 
     <div class="readings">
@@ -2676,7 +2695,7 @@ function ding() {
     setTimeout(() => o.stop(), 480);
   } catch (e) {}
 }
-$("#snd").onclick = () => { sndOn = !sndOn; $("#snd").textContent = "sound: " + (sndOn ? "on" : "off"); if (sndOn) noise(.12, 880, 1, .05); };
+$("#snd").onclick = () => { sndOn = !sndOn; $("#snd").textContent = "sound: " + (sndOn ? "on" : "off"); $("#snd").dataset.on = sndOn ? "1" : "0"; if (sndOn) noise(.12, 880, 1, .05); };
 
 const NOFX = new URLSearchParams(location.search).has("nofx") || matchMedia("(prefers-reduced-motion: reduce)").matches;
 if (NOFX) document.body.classList.add("nofx");
@@ -2737,7 +2756,6 @@ function render(d) {
   const qr = qrDataURL(shareURL(d.input.wallet, d.input.handle, (d.input || {}).heat), 4);
 
   el.paper.innerHTML = `
-    <div class="stamp" id="stamp">${esc(stamp)}</div>
     <div class="p-h"><span>COOKED</span></div>
     <p class="p-st">receipt &middot; ${esc(d.receipt_id || "")}</p>
     <p class="p-sub">${esc(d.generated_at ? d.generated_at.slice(0, 16).replace("T", " ") : "")} utc<br>terminal c-1 &middot; dot matrix</p>
@@ -2785,7 +2803,7 @@ function render(d) {
       <div class="kv"><span class="k">dust under $1</span><span class="v">${nf(ch.dust_count)}</span></div>
       <div class="kv"><span class="k">unpriced</span><span class="v">${nf(ch.unpriced_count)}</span></div>
       <div class="kv"><span class="k">lifetime gas (measured)</span><span class="v">${nf(ch.gas_used)} gas</span></div>
-      <div class="kv"><span class="k">that gas, in today's dollars</span><span class="v">${money(ch.gas_usd)} <span style="color:#8b8778">est.</span></span></div>
+      <div class="kv"><span class="k">that gas, in today's dollars</span><span class="v">${money(ch.gas_usd)} <span style="color:#9a957f">est.</span></span></div>
       <div class="kv"><span class="k">transactions seen</span><span class="v">${nf(ch.tx_count)}</span></div>
       <div class="kv"><span class="k">token transfers</span><span class="v">${nf(ch.token_transfers)}</span></div>
       ${sol ? `<div class="kv"><span class="k">solana balance</span><span class="v">${sol.balance.toFixed(4)} SOL (${money(sol.usd)})</span></div>` : ""}
@@ -2947,7 +2965,9 @@ if (q.get("x")) el.x.value = q.get("x");
 if (q.get("w")) el.w.value = q.get("w");
 if (q.get("heat")) setHeat(q.get("heat"));
 el.stage.textContent = TAUNTS[Math.floor(Math.random() * TAUNTS.length)];
-fetch("/health").then((r) => r.json()).then((h) => { $("#rev").textContent = "rev " + (h.rev || "?"); }).catch(() => {});
+if (location.protocol === "http:" || location.protocol === "https:") {
+  fetch("/health").then((r) => r.json()).then((h) => { $("#rev").textContent = "rev " + (h.rev || "?"); }).catch(() => {});
+}
 if (q.get("x") || q.get("w")) setTimeout(() => printReceipt(), 140);
 </script>
 </body>
